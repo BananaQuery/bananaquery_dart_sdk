@@ -3,6 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/packages/banana_query_core/melos_banana_query_core.iml" filepath="$PROJECT_DIR$/packages/banana_query_core/melos_banana_query_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/banana_query_couchbase/melos_banana_query_couchbase.iml" filepath="$PROJECT_DIR$/packages/banana_query_couchbase/melos_banana_query_couchbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/banana_query_database/melos_banana_query_database.iml" filepath="$PROJECT_DIR$/packages/banana_query_database/melos_banana_query_database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/banana_query_localization/melos_banana_query_localization.iml" filepath="$PROJECT_DIR$/packages/banana_query_localization/melos_banana_query_localization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/banana_query_ui/melos_banana_query_ui.iml" filepath="$PROJECT_DIR$/packages/banana_query_ui/melos_banana_query_ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/packages/banana_query_ui/example/melos_example.iml" filepath="$PROJECT_DIR$/packages/banana_query_ui/example/melos_example.iml" />
       <module fileurl="file://$PROJECT_DIR$/melos_banana_query_dart_sdk.iml" filepath="$PROJECT_DIR$/melos_banana_query_dart_sdk.iml" />
     </modules>
   </component>
