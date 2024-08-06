@@ -1,0 +1,8 @@
+# melos_managed_dependency_overrides: banana_query_core,banana_query_database,banana_query_localization
+dependency_overrides:
+  banana_query_core:
+    path: ../banana_query_core
+  banana_query_database:
+    path: ../banana_query_database
+  banana_query_localization:
+    path: ../banana_query_localization

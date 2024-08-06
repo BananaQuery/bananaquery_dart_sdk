@@ -1,0 +1,25 @@
+name: banana_query_couchbase
+description: A sample command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.4.1
+
+# Add regular dependencies here.
+dependencies:
+  cbl: ^3.0.0
+  uuid: ^3.0.6
+  cbl_flutter: ^3.0.0
+  banana_query_core: {
+     path: ../banana_query_core
+  }
+  banana_query_database: {
+     path: ../banana_query_database
+  }
+  # path: ^1.8.0
+
+dev_dependencies:
+  cbl_dart: ^3.0.1
+  lints: ^3.0.0
+  test: ^1.24.0
