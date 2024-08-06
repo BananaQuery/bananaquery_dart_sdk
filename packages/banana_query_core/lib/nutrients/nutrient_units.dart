@@ -1,0 +1,102 @@
+import 'package:banana_query_core/nutrients/macro/carbs/carbohydrate_difference.dart';
+import 'package:banana_query_core/nutrients/macro/carbs/complex/polysaccharides/fiber/dietary_fiber.dart';
+import 'package:banana_query_core/nutrients/macro/energy/energy_nutrient.dart';
+import 'package:banana_query_core/nutrients/macro/lipids/total/total_lipids.dart';
+import 'package:banana_query_core/nutrients/macro/proteins/total_protein.dart';
+
+import 'micro/minerals/calcium.dart';
+import 'micro/minerals/copper.dart';
+import 'micro/minerals/fluoride.dart';
+import 'micro/minerals/iron.dart';
+import 'micro/minerals/magnesium.dart';
+import 'micro/minerals/manganese.dart';
+import 'micro/minerals/phosphorus.dart';
+import 'micro/minerals/potassium.dart';
+import 'micro/minerals/selenium.dart';
+import 'micro/minerals/sodium.dart';
+import 'micro/minerals/zinc.dart';
+import 'micro/vitamins/fatsoluble/a/vitamin_a_iu.dart';
+import 'micro/vitamins/fatsoluble/a/vitamin_a_rae.dart';
+import 'micro/vitamins/fatsoluble/d/vitamin_d_d2.dart';
+import 'micro/vitamins/fatsoluble/d/vitamin_d_d2_d3.dart';
+import 'micro/vitamins/fatsoluble/d/vitamin_d_d3.dart';
+import 'micro/vitamins/fatsoluble/d/vitamin_d_iu.dart';
+import 'micro/vitamins/fatsoluble/e/tocopherol/vitamin_e_alpha_tocopherol.dart';
+import 'micro/vitamins/fatsoluble/e/tocopherol/vitamin_e_beta_tocopherol.dart';
+import 'micro/vitamins/fatsoluble/e/tocopherol/vitamin_e_delta_tocopherol.dart';
+import 'micro/vitamins/fatsoluble/e/tocopherol/vitamin_e_gamma_tocopherol.dart';
+import 'micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_alpha_tocotrienol.dart';
+import 'micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_beta_tocotrienol.dart';
+import 'micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_delta_tocotrienol.dart';
+import 'micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_gamma_tocotrienol.dart';
+import 'micro/vitamins/fatsoluble/e/vitamin_e_added.dart';
+import 'micro/vitamins/fatsoluble/k/vitamin_k1_dihydrophylloquinone.dart';
+import 'micro/vitamins/fatsoluble/k/vitamin_k1_phylloquinone.dart';
+import 'micro/vitamins/fatsoluble/k/vitamin_k2_menaquinone.dart';
+import 'micro/vitamins/watersoluble/b/b12/vitamin_b12_added.dart';
+import 'micro/vitamins/watersoluble/b/b12/vitamin_b_12.dart';
+import 'micro/vitamins/watersoluble/b/b2/riboflavin.dart';
+import 'micro/vitamins/watersoluble/b/b3/niacin.dart';
+import 'micro/vitamins/watersoluble/b/b5/pantothenic_acid.dart';
+import 'micro/vitamins/watersoluble/b/b6/vitamin_b6.dart';
+import 'micro/vitamins/watersoluble/b/b9/folate_dfe.dart';
+import 'micro/vitamins/watersoluble/b/b9/folate_food.dart';
+import 'micro/vitamins/watersoluble/b/b9/folate_total.dart';
+import 'micro/vitamins/watersoluble/b/b9/folic_acid.dart';
+import 'micro/vitamins/watersoluble/b/thiamin/thiamin.dart';
+import 'micro/vitamins/watersoluble/c/vitamin_c_total_ascorbic_acid.dart';
+
+class NutrientUnits {
+  static final Map<String, String> typicalMeasuringUnits = {
+    // macro nutrients
+    TotalProtein.nutrientType: TotalProtein.measuringUnits,
+    CarbohydrateDifference.nutrientType: CarbohydrateDifference.measuringUnits,
+    TotalLipids.nutrientType: TotalLipids.measuringUnits,
+    EnergyNutrient.nutrientType: EnergyNutrient.measuringUnits,
+    DietaryFiber.nutrientType: DietaryFiber.measuringUnits,
+
+    // minerals
+    Calcium.nutrientType: Calcium.measuringUnits,
+    Copper.nutrientType: Copper.measuringUnits,
+    Fluoride.nutrientType: Fluoride.measuringUnits,
+    Iron.nutrientType: Iron.measuringUnits,
+    Magnesium.nutrientType: Magnesium.measuringUnits,
+    Manganese.nutrientType: Manganese.measuringUnits,
+    Niacin.nutrientType: Niacin.measuringUnits,
+    Phosphorus.nutrientType: Phosphorus.measuringUnits,
+    Potassium.nutrientType: Potassium.measuringUnits,
+    Riboflavin.nutrientType: Riboflavin.measuringUnits,
+    Selenium.nutrientType: Selenium.measuringUnits,
+    Sodium.nutrientType: Sodium.measuringUnits,
+    Zinc.nutrientType: Zinc.measuringUnits,
+    // vitamins
+    VitaminAIU.nutrientType: VitaminAIU.measuringUnits,
+    VitaminARAE.nutrientType: VitaminARAE.measuringUnits,
+    VitaminDD2.nutrientType: VitaminDD2.measuringUnits,
+    VitaminDD2D3.nutrientType: VitaminDD2D3.measuringUnits,
+    VitaminDD3.nutrientType: VitaminDD3.measuringUnits,
+    VitaminDIU.nutrientType: VitaminDIU.measuringUnits,
+    VitaminEAlphaTocopherol.nutrientType: VitaminEAlphaTocopherol.measuringUnits,
+    VitaminEBetaTocopherol.nutrientType: VitaminEBetaTocopherol.measuringUnits,
+    VitaminEDeltaTocopherol.nutrientType: VitaminEDeltaTocopherol.measuringUnits,
+    VitaminEGammaTocopherol.nutrientType: VitaminEGammaTocopherol.measuringUnits,
+    VitaminEAlphaTocotrienol.nutrientType: VitaminEAlphaTocotrienol.measuringUnits,
+    VitaminEBetaTocotrienol.nutrientType: VitaminEBetaTocotrienol.measuringUnits,
+    VitaminEDeltaTocotrienol.nutrientType: VitaminEDeltaTocotrienol.measuringUnits,
+    VitaminEGammaTocotrienol.nutrientType: VitaminEGammaTocotrienol.measuringUnits,
+    VitaminEAdded.nutrientType: VitaminEAdded.measuringUnits,
+    VitaminK1Dihydrophylloquinone.nutrientType: VitaminK1Dihydrophylloquinone.measuringUnits,
+    VitaminK1Phylloquinone.nutrientType: VitaminK1Phylloquinone.measuringUnits,
+    VitaminK2Menaquinone.nutrientType: VitaminK2Menaquinone.measuringUnits,
+    PantothenicAcid.nutrientType: PantothenicAcid.measuringUnits,
+    VitaminB6.nutrientType: VitaminB6.measuringUnits,
+    FolateDFE.nutrientType: FolateDFE.measuringUnits,
+    FolateFood.nutrientType: FolateFood.measuringUnits,
+    FolateTotal.nutrientType: FolateTotal.measuringUnits,
+    FolicAcid.nutrientType: FolicAcid.measuringUnits,
+    VitaminB12Added.nutrientType: VitaminB12Added.measuringUnits,
+    VitaminB12.nutrientType: VitaminB12.measuringUnits,
+    Thiamin.nutrientType: Thiamin.measuringUnits,
+    VitaminCTotalAscorbicAcid.nutrientType: VitaminCTotalAscorbicAcid.measuringUnits
+  };
+}
