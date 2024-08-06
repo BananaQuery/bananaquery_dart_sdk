@@ -8,7 +8,6 @@ environment:
 
 dependencies:
   openapi_generator_annotations: ^4.11.0
-  openapi_spec: ^0.7.10
   crypto: ^3.0.1
   rxdart: ^0.28.0
   uuid: ^3.0.6
