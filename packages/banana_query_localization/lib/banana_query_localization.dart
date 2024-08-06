@@ -1,0 +1,1 @@
+library bodistics_localization;

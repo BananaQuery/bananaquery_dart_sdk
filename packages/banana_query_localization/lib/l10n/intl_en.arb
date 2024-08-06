@@ -1,0 +1,2200 @@
+{
+  "@@locale": "en",
+  "acceptButtonText": "ACCEPT",
+  "@acceptButtonText": {
+    "type": "text",
+    "description": "text for an ACCEPT button."
+  },
+  "addButtonText": "Add",
+  "@addButtonText": {
+    "type": "text",
+    "description": "text for an add button."
+  },
+  "addItem": "Add Item",
+  "@addItem": {
+    "type": "text",
+    "description": "add item button text"
+  },
+  "alanine": "Alanine",
+  "@alanine": {
+    "type": "text",
+    "description": "Alanine"
+  },
+  "alcoholEthyl": "Alcohol, ethyl",
+  "@alcoholEthyl": {
+    "type": "text",
+    "description": "Alcohol, ethyl"
+  },
+  "americanIndianalaskaNativeFoods": "American Indian/Alaska Native Foods",
+  "@americanIndianalaskaNativeFoods": {
+    "type": "text",
+    "description": "American Indian/Alaska Native Foods"
+  },
+  "amount": "Amount",
+  "@amount": {
+    "type": "text",
+    "description": "Amount."
+  },
+  "appSettingsTabTitle": "App Settings",
+  "@appSettingsTabTitle": {
+    "type": "text",
+    "description": "title for the app settings tab"
+  },
+  "areYouSureYouWantToDeleteMealPlan": "Are you sure you want to delete this plan?",
+  "@areYouSureYouWantToDeleteMealPlan": {
+    "type": "text",
+    "description": "Title for the confirmation dialog shown when trying to delete meal plan."
+  },
+  "areYouSureYouWantToRemoveItemFromEquivalence": "Are you sure you want to remove this item from the equivalent list?",
+  "@areYouSureYouWantToRemoveItemFromEquivalence": {
+    "type": "text",
+    "description": "Description of the confirmation modal to remove a food item from equivalence"
+  },
+  "arginine": "Arginine",
+  "@arginine": {
+    "type": "text",
+    "description": "Arginine"
+  },
+  "ash": "Ash",
+  "@ash": {
+    "type": "text",
+    "description": "Ash"
+  },
+  "asparticAcid": "Aspartic acid",
+  "@asparticAcid": {
+    "type": "text",
+    "description": "Aspartic acid"
+  },
+  "averagePortion": "Average Portion",
+  "@averagePortion": {
+    "type": "text",
+    "description": "average portion"
+  },
+  "babyFoods": "Baby Foods",
+  "@babyFoods": {
+    "type": "text",
+    "description": "Baby Foods"
+  },
+  "back": "Back",
+  "@back": {
+    "type": "text",
+    "description": "text for a back button."
+  },
+  "bakedProducts": "Baked Products",
+  "@bakedProducts": {
+    "type": "text",
+    "description": "Baked Products"
+  },
+  "becomeASupporterContinueButton": "Continue ({planPrice}/Month)",
+  "@becomeASupporterContinueButton": {
+    "type": "text",
+    "description": "Text for the continue button in the become a supporter page",
+    "placeholders": {
+      "planPrice": {}
+    }
+  },
+  "becomeASupporterPriceRate": "{planPrice}/Month",
+  "@becomeASupporterPriceRate": {
+    "type": "text",
+    "description": "Price rate string used in the tier cards.",
+    "placeholders": {
+      "planPrice": {}
+    }
+  },
+  "becomeASupporterSubtitle": "You contributions will help Bodistics grow!",
+  "@becomeASupporterSubtitle": {
+    "type": "text",
+    "description": "Subtitle for the become a supporter page."
+  },
+  "becomeASupporterTierOneName": "Supporter",
+  "@becomeASupporterTierOneName": {
+    "type": "text",
+    "description": "Name of the tier one subscription."
+  },
+  "becomeASupporterTierOnePointOne": "You like the project",
+  "@becomeASupporterTierOnePointOne": {
+    "type": "text",
+    "description": "Bullet point 1 description the supporter tier subscription"
+  },
+  "becomeASupporterTierOnePointThree": "But you are not ready to use Bodistics",
+  "@becomeASupporterTierOnePointThree": {
+    "type": "text",
+    "description": "Bullet point 3 description the supporter tier subscription"
+  },
+  "becomeASupporterTierOnePointTwo": "You'd like to see Bodistics succeed",
+  "@becomeASupporterTierOnePointTwo": {
+    "type": "text",
+    "description": "Bullet point 2 description the supporter tier subscription"
+  },
+  "becomeASupporterTierThreeName": "Advocator",
+  "@becomeASupporterTierThreeName": {
+    "type": "text",
+    "description": "Name of the tier two subscription."
+  },
+  "becomeASupporterTierThreePointOne": "You want to be involved in the Bodistics community",
+  "@becomeASupporterTierThreePointOne": {
+    "type": "text",
+    "description": "Bullet point 1 description the advocator tier subscription"
+  },
+  "becomeASupporterTierThreePointThree": "You want to give direct feedback to the developers to help make Bodistics better",
+  "@becomeASupporterTierThreePointThree": {
+    "type": "text",
+    "description": "Bullet point 3 description the advocator tier subscription"
+  },
+  "becomeASupporterTierThreePointTwo": "You want to be front of the line when it comes to updates",
+  "@becomeASupporterTierThreePointTwo": {
+    "type": "text",
+    "description": "Bullet point 2 description the advocator tier subscription"
+  },
+  "becomeASupporterTierTwoName": "Believer",
+  "@becomeASupporterTierTwoName": {
+    "type": "text",
+    "description": "Name of the tier two subscription."
+  },
+  "becomeASupporterTierTwoPointOne": "You believe this project will become your main tool of work",
+  "@becomeASupporterTierTwoPointOne": {
+    "type": "text",
+    "description": "Bullet point 1 description the believer tier subscription"
+  },
+  "becomeASupporterTierTwoPointThree": "You believe in Bodistics' vision and you want to be part of it",
+  "@becomeASupporterTierTwoPointThree": {
+    "type": "text",
+    "description": "Bullet point 3 description the believer tier subscription"
+  },
+  "becomeASupporterTierTwoPointTwo": "You think Bodistics could make your life easier",
+  "@becomeASupporterTierTwoPointTwo": {
+    "type": "text",
+    "description": "Bullet point 2 description the believer tier subscription"
+  },
+  "becomeASupporterTitle": "Become a Supporter",
+  "@becomeASupporterTitle": {
+    "type": "text",
+    "description": "Title for the supporter page."
+  },
+  "beefProducts": "Beef Products",
+  "@beefProducts": {
+    "type": "text",
+    "description": "Beef Products"
+  },
+  "betaine": "Betaine",
+  "@betaine": {
+    "type": "text",
+    "description": "Betaine"
+  },
+  "betasitosterol": "Beta-sitosterol",
+  "@betasitosterol": {
+    "type": "text",
+    "description": "Beta-sitosterol"
+  },
+  "beverages": "Beverages",
+  "@beverages": {
+    "type": "text",
+    "description": "Beverages"
+  },
+  "breakfastCereals": "Breakfast Cereals",
+  "@breakfastCereals": {
+    "type": "text",
+    "description": "Breakfast Cereals"
+  },
+  "caffeine": "Caffeine",
+  "@caffeine": {
+    "type": "text",
+    "description": "Caffeine"
+  },
+  "calciumCa": "Calcium, Ca",
+  "@calciumCa": {
+    "type": "text",
+    "description": "Calcium, Ca"
+  },
+  "calorieDistribution": "Calorie Distribution",
+  "@calorieDistribution": {
+    "type": "text",
+    "description": "Calorie distribution title"
+  },
+  "calories": "Calories",
+  "@calories": {
+    "type": "text",
+    "description": "Calories text"
+  },
+  "campesterol": "Campesterol",
+  "@campesterol": {
+    "type": "text",
+    "description": "Campesterol"
+  },
+  "cancelButtonText": "Cancel",
+  "@cancelButtonText": {
+    "type": "text",
+    "description": "text for a cancel button."
+  },
+  "cannotOpenFile": "Cannot open \"{filename}\", the file is invalid.",
+  "@cannotOpenFile": {
+    "type": "text",
+    "description": "Body text for the alert that pops up when you cannot open a file",
+    "placeholders": {
+      "filename": {}
+    }
+  },
+  "carb": "Carb",
+  "@carb": {
+    "type": "text",
+    "description": "Protein"
+  },
+  "carbohydrateByDifference": "Carbohydrate, by difference",
+  "@carbohydrateByDifference": {
+    "type": "text",
+    "description": "Carbohydrate, by difference"
+  },
+  "carbohydrates": "Carbohydrates",
+  "@carbohydrates": {
+    "type": "text",
+    "description": "Carbohydrates text"
+  },
+  "caroteneAlpha": "Carotene, alpha",
+  "@caroteneAlpha": {
+    "type": "text",
+    "description": "Carotene, alpha"
+  },
+  "caroteneBeta": "Carotene, beta",
+  "@caroteneBeta": {
+    "type": "text",
+    "description": "Carotene, beta"
+  },
+  "cerealGrainsAndPasta": "Cereal Grains and Pasta",
+  "@cerealGrainsAndPasta": {
+    "type": "text",
+    "description": "Cereal Grains and Pasta"
+  },
+  "cholesterol": "Cholesterol",
+  "@cholesterol": {
+    "type": "text",
+    "description": "Cholesterol"
+  },
+  "cholineTotal": "Choline, total",
+  "@cholineTotal": {
+    "type": "text",
+    "description": "Choline, total"
+  },
+  "clientDocumentTabUntitledDocument": "Untitled Document",
+  "@clientDocumentTabUntitledDocument": {
+    "type": "text",
+    "description": "title for an unsaved client document"
+  },
+  "confirmYourSelection": "Confirm your selection",
+  "@confirmYourSelection": {
+    "type": "text",
+    "description": "Confirm your selection text"
+  },
+  "conflictingItemDatabaseItemTitle": "Database Food Item",
+  "@conflictingItemDatabaseItemTitle": {
+    "type": "text",
+    "description": "Title shown in the database food item when displaying the two conflicting food items side by side."
+  },
+  "conflictingItemMealPlanItemTitle": "Item in meal plan",
+  "@conflictingItemMealPlanItemTitle": {
+    "type": "text",
+    "description": "Title shown in the meal plan food item when displaying the two conflicting food items side by side."
+  },
+  "conflictingItemReplacementMessage": "The conflicting food items in your meal plan will be replaced by the food item present in your database",
+  "@conflictingItemReplacementMessage": {
+    "type": "text",
+    "description": "Confirm your selection text"
+  },
+  "conflictingItemSelectionDialogMessageOne": "There is an existing food item with the same name but with different data in the meal plan and the database",
+  "@conflictingItemSelectionDialogMessageOne": {
+    "type": "text",
+    "description": "Message for the dialog shown when you have to choose between food items in a meal plan"
+  },
+  "conflictingItemSelectionDialogMessageTwo": "Note: selecting the food item from the meal plan will cause your entry to be marked as out of sync.",
+  "@conflictingItemSelectionDialogMessageTwo": {
+    "type": "text",
+    "description": "Message for the dialog shown when you have to choose between food items in a meal plan"
+  },
+  "conflictingItemSelectionDialogTitle": "Which item would you like to use in this meal plan?",
+  "@conflictingItemSelectionDialogTitle": {
+    "type": "text",
+    "description": "Title for the dialog shown when you have to choose between food items in a meal plan"
+  },
+  "copperCu": "Copper, Cu",
+  "@copperCu": {
+    "type": "text",
+    "description": "Copper, Cu"
+  },
+  "createLink": "Create link",
+  "@createLink": {
+    "type": "text",
+    "description": "Create link button text"
+  },
+  "createNewPlan": "Create New Plan",
+  "@createNewPlan": {
+    "type": "text",
+    "description": "Create new plan button text."
+  },
+  "cryptoxanthinBeta": "Cryptoxanthin, beta",
+  "@cryptoxanthinBeta": {
+    "type": "text",
+    "description": "Cryptoxanthin, beta"
+  },
+  "cystine": "Cystine",
+  "@cystine": {
+    "type": "text",
+    "description": "Cystine"
+  },
+  "dairyAndEggProducts": "Dairy and Egg Products",
+  "@dairyAndEggProducts": {
+    "type": "text",
+    "description": "Dairy and Egg Products"
+  },
+  "deleteButtonText": "Delete",
+  "@deleteButtonText": {
+    "type": "text",
+    "description": "text for a delete button."
+  },
+  "deleteDialogDefaultMessage": "You are about to delete a resource, are you sure you want to continue?",
+  "@deleteDialogDefaultMessage": {
+    "type": "text",
+    "description": "Message for the delete dialog."
+  },
+  "deleteDialogDefaultTitle": "Are you sure?",
+  "@deleteDialogDefaultTitle": {
+    "type": "text",
+    "description": "Title for the delete dialog"
+  },
+  "deleteFoodPortion": "Delete Portion",
+  "@deleteFoodPortion": {
+    "type": "text",
+    "description": "Title for the delete food portion dialog"
+  },
+  "deleteItemConfirmationMessage": "The food item will be deleted from your database, this action cannot be undone.",
+  "@deleteItemConfirmationMessage": {
+    "type": "text",
+    "description": "Message for the dialog shown when deleting an item"
+  },
+  "deleteItemConfirmationTitle": "Are you sure you want to edit this item?",
+  "@deleteItemConfirmationTitle": {
+    "type": "text",
+    "description": "Title for the dialog shown when deleting an item"
+  },
+  "deletePlan": "delete plan",
+  "@deletePlan": {
+    "type": "text",
+    "description": "text for an delete plan button."
+  },
+  "downloadButtonText": "Download",
+  "@downloadButtonText": {
+    "type": "text",
+    "description": "text for a download button."
+  },
+  "editButtonText": "Edit",
+  "@editButtonText": {
+    "type": "text",
+    "description": "text for an edit button."
+  },
+  "editFoodPortion": "Edit Food Portion",
+  "@editFoodPortion": {
+    "type": "text",
+    "description": "Title for the edit food portion dialog"
+  },
+  "editItem": "Edit Item",
+  "@editItem": {
+    "type": "text",
+    "description": "text for a edit item button."
+  },
+  "editItemConfirmationMessage": "Food items don't get changed much so we just want to confirm you want to edit this item.",
+  "@editItemConfirmationMessage": {
+    "type": "text",
+    "description": "Message for the dialog shown when editing an item"
+  },
+  "editItemConfirmationTitle": "Are you sure you want to edit this item?",
+  "@editItemConfirmationTitle": {
+    "type": "text",
+    "description": "Title for the dialog shown when editing an item"
+  },
+  "editPlan": "Edit Plan",
+  "@editPlan": {
+    "type": "text",
+    "description": "text for an edit plan button."
+  },
+  "emailFieldHint": "enter email address",
+  "@emailFieldHint": {
+    "type": "text",
+    "description": "hint for an email field."
+  },
+  "energy": "Energy",
+  "@energy": {
+    "type": "text",
+    "description": "Energy"
+  },
+  "equivalence": "Equivalence",
+  "@equivalence": {
+    "type": "text",
+    "description": "equivalence"
+  },
+  "equivalents": "Equivalents",
+  "@equivalents": {
+    "type": "text",
+    "description": "equivalents"
+  },
+  "exitButtonText": "Exit",
+  "@exitButtonText": {
+    "type": "text",
+    "description": "text for an exit button."
+  },
+  "exportPlan": "Export plan",
+  "@exportPlan": {
+    "type": "text",
+    "description": "export plan tooltip"
+  },
+  "fastFoods": "Fast Foods",
+  "@fastFoods": {
+    "type": "text",
+    "description": "Fast Foods"
+  },
+  "fat": "Fat",
+  "@fat": {
+    "type": "text",
+    "description": "fat"
+  },
+  "fats": "Fats",
+  "@fats": {
+    "type": "text",
+    "description": "Fats text"
+  },
+  "fatsAndOils": "Fats and Oils",
+  "@fatsAndOils": {
+    "type": "text",
+    "description": "Fats and Oils"
+  },
+  "fattyAcidsTotalMonounsaturated": "Fatty acids, total monounsaturated",
+  "@fattyAcidsTotalMonounsaturated": {
+    "type": "text",
+    "description": "Fatty acids, total monounsaturated"
+  },
+  "fattyAcidsTotalPolyunsaturated": "Fatty acids, total polyunsaturated",
+  "@fattyAcidsTotalPolyunsaturated": {
+    "type": "text",
+    "description": "Fatty acids, total polyunsaturated"
+  },
+  "fattyAcidsTotalSaturated": "Fatty acids, total saturated",
+  "@fattyAcidsTotalSaturated": {
+    "type": "text",
+    "description": "Fatty acids, total saturated"
+  },
+  "fattyAcidsTotalTrans": "Fatty acids, total trans",
+  "@fattyAcidsTotalTrans": {
+    "type": "text",
+    "description": "Fatty acids, total trans"
+  },
+  "fattyAcidsTotalTransmonoenoic": "Fatty acids, total trans-monoenoic",
+  "@fattyAcidsTotalTransmonoenoic": {
+    "type": "text",
+    "description": "Fatty acids, total trans-monoenoic"
+  },
+  "fattyAcidsTotalTranspolyenoic": "Fatty acids, total trans-polyenoic",
+  "@fattyAcidsTotalTranspolyenoic": {
+    "type": "text",
+    "description": "Fatty acids, total trans-polyenoic"
+  },
+  "fiber": "Fiber",
+  "@fiber": {
+    "type": "text",
+    "description": "Fiber"
+  },
+  "fiberTotalDietary": "Fiber, total dietary",
+  "@fiberTotalDietary": {
+    "type": "text",
+    "description": "Fiber, total dietary"
+  },
+  "finfishAndShellfishProducts": "Finfish and Shellfish Products",
+  "@finfishAndShellfishProducts": {
+    "type": "text",
+    "description": "Finfish and Shellfish Products"
+  },
+  "finish": "Finish",
+  "@finish": {
+    "type": "text",
+    "description": "text for a finish button."
+  },
+  "fluorideF": "Fluoride, F",
+  "@fluorideF": {
+    "type": "text",
+    "description": "Fluoride, F"
+  },
+  "folateDfe": "Folate, DFE",
+  "@folateDfe": {
+    "type": "text",
+    "description": "Folate, DFE"
+  },
+  "folateFood": "Folate, food",
+  "@folateFood": {
+    "type": "text",
+    "description": "Folate, food"
+  },
+  "folateTotal": "Folate, total",
+  "@folateTotal": {
+    "type": "text",
+    "description": "Folate, total"
+  },
+  "folicAcid": "Folic acid",
+  "@folicAcid": {
+    "type": "text",
+    "description": "Folic acid"
+  },
+  "foodGroupDistribution": "Food Group Distribution",
+  "@foodGroupDistribution": {
+    "type": "text",
+    "description": "Title for food group distribution pie chart."
+  },
+  "foodItemOutOfSync": "Food item out of sync",
+  "@foodItemOutOfSync": {
+    "type": "text",
+    "description": "Text to indicate that a food item's information is difference than that found in the database"
+  },
+  "foodItems": "Food Items",
+  "@foodItems": {
+    "type": "text",
+    "description": "Food items"
+  },
+  "foodName": "Food name",
+  "@foodName": {
+    "type": "text",
+    "description": "Field label for food item's name"
+  },
+  "foodPlanComponentAdd": "Add",
+  "@foodPlanComponentAdd": {
+    "type": "text",
+    "description": "Text to show in the action button in the food plan component"
+  },
+  "foodPlanComponentAddItem": "Add Item",
+  "@foodPlanComponentAddItem": {
+    "type": "text",
+    "description": "Hint text for the food item search field"
+  },
+  "foodPlanComponentBreakfast": "Breakfast",
+  "@foodPlanComponentBreakfast": {
+    "type": "text",
+    "description": "Text for the break fast food section"
+  },
+  "foodPlanComponentDinner": "Dinner",
+  "@foodPlanComponentDinner": {
+    "type": "text",
+    "description": "Text for the dinner food section"
+  },
+  "foodPlanComponentLunch": "Lunch",
+  "@foodPlanComponentLunch": {
+    "type": "text",
+    "description": "Text for the lunch food section"
+  },
+  "foodPlanComponentSnack": "Snack",
+  "@foodPlanComponentSnack": {
+    "type": "text",
+    "description": "Text for the snack food section"
+  },
+  "foodPlanComponentTotals": "Totals",
+  "@foodPlanComponentTotals": {
+    "type": "text",
+    "description": "Text for the totals plan group"
+  },
+  "foodPlanEditorHelp": "Food Plan Editor Help",
+  "@foodPlanEditorHelp": {
+    "type": "text",
+    "description": "Title for the editor's help dialog"
+  },
+  "foodPlansHoldTheirOwnData": "Bodistics food plans hold their own nutritional data for the items they use. \nWe have detected that this item has different nutritional in your food plan than what your database holds.",
+  "@foodPlansHoldTheirOwnData": {
+    "type": "text",
+    "description": "Message for the dialog shown when a food item in conflict."
+  },
+  "foods": "Foods",
+  "@foods": {
+    "type": "text",
+    "description": "foods text"
+  },
+  "friday": "Friday",
+  "@friday": {
+    "type": "text",
+    "description": "Friday: day of the week."
+  },
+  "fructose": "Fructose",
+  "@fructose": {
+    "type": "text",
+    "description": "Fructose"
+  },
+  "fruitsAndFruitJuices": "Fruits and Fruit Juices",
+  "@fruitsAndFruitJuices": {
+    "type": "text",
+    "description": "Fruits and Fruit Juices"
+  },
+  "galactose": "Galactose",
+  "@galactose": {
+    "type": "text",
+    "description": "Galactose"
+  },
+  "gender": "Gender",
+  "@gender": {
+    "type": "text",
+    "description": "Confined to bed physical activity"
+  },
+  "genderFemale": "female",
+  "@genderFemale": {
+    "type": "text",
+    "description": "The name of female gender enum"
+  },
+  "genderMale": "male",
+  "@genderMale": {
+    "type": "text",
+    "description": "The name for the male gender enum"
+  },
+  "getStartedBecomeASupporterButton": "Become a supporter",
+  "@getStartedBecomeASupporterButton": {
+    "type": "text",
+    "description": "Text for the supporter button"
+  },
+  "getStartedDocumentShortcutsTitle": "Document Shortcuts",
+  "@getStartedDocumentShortcutsTitle": {
+    "type": "text",
+    "description": "Text for the supporter button"
+  },
+  "getStartedGlobalShortcutsTitle": "Global Shortcuts",
+  "@getStartedGlobalShortcutsTitle": {
+    "type": "text",
+    "description": "Title for the global shortcuts section"
+  },
+  "getStartedNewDocumentShortcutMacOS": "(⌘ + n) New document",
+  "@getStartedNewDocumentShortcutMacOS": {
+    "type": "text",
+    "description": "Text for the new document shortcut"
+  },
+  "getStartedSaveDocumentShortcut": "(⌘ + s) Save document",
+  "@getStartedSaveDocumentShortcut": {
+    "type": "text",
+    "description": "Text fot the save document shortcut"
+  },
+  "getStartedSupporterSectionTitle": "Support Bodistics",
+  "@getStartedSupporterSectionTitle": {
+    "type": "text",
+    "description": "Title for the Supporter section in the get started tab."
+  },
+  "getStartedTabTitle": "Get Started",
+  "@getStartedTabTitle": {
+    "type": "text",
+    "description": "title for the get started tab"
+  },
+  "getStartedViewCreateNewPatientFile": "Create new patient file",
+  "@getStartedViewCreateNewPatientFile": {
+    "type": "text",
+    "description": "Text button string to create a new patient file"
+  },
+  "getStartedViewLinks": "Links",
+  "@getStartedViewLinks": {
+    "type": "text",
+    "description": "Title for a section that displays a list of useful links"
+  },
+  "getStartedViewNoRecentFiles": "No recent files...",
+  "@getStartedViewNoRecentFiles": {
+    "type": "text",
+    "description": "Text to show when there are not recent files to show"
+  },
+  "getStartedViewOpenExistingFile": "Open existing file",
+  "@getStartedViewOpenExistingFile": {
+    "type": "text",
+    "description": "Text button string to open an existing file"
+  },
+  "getStartedViewRecent": "Recent",
+  "@getStartedViewRecent": {
+    "type": "text",
+    "description": "Title for a section that displays a list of recently opened files"
+  },
+  "getStartedViewStart": "Start",
+  "@getStartedViewStart": {
+    "type": "text",
+    "description": "Title for a section that helps user take quick actions to start using the app"
+  },
+  "getStartedViewTermsOfUse": "Terms of use",
+  "@getStartedViewTermsOfUse": {
+    "type": "text",
+    "description": "Link to the terms of use of the app"
+  },
+  "getStartedWithFoodEquivalents": "Get Started With Food Equivalents",
+  "@getStartedWithFoodEquivalents": {
+    "type": "text",
+    "description": "Title that shoes up when you don't have any food equivalents"
+  },
+  "getStartedWithFoodEquivalentsDescription": "You can use equivalent lists to group food items that have similar nutrient contents. \n Equivalents can be used in meal plans to give your clients a variety of food items to choose from that have the same impact on their meal plan.",
+  "@getStartedWithFoodEquivalentsDescription": {
+    "type": "text",
+    "description": "Brief explanation of how to use food equivalents"
+  },
+  "glucose": "Glucose",
+  "@glucose": {
+    "type": "text",
+    "description": "Glucose"
+  },
+  "glutamicAcid": "Glutamic acid",
+  "@glutamicAcid": {
+    "type": "text",
+    "description": "Glutamic acid"
+  },
+  "glycine": "Glycine",
+  "@glycine": {
+    "type": "text",
+    "description": "Glycine"
+  },
+  "gramWeight": "Gram Weight",
+  "@gramWeight": {
+    "type": "text",
+    "description": "Field label for portion's gram weight"
+  },
+  "help": "help",
+  "@help": {
+    "type": "text",
+    "description": "tooltip for help icon button"
+  },
+  "histidine": "Histidine",
+  "@histidine": {
+    "type": "text",
+    "description": "Histidine"
+  },
+  "hydroxyproline": "Hydroxyproline",
+  "@hydroxyproline": {
+    "type": "text",
+    "description": "Hydroxyproline"
+  },
+  "import": "Import",
+  "@import": {
+    "type": "text",
+    "description": "import"
+  },
+  "importingEnglishFoodDatabase": "Importing English food database",
+  "@importingEnglishFoodDatabase": {
+    "type": "text",
+    "description": "Text to indicate that we are loading the English food database"
+  },
+  "importingSpanishFoodDatabase": "Importing Spanish food database",
+  "@importingSpanishFoodDatabase": {
+    "type": "text",
+    "description": "Text to indicate that we are loading the Spanish food database"
+  },
+  "information": "Information",
+  "@information": {
+    "type": "text",
+    "description": "Information"
+  },
+  "initializingFoodService": "Initializing food service",
+  "@initializingFoodService": {
+    "type": "text",
+    "description": "Text to indicate that we are initializing the food service"
+  },
+  "invalidFile": "Invalid file",
+  "@invalidFile": {
+    "type": "text",
+    "description": "Title for the alert that pops up when you cannot open a file"
+  },
+  "invalidWeight": "Invalid weight",
+  "@invalidWeight": {
+    "type": "text",
+    "description": "Error message when a portion weight is invalid"
+  },
+  "ironFe": "Iron, Fe",
+  "@ironFe": {
+    "type": "text",
+    "description": "Iron, Fe"
+  },
+  "isoleucine": "Isoleucine",
+  "@isoleucine": {
+    "type": "text",
+    "description": "Isoleucine"
+  },
+  "itemDoesNotExist": "Item does not exist",
+  "@itemDoesNotExist": {
+    "type": "text",
+    "description": "open"
+  },
+  "itemSearchComponentStartTypingToSearch": "Start typing to search items",
+  "@itemSearchComponentStartTypingToSearch": {
+    "type": "text",
+    "description": "String to show when there no search query in the item search component"
+  },
+  "itemSynced": "Item Synced",
+  "@itemSynced": {
+    "type": "text",
+    "description": "Text to indicate that a food item's information is synced with the database"
+  },
+  "keyboardShortcutsText": "Keyboard shortcuts",
+  "@keyboardShortcutsText": {
+    "type": "text",
+    "description": "Text for a keyboard shortcut section"
+  },
+  "lactose": "Lactose",
+  "@lactose": {
+    "type": "text",
+    "description": "Lactose"
+  },
+  "lambVealAndGameProducts": "Lamb, Veal, and Game Products",
+  "@lambVealAndGameProducts": {
+    "type": "text",
+    "description": "Lamb, Veal, and Game Products"
+  },
+  "legumesAndLegumeProducts": "Legumes and Legume Products",
+  "@legumesAndLegumeProducts": {
+    "type": "text",
+    "description": "Legumes and Legume Products"
+  },
+  "leucine": "Leucine",
+  "@leucine": {
+    "type": "text",
+    "description": "Leucine"
+  },
+  "linkButtonText": "Link",
+  "@linkButtonText": {
+    "type": "text",
+    "description": "text for a link button."
+  },
+  "loadingFileService": "Loading file service",
+  "@loadingFileService": {
+    "type": "text",
+    "description": "Text to indicate that we are loading file service"
+  },
+  "loadingSettings": "Loading settings",
+  "@loadingSettings": {
+    "type": "text",
+    "description": "Text to indicate that we are loading settings"
+  },
+  "loadingTabService": "Loading tab service",
+  "@loadingTabService": {
+    "type": "text",
+    "description": "Text to indicate that we are loading tab service"
+  },
+  "luteinZeaxanthin": "Lutein + zeaxanthin",
+  "@luteinZeaxanthin": {
+    "type": "text",
+    "description": "Lutein + zeaxanthin"
+  },
+  "lycopene": "Lycopene",
+  "@lycopene": {
+    "type": "text",
+    "description": "Lycopene"
+  },
+  "lysine": "Lysine",
+  "@lysine": {
+    "type": "text",
+    "description": "Lysine"
+  },
+  "macroNutrientDistribution": "Macro Nutrient Distribution",
+  "@macroNutrientDistribution": {
+    "type": "text",
+    "description": "Title for macro nutrient distribution pie chart."
+  },
+  "macrosAndGroups": "Macros & Food Groups",
+  "@macrosAndGroups": {
+    "type": "text",
+    "description": "Macros stats title"
+  },
+  "magnesiumMg": "Magnesium, Mg",
+  "@magnesiumMg": {
+    "type": "text",
+    "description": "Magnesium, Mg"
+  },
+  "maltose": "Maltose",
+  "@maltose": {
+    "type": "text",
+    "description": "Maltose"
+  },
+  "manganeseMn": "Manganese, Mn",
+  "@manganeseMn": {
+    "type": "text",
+    "description": "Manganese, Mn"
+  },
+  "markAsCurrent": "Mark as current",
+  "@markAsCurrent": {
+    "type": "text",
+    "description": "mark plan as current plan tooltip"
+  },
+  "meals": "Meals",
+  "@meals": {
+    "type": "text",
+    "description": "meals text"
+  },
+  "mealsEntreesAndSideDishes": "Meals, Entrees, and Side Dishes",
+  "@mealsEntreesAndSideDishes": {
+    "type": "text",
+    "description": "Meals, Entrees, and Side Dishes"
+  },
+  "methionine": "Methionine",
+  "@methionine": {
+    "type": "text",
+    "description": "Methionine"
+  },
+  "microNutrients": "Micro Nutrients",
+  "@microNutrients": {
+    "type": "text",
+    "description": "micro nutrients"
+  },
+  "minerals": "Minerals",
+  "@minerals": {
+    "type": "text",
+    "description": "Minerals text"
+  },
+  "monday": "Monday",
+  "@monday": {
+    "type": "text",
+    "description": "Monday: day of the week."
+  },
+  "mufa141": "MUFA 14:1",
+  "@mufa141": {
+    "type": "text",
+    "description": "MUFA 14:1"
+  },
+  "mufa151": "MUFA 15:1",
+  "@mufa151": {
+    "type": "text",
+    "description": "MUFA 15:1"
+  },
+  "mufa161": "MUFA 16:1",
+  "@mufa161": {
+    "type": "text",
+    "description": "MUFA 16:1"
+  },
+  "mufa161C": "MUFA 16:1 c",
+  "@mufa161C": {
+    "type": "text",
+    "description": "MUFA 16:1 c"
+  },
+  "mufa171": "MUFA 17:1",
+  "@mufa171": {
+    "type": "text",
+    "description": "MUFA 17:1"
+  },
+  "mufa181": "MUFA 18:1",
+  "@mufa181": {
+    "type": "text",
+    "description": "MUFA 18:1"
+  },
+  "mufa18111T181tN7": "MUFA 18:1-11 t (18:1t n-7)",
+  "@mufa18111T181tN7": {
+    "type": "text",
+    "description": "MUFA 18:1-11 t (18:1t n-7)"
+  },
+  "mufa181C": "MUFA 18:1 c",
+  "@mufa181C": {
+    "type": "text",
+    "description": "MUFA 18:1 c"
+  },
+  "mufa201": "MUFA 20:1",
+  "@mufa201": {
+    "type": "text",
+    "description": "MUFA 20:1"
+  },
+  "mufa221": "MUFA 22:1",
+  "@mufa221": {
+    "type": "text",
+    "description": "MUFA 22:1"
+  },
+  "mufa221C": "MUFA 22:1 c",
+  "@mufa221C": {
+    "type": "text",
+    "description": "MUFA 22:1 c"
+  },
+  "mufa241C": "MUFA 24:1 c",
+  "@mufa241C": {
+    "type": "text",
+    "description": "MUFA 24:1 c"
+  },
+  "newEquivalence": "New Equivalence",
+  "@newEquivalence": {
+    "type": "text",
+    "description": "new equivalence"
+  },
+  "newFoodPortion": "New Food portion",
+  "@newFoodPortion": {
+    "type": "text",
+    "description": "Title for the new food portion dialog"
+  },
+  "newMealPlan": "New Meal Plan",
+  "@newMealPlan": {
+    "type": "text",
+    "description": "title for an new plan document"
+  },
+  "newPortion": "New Portion",
+  "@newPortion": {
+    "type": "text",
+    "description": "New portions button text"
+  },
+  "niacin": "Niacin",
+  "@niacin": {
+    "type": "text",
+    "description": "Niacin"
+  },
+  "no": "No",
+  "@no": {
+    "type": "text",
+    "description": "text for a no button."
+  },
+  "noAveragePortion": "No Average Portion",
+  "@noAveragePortion": {
+    "type": "text",
+    "description": "no average portion"
+  },
+  "noChangesHaveBeenMade": "No changes have been made",
+  "@noChangesHaveBeenMade": {
+    "type": "text",
+    "description": "Title for the dialog shown when no changes were made to meal plan."
+  },
+  "noFoodItemsMatchingQuery": "No food items matching: {query}",
+  "@noFoodItemsMatchingQuery": {
+    "type": "text",
+    "description": "String to show when there no search query in the item search component",
+    "placeholders": {
+      "query": {}
+    }
+  },
+  "noItems": "No Items",
+  "@noItems": {
+    "type": "text",
+    "description": "no items"
+  },
+  "noItemsInEquivalence": "There are no items in this equivalence. Get started by adding an item!",
+  "@noItemsInEquivalence": {
+    "type": "text",
+    "description": "Brief text that shows up when there are no equivalences in the list"
+  },
+  "nutAndSeedProducts": "Nut and Seed Products",
+  "@nutAndSeedProducts": {
+    "type": "text",
+    "description": "Nut and Seed Products"
+  },
+  "okButtonText": "OK",
+  "@okButtonText": {
+    "type": "text",
+    "description": "text for an OK button."
+  },
+  "open": "Open",
+  "@open": {
+    "type": "text",
+    "description": "open"
+  },
+  "pageBarCloseDialogBodyOne": "You are closing an unsaved document. All data will be lost.",
+  "@pageBarCloseDialogBodyOne": {
+    "type": "text",
+    "description": "Body text for the close unsaved document dialog."
+  },
+  "pageBarCloseDialogBodyTwo": "Are you sure you want to close this document?",
+  "@pageBarCloseDialogBodyTwo": {
+    "type": "text",
+    "description": "Body text for the close unsaved document dialog."
+  },
+  "pageBarCloseDialogCloseButton": "Close",
+  "@pageBarCloseDialogCloseButton": {
+    "type": "text",
+    "description": "Text for the close button in the close document confirmation dialog."
+  },
+  "pageBarCloseDialogTitle": "Unsaved document",
+  "@pageBarCloseDialogTitle": {
+    "type": "text",
+    "description": "Title for the confirm close document dialog"
+  },
+  "pantothenicAcid": "Pantothenic acid",
+  "@pantothenicAcid": {
+    "type": "text",
+    "description": "Pantothenic acid"
+  },
+  "phenylalanine": "Phenylalanine",
+  "@phenylalanine": {
+    "type": "text",
+    "description": "Phenylalanine"
+  },
+  "phosphorusP": "Phosphorus, P",
+  "@phosphorusP": {
+    "type": "text",
+    "description": "Phosphorus, P"
+  },
+  "physicalActivity": "Physical Activity",
+  "@physicalActivity": {
+    "type": "text",
+    "description": "Confined to bed physical activity"
+  },
+  "physicalActivityAverageActivity": "average activity",
+  "@physicalActivityAverageActivity": {
+    "type": "text",
+    "description": "average physical activity"
+  },
+  "physicalActivityConfinedToBed": "confined to bed",
+  "@physicalActivityConfinedToBed": {
+    "type": "text",
+    "description": "Confined to bed physical activity"
+  },
+  "physicalActivityHighActivity": "high activity",
+  "@physicalActivityHighActivity": {
+    "type": "text",
+    "description": "high physical activity"
+  },
+  "physicalActivityLowActivity": "low activity",
+  "@physicalActivityLowActivity": {
+    "type": "text",
+    "description": "low physical activity"
+  },
+  "physicalActivityModerateActivity": "moderate activity",
+  "@physicalActivityModerateActivity": {
+    "type": "text",
+    "description": "moderate physical activity"
+  },
+  "phytosterols": "Phytosterols",
+  "@phytosterols": {
+    "type": "text",
+    "description": "Phytosterols"
+  },
+  "planEditorViewCalorieCount": "Calorie Count",
+  "@planEditorViewCalorieCount": {
+    "type": "text",
+    "description": "Title for the calorie count graph"
+  },
+  "planEditorViewCopiedPlanLink": "Copied plan link",
+  "@planEditorViewCopiedPlanLink": {
+    "type": "text",
+    "description": "Text for indicating the user a link has been copied"
+  },
+  "planEditorViewCurrentPlanButton": "Current Plan",
+  "@planEditorViewCurrentPlanButton": {
+    "type": "text",
+    "description": "Text for the button that activates the food plan as the current food plan"
+  },
+  "planEditorViewFailedToCreatePlanLink": "Failed to create plan link",
+  "@planEditorViewFailedToCreatePlanLink": {
+    "type": "text",
+    "description": "Text for indicating the user when a link has failed to be created"
+  },
+  "planEditorViewMacroNutrients": "Macro Nutrients",
+  "@planEditorViewMacroNutrients": {
+    "type": "text",
+    "description": "Title for the macro nutrient graph"
+  },
+  "planEditorViewMicroNutrients": "Micro Nutrients",
+  "@planEditorViewMicroNutrients": {
+    "type": "text",
+    "description": "Title for the micro nutrient graph"
+  },
+  "planEditorViewPlanHasBeenExported": "Food plan has been exported and saved.",
+  "@planEditorViewPlanHasBeenExported": {
+    "type": "text",
+    "description": "Message that appears to let the user know that the plan has been exported and saved."
+  },
+  "planEditorViewSaveDialogTitle": "Save Food Plan",
+  "@planEditorViewSaveDialogTitle": {
+    "type": "text",
+    "description": "Title for the save food plan dialog"
+  },
+  "planEditorViewShortcutCopy": "Copy",
+  "@planEditorViewShortcutCopy": {
+    "type": "text",
+    "description": "copy shortcut title"
+  },
+  "planEditorViewShortcutDelete": "Delete",
+  "@planEditorViewShortcutDelete": {
+    "type": "text",
+    "description": "delete shortcut title"
+  },
+  "planEditorViewShortcutExpandShrink": "Expand/shrink selection",
+  "@planEditorViewShortcutExpandShrink": {
+    "type": "text",
+    "description": "expand/shrink shortcut title"
+  },
+  "planEditorViewShortcutMoveNextPrevious": "Move to next/previous section",
+  "@planEditorViewShortcutMoveNextPrevious": {
+    "type": "text",
+    "description": "move next/previous shortcut title"
+  },
+  "planEditorViewShortcutMoveRightLeft": "Move right/left",
+  "@planEditorViewShortcutMoveRightLeft": {
+    "type": "text",
+    "description": "move right/left shortcut title"
+  },
+  "planEditorViewShortcutPaste": "Paste",
+  "@planEditorViewShortcutPaste": {
+    "type": "text",
+    "description": "paste shortcut title"
+  },
+  "planName": "Plan Name",
+  "@planName": {
+    "type": "text",
+    "description": "Plan name field label."
+  },
+  "planShareDialogTitle": "Send Food Plan",
+  "@planShareDialogTitle": {
+    "type": "text",
+    "description": "Title for plan share dialog"
+  },
+  "pleaseConfirmUpdate": "Please confirm update",
+  "@pleaseConfirmUpdate": {
+    "type": "text",
+    "description": "Confirm update dialog title"
+  },
+  "pleaseEnterAPortionName": "Please enter a portion name",
+  "@pleaseEnterAPortionName": {
+    "type": "text",
+    "description": "Error message when a portion field is empty"
+  },
+  "porkProducts": "Pork Products",
+  "@porkProducts": {
+    "type": "text",
+    "description": "Pork Products"
+  },
+  "portion": "portion",
+  "@portion": {
+    "type": "text",
+    "description": "portion"
+  },
+  "portionName": "Portion Name",
+  "@portionName": {
+    "type": "text",
+    "description": "Field label for portion's name"
+  },
+  "portionNameHint": "e.g: big cup",
+  "@portionNameHint": {
+    "type": "text",
+    "description": "Field hint for portion's name"
+  },
+  "portions": "Portions",
+  "@portions": {
+    "type": "text",
+    "description": "Portions text"
+  },
+  "portionsModalQuantity": "Quantity",
+  "@portionsModalQuantity": {
+    "type": "text",
+    "description": "Title quantity number field"
+  },
+  "portionsModalQuantityHint": "Quantity: e.g \"1.2\"",
+  "@portionsModalQuantityHint": {
+    "type": "text",
+    "description": "Hint for the quantity number field"
+  },
+  "potassiumK": "Potassium, K",
+  "@potassiumK": {
+    "type": "text",
+    "description": "Potassium, K"
+  },
+  "poultryProducts": "Poultry Products",
+  "@poultryProducts": {
+    "type": "text",
+    "description": "Poultry Products"
+  },
+  "privacyPolicy": "Privacy policy",
+  "@privacyPolicy": {},
+  "proline": "Proline",
+  "@proline": {
+    "type": "text",
+    "description": "Proline"
+  },
+  "protein": "Protein",
+  "@protein": {
+    "type": "text",
+    "description": "Protein"
+  },
+  "proteins": "Proteins",
+  "@proteins": {
+    "type": "text",
+    "description": "Proteins text"
+  },
+  "pufa182": "PUFA 18:2",
+  "@pufa182": {
+    "type": "text",
+    "description": "PUFA 18:2"
+  },
+  "pufa182Clas": "PUFA 18:2 CLAs",
+  "@pufa182Clas": {
+    "type": "text",
+    "description": "PUFA 18:2 CLAs"
+  },
+  "pufa182I": "PUFA 18:2 i",
+  "@pufa182I": {
+    "type": "text",
+    "description": "PUFA 18:2 i"
+  },
+  "pufa182N6Cc": "PUFA 18:2 n-6 c,c",
+  "@pufa182N6Cc": {
+    "type": "text",
+    "description": "PUFA 18:2 n-6 c,c"
+  },
+  "pufa183": "PUFA 18:3",
+  "@pufa183": {
+    "type": "text",
+    "description": "PUFA 18:3"
+  },
+  "pufa183i": "PUFA 18:3i",
+  "@pufa183i": {
+    "type": "text",
+    "description": "PUFA 18:3i"
+  },
+  "pufa183N3CccAla": "PUFA 18:3 n-3 c,c,c (ALA)",
+  "@pufa183N3CccAla": {
+    "type": "text",
+    "description": "PUFA 18:3 n-3 c,c,c (ALA)"
+  },
+  "pufa183N6Ccc": "PUFA 18:3 n-6 c,c,c",
+  "@pufa183N6Ccc": {
+    "type": "text",
+    "description": "PUFA 18:3 n-6 c,c,c"
+  },
+  "pufa184": "PUFA 18:4",
+  "@pufa184": {
+    "type": "text",
+    "description": "PUFA 18:4"
+  },
+  "pufa202N6Cc": "PUFA 20:2 n-6 c,c",
+  "@pufa202N6Cc": {
+    "type": "text",
+    "description": "PUFA 20:2 n-6 c,c"
+  },
+  "pufa203": "PUFA 20:3",
+  "@pufa203": {
+    "type": "text",
+    "description": "PUFA 20:3"
+  },
+  "pufa203N3": "PUFA 20:3 n-3",
+  "@pufa203N3": {
+    "type": "text",
+    "description": "PUFA 20:3 n-3"
+  },
+  "pufa203N6": "PUFA 20:3 n-6",
+  "@pufa203N6": {
+    "type": "text",
+    "description": "PUFA 20:3 n-6"
+  },
+  "pufa204": "PUFA 20:4",
+  "@pufa204": {
+    "type": "text",
+    "description": "PUFA 20:4"
+  },
+  "pufa215": "PUFA 21:5",
+  "@pufa215": {
+    "type": "text",
+    "description": "PUFA 21:5"
+  },
+  "pufa224": "PUFA 22:4",
+  "@pufa224": {
+    "type": "text",
+    "description": "PUFA 22:4"
+  },
+  "pufa225N3Dpa": "PUFA 22:5 n-3 (DPA)",
+  "@pufa225N3Dpa": {
+    "type": "text",
+    "description": "PUFA 22:5 n-3 (DPA)"
+  },
+  "pufa226N3Dha": "PUFA 22:6 n-3 (DHA)",
+  "@pufa226N3Dha": {
+    "type": "text",
+    "description": "PUFA 22:6 n-3 (DHA)"
+  },
+  "pufa24N6": "PUFA 2:4 n-6",
+  "@pufa24N6": {
+    "type": "text",
+    "description": "PUFA 2:4 n-6"
+  },
+  "pufa25N3Epa": "PUFA 2:5 n-3 (EPA)",
+  "@pufa25N3Epa": {
+    "type": "text",
+    "description": "PUFA 2:5 n-3 (EPA)"
+  },
+  "quantity": "Quantity",
+  "@quantity": {
+    "type": "text",
+    "description": "quantity"
+  },
+  "rda": "RDA",
+  "@rda": {
+    "type": "text",
+    "description": "RDA"
+  },
+  "readOnlyLink": "Read-only link",
+  "@readOnlyLink": {
+    "type": "text",
+    "description": "Read only link label"
+  },
+  "removeItem": "Remove Item",
+  "@removeItem": {
+    "type": "text",
+    "description": "Remove food item"
+  },
+  "restaurantFoods": "Restaurant Foods",
+  "@restaurantFoods": {
+    "type": "text",
+    "description": "Restaurant Foods"
+  },
+  "retinol": "Retinol",
+  "@retinol": {
+    "type": "text",
+    "description": "Retinol"
+  },
+  "riboflavin": "Riboflavin",
+  "@riboflavin": {
+    "type": "text",
+    "description": "Riboflavin"
+  },
+  "saturday": "Saturday",
+  "@saturday": {
+    "type": "text",
+    "description": "Saturday: day of the week."
+  },
+  "sausagesAndLuncheonMeats": "Sausages and Luncheon Meats",
+  "@sausagesAndLuncheonMeats": {
+    "type": "text",
+    "description": "Sausages and Luncheon Meats"
+  },
+  "saveButtonText": "Save",
+  "@saveButtonText": {
+    "type": "text",
+    "description": "text for an save button."
+  },
+  "saveDialogTitle": "Save Food Plan",
+  "@saveDialogTitle": {
+    "type": "text",
+    "description": "Title for the save plan dialog"
+  },
+  "searchFieldHint": "Search food",
+  "@searchFieldHint": {
+    "type": "text",
+    "description": "hint for the food search field."
+  },
+  "selectButtonText": "Select",
+  "@selectButtonText": {
+    "type": "text",
+    "description": "text for a select button."
+  },
+  "selectingDefaultDatabase": "Selecting default database",
+  "@selectingDefaultDatabase": {
+    "type": "text",
+    "description": "Text to indicate that we are selecting the default database"
+  },
+  "selectItemButtonText": "Select Item",
+  "@selectItemButtonText": {
+    "type": "text",
+    "description": "text for a select item button."
+  },
+  "seleniumSe": "Selenium, Se",
+  "@seleniumSe": {
+    "type": "text",
+    "description": "Selenium, Se"
+  },
+  "sendButtonText": "Send",
+  "@sendButtonText": {
+    "type": "text",
+    "description": "text for a send button."
+  },
+  "sendPlanJobCardBodyAttempts": "{attemptCount, plural, zero{No attempts} one{{attemptCount} attempt} other{{attemptCount} attempts}}",
+  "@sendPlanJobCardBodyAttempts": {
+    "type": "text",
+    "description": "Body with the number of attempts that have been made to send the plan",
+    "placeholders": {
+      "attemptCount": {}
+    }
+  },
+  "sendPlanJobCardBodyRetry": "retry",
+  "@sendPlanJobCardBodyRetry": {
+    "type": "text",
+    "description": "text for the retry button in the body of the card"
+  },
+  "sendPlanJobCardBodySuccess": "Plan was sent successfully",
+  "@sendPlanJobCardBodySuccess": {
+    "type": "text",
+    "description": "Body text to display when plan has been sent"
+  },
+  "sendPlanJobCardSubtitleTo": "to: {email}",
+  "@sendPlanJobCardSubtitleTo": {
+    "type": "text",
+    "description": "Subtitle with the recipient of the plan",
+    "placeholders": {
+      "email": {}
+    }
+  },
+  "sendPlanJobCardTitleNotSent": "{planName} (not sent)",
+  "@sendPlanJobCardTitleNotSent": {
+    "type": "text",
+    "description": "title for the send plan job card when the plan failed to be sent",
+    "placeholders": {
+      "planName": {}
+    }
+  },
+  "sendPlanJobCardTitleSending": "{planName} (sending)",
+  "@sendPlanJobCardTitleSending": {
+    "type": "text",
+    "description": "title for the send plan job card when the plan is being sent",
+    "placeholders": {
+      "planName": {}
+    }
+  },
+  "sendPlanJobCardTitleSent": "{planName}",
+  "@sendPlanJobCardTitleSent": {
+    "type": "text",
+    "description": "title for the send plan job card when the plan has been sent",
+    "placeholders": {
+      "planName": {}
+    }
+  },
+  "serine": "Serine",
+  "@serine": {
+    "type": "text",
+    "description": "Serine"
+  },
+  "settingsViewDefaultUnits": "Default Units",
+  "@settingsViewDefaultUnits": {
+    "type": "text",
+    "description": "Text for the default units dropdown menu"
+  },
+  "settingsViewFoodDatabases": "Food Databases",
+  "@settingsViewFoodDatabases": {
+    "type": "text",
+    "description": "Title for the food databases section in the settings page"
+  },
+  "settingsViewImportDatabase": "Import Database",
+  "@settingsViewImportDatabase": {
+    "type": "text",
+    "description": "Text for the import database button"
+  },
+  "settingsViewSettings": "Settings",
+  "@settingsViewSettings": {
+    "type": "text",
+    "description": "Title for the settings page"
+  },
+  "sfa100": "SFA 10:0",
+  "@sfa100": {
+    "type": "text",
+    "description": "SFA 10:0"
+  },
+  "sfa120": "SFA 12:0",
+  "@sfa120": {
+    "type": "text",
+    "description": "SFA 12:0"
+  },
+  "sfa130": "SFA 13:0",
+  "@sfa130": {
+    "type": "text",
+    "description": "SFA 13:0"
+  },
+  "sfa140": "SFA 14:0",
+  "@sfa140": {
+    "type": "text",
+    "description": "SFA 14:0"
+  },
+  "sfa150": "SFA 15:0",
+  "@sfa150": {
+    "type": "text",
+    "description": "SFA 15:0"
+  },
+  "sfa160": "SFA 16:0",
+  "@sfa160": {
+    "type": "text",
+    "description": "SFA 16:0"
+  },
+  "sfa170": "SFA 17:0",
+  "@sfa170": {
+    "type": "text",
+    "description": "SFA 17:0"
+  },
+  "sfa180": "SFA 18:0",
+  "@sfa180": {
+    "type": "text",
+    "description": "SFA 18:0"
+  },
+  "sfa200": "SFA 20:0",
+  "@sfa200": {
+    "type": "text",
+    "description": "SFA 20:0"
+  },
+  "sfa220": "SFA 22:0",
+  "@sfa220": {
+    "type": "text",
+    "description": "SFA 22:0"
+  },
+  "sfa240": "SFA 24:0",
+  "@sfa240": {
+    "type": "text",
+    "description": "SFA 24:0"
+  },
+  "sfa40": "SFA 4:0",
+  "@sfa40": {
+    "type": "text",
+    "description": "SFA 4:0"
+  },
+  "sfa60": "SFA 6:0",
+  "@sfa60": {
+    "type": "text",
+    "description": "SFA 6:0"
+  },
+  "sfa80": "SFA 8:0",
+  "@sfa80": {
+    "type": "text",
+    "description": "SFA 8:0"
+  },
+  "shareMealPlan": "Share meal plan",
+  "@shareMealPlan": {
+    "type": "text",
+    "description": "Share meal plan dialog title"
+  },
+  "shareMealPlanMessage": "Give your clients access to this meal plan. The meal plan will be automatically sync everytime you save the file",
+  "@shareMealPlanMessage": {
+    "type": "text",
+    "description": "Share meal plan dialog title"
+  },
+  "slideAvocadoToConfirm": "Slide the avocado to confirm",
+  "@slideAvocadoToConfirm": {
+    "type": "text",
+    "description": "Text to show in the confirmation slider used when deleting or editing important data."
+  },
+  "snacks": "Snacks",
+  "@snacks": {
+    "type": "text",
+    "description": "Snacks"
+  },
+  "sodiumNa": "Sodium, Na",
+  "@sodiumNa": {
+    "type": "text",
+    "description": "Sodium, Na"
+  },
+  "soupsSaucesAndGravies": "Soups, Sauces, and Gravies",
+  "@soupsSaucesAndGravies": {
+    "type": "text",
+    "description": "Soups, Sauces, and Gravies"
+  },
+  "spicesAndHerbs": "Spices and Herbs",
+  "@spicesAndHerbs": {
+    "type": "text",
+    "description": "Spices and Herbs"
+  },
+  "starch": "Starch",
+  "@starch": {
+    "type": "text",
+    "description": "Starch"
+  },
+  "stigmasterol": "Stigmasterol",
+  "@stigmasterol": {
+    "type": "text",
+    "description": "Stigmasterol"
+  },
+  "sucrose": "Sucrose",
+  "@sucrose": {
+    "type": "text",
+    "description": "Sucrose"
+  },
+  "sugarsTotalIncludingNlea": "Sugars, total including NLEA",
+  "@sugarsTotalIncludingNlea": {
+    "type": "text",
+    "description": "Sugars, total including NLEA"
+  },
+  "sunday": "Sunday",
+  "@sunday": {
+    "type": "text",
+    "description": "Sunday: day of the week."
+  },
+  "sweets": "Sweets",
+  "@sweets": {
+    "type": "text",
+    "description": "Sweets"
+  },
+  "syncButtonText": "Sync",
+  "@syncButtonText": {
+    "type": "text",
+    "description": "text for an sync button."
+  },
+  "tfa161T": "TFA 16:1 t",
+  "@tfa161T": {
+    "type": "text",
+    "description": "TFA 16:1 t"
+  },
+  "tfa181T": "TFA 18:1 t",
+  "@tfa181T": {
+    "type": "text",
+    "description": "TFA 18:1 t"
+  },
+  "tfa182TNotFurtherDefined": "TFA 18:2 t not further defined",
+  "@tfa182TNotFurtherDefined": {
+    "type": "text",
+    "description": "TFA 18:2 t not further defined"
+  },
+  "tfa182Tt": "TFA 18:2 t,t",
+  "@tfa182Tt": {
+    "type": "text",
+    "description": "TFA 18:2 t,t"
+  },
+  "tfa221T": "TFA 22:1 t",
+  "@tfa221T": {
+    "type": "text",
+    "description": "TFA 22:1 t"
+  },
+  "theAverageFoodPortionIsComputed": "The average food portion is computed from the items in the equivalence.",
+  "@theAverageFoodPortionIsComputed": {
+    "type": "text",
+    "description": "Description that explains what an average portion is."
+  },
+  "theFoodItemNowMatchesTheDatabase": "The food item in your meal plan now matches the food item in your database and will now be marked as synced.",
+  "@theFoodItemNowMatchesTheDatabase": {
+    "type": "text",
+    "description": "Message of dialog shown when an item in the meal plan has been updated"
+  },
+  "theFoodPlanWillBeDeleted": "The food plan will be deleted from your document's profile and will no longer be accessible. This action cannot be undone.",
+  "@theFoodPlanWillBeDeleted": {
+    "type": "text",
+    "description": "Message for the confirmation dialog shown when trying to delete meal plan."
+  },
+  "theItemWillStillBeMarkedAsNotSynced": "The item will still be marked as not synced. You can always come back and sync it later.",
+  "@theItemWillStillBeMarkedAsNotSynced": {
+    "type": "text",
+    "description": "Message when the item in a meal will still be marked as out-of-sync."
+  },
+  "theItemYouOpenningDoesNotExist": "The item you are trying to open does not exist in the database.",
+  "@theItemYouOpenningDoesNotExist": {
+    "type": "text",
+    "description": "Description of the alert modal that shows up when the item you are trying to open does not exist in the database"
+  },
+  "theobromine": "Theobromine",
+  "@theobromine": {
+    "type": "text",
+    "description": "Theobromine"
+  },
+  "thiamin": "Thiamin",
+  "@thiamin": {
+    "type": "text",
+    "description": "Thiamin"
+  },
+  "threonine": "Threonine",
+  "@threonine": {
+    "type": "text",
+    "description": "Threonine"
+  },
+  "thursday": "Thursday",
+  "@thursday": {
+    "type": "text",
+    "description": "Thursday: day of the week."
+  },
+  "tocopherolBeta": "Tocopherol, beta",
+  "@tocopherolBeta": {
+    "type": "text",
+    "description": "Tocopherol, beta"
+  },
+  "tocopherolDelta": "Tocopherol, delta",
+  "@tocopherolDelta": {
+    "type": "text",
+    "description": "Tocopherol, delta"
+  },
+  "tocopherolGamma": "Tocopherol, gamma",
+  "@tocopherolGamma": {
+    "type": "text",
+    "description": "Tocopherol, gamma"
+  },
+  "tocotrienolAlpha": "Tocotrienol, alpha",
+  "@tocotrienolAlpha": {
+    "type": "text",
+    "description": "Tocotrienol, alpha"
+  },
+  "tocotrienolBeta": "Tocotrienol, beta",
+  "@tocotrienolBeta": {
+    "type": "text",
+    "description": "Tocotrienol, beta"
+  },
+  "tocotrienolDelta": "Tocotrienol, delta",
+  "@tocotrienolDelta": {
+    "type": "text",
+    "description": "Tocotrienol, delta"
+  },
+  "tocotrienolGamma": "Tocotrienol, gamma",
+  "@tocotrienolGamma": {
+    "type": "text",
+    "description": "Tocotrienol, gamma"
+  },
+  "totalLipidFat": "Total lipid (fat)",
+  "@totalLipidFat": {
+    "type": "text",
+    "description": "Total lipid (fat)"
+  },
+  "tryptophan": "Tryptophan",
+  "@tryptophan": {
+    "type": "text",
+    "description": "Tryptophan"
+  },
+  "tuesday": "Tuesday",
+  "@tuesday": {
+    "type": "text",
+    "description": "Tuesday: day of the week."
+  },
+  "tyrosine": "Tyrosine",
+  "@tyrosine": {
+    "type": "text",
+    "description": "Tyrosine"
+  },
+  "unitSystemImperial": "imperial",
+  "@unitSystemImperial": {
+    "type": "text",
+    "description": "The name of the imperial unit system"
+  },
+  "unitSystemMetric": "metric",
+  "@unitSystemMetric": {
+    "type": "text",
+    "description": "The name of the metric unit system"
+  },
+  "update": "Update",
+  "@update": {
+    "type": "text",
+    "description": "text for a update button."
+  },
+  "updateDatabaseWithMealPlanItemMessageOne": "We can update the food item in your database to match the food item in the food plan. This will update the name, portions, and nutrients.",
+  "@updateDatabaseWithMealPlanItemMessageOne": {
+    "type": "text",
+    "description": "Update database with meal plan item dialog message"
+  },
+  "updateDatabaseWithMealPlanItemMessageThree": "Note: You can always select \"no\" do this later.",
+  "@updateDatabaseWithMealPlanItemMessageThree": {
+    "type": "text",
+    "description": "Update database with meal plan item dialog message"
+  },
+  "updateDatabaseWithMealPlanItemMessageTwo": "If you select \"no\" then the item in the food plan will remain marked as \"out of sync\".",
+  "@updateDatabaseWithMealPlanItemMessageTwo": {
+    "type": "text",
+    "description": "Update database with meal plan item dialog message"
+  },
+  "updateDatabaseWithMealPlanItemTitle": "Update your database with the meal plan's food item?",
+  "@updateDatabaseWithMealPlanItemTitle": {
+    "type": "text",
+    "description": "Update database with meal plan item dialog title"
+  },
+  "userProfileActualHeight": "Actual Height",
+  "@userProfileActualHeight": {
+    "type": "text",
+    "description": "Text that labels the actual height value"
+  },
+  "userProfileActualWaist": "Actual Waist",
+  "@userProfileActualWaist": {
+    "type": "text",
+    "description": "Text that labels the actual waist value in the edit waist dialog"
+  },
+  "userProfileActualWeight": "Actual Weight",
+  "@userProfileActualWeight": {
+    "type": "text",
+    "description": "Title for the weight measurement"
+  },
+  "userProfileAddMetricButton": "ADD METRIC",
+  "@userProfileAddMetricButton": {
+    "type": "text",
+    "description": "Text for the button to add a new entry into the stats table"
+  },
+  "userProfileBMI": "BMI",
+  "@userProfileBMI": {
+    "type": "text",
+    "description": "Body Mass Index abbreviation letters"
+  },
+  "userProfileBodyFat": "Body Fat %",
+  "@userProfileBodyFat": {
+    "type": "text",
+    "description": "Title for the body fat measurement"
+  },
+  "userProfileContactInformation": "Contact Information",
+  "@userProfileContactInformation": {
+    "type": "text",
+    "description": "Title for the contact information section"
+  },
+  "userProfileContactInformationEmail": "Email",
+  "@userProfileContactInformationEmail": {
+    "type": "text",
+    "description": "Title for the email field"
+  },
+  "userProfileContactInformationPhoneNumber": "Phone Number",
+  "@userProfileContactInformationPhoneNumber": {
+    "type": "text",
+    "description": "Title for the phone number field"
+  },
+  "userProfileCurrentDietPlan": "Current Diet Plan",
+  "@userProfileCurrentDietPlan": {
+    "type": "text",
+    "description": "Title for the current diet plan for a user profile"
+  },
+  "userProfileCurrentMealPlan": "Current Meal Plan",
+  "@userProfileCurrentMealPlan": {
+    "type": "text",
+    "description": "Title for the current meal plans for a user profile"
+  },
+  "userProfileDateOfBirth": "Date of Birth",
+  "@userProfileDateOfBirth": {
+    "type": "text",
+    "description": "Title for the date of birth field"
+  },
+  "userProfileDietPlans": "Diet Plans",
+  "@userProfileDietPlans": {
+    "type": "text",
+    "description": "Title for the list of diet plans in a user profile"
+  },
+  "userProfileEmptyCurrentDietPlan": "No assigned plan",
+  "@userProfileEmptyCurrentDietPlan": {
+    "type": "text",
+    "description": "Text to show when there is no diet plan assigned"
+  },
+  "userProfileEmptyCurrentMealPlan": "No assigned plans",
+  "@userProfileEmptyCurrentMealPlan": {
+    "type": "text",
+    "description": "Text to show when there is no meal plans assigned"
+  },
+  "userProfileEmptyStats": "Get started by adding metrics!",
+  "@userProfileEmptyStats": {
+    "type": "text",
+    "description": "Text to show when there is no stats data"
+  },
+  "userProfileFoodPlanName": "Food plan name",
+  "@userProfileFoodPlanName": {
+    "type": "text",
+    "description": "Field title for the food plan name"
+  },
+  "userProfileFoodPlanNameHint": "plan name",
+  "@userProfileFoodPlanNameHint": {
+    "type": "text",
+    "description": "Field hint for the food plan name"
+  },
+  "userProfileHeight": "Height",
+  "@userProfileHeight": {
+    "type": "text",
+    "description": "Title for the height measurement"
+  },
+  "userProfileIntroduceNewHeight": "Introduce new height",
+  "@userProfileIntroduceNewHeight": {
+    "type": "text",
+    "description": "Field label for the edit height dialog"
+  },
+  "userProfileIntroduceNewWaist": "Introduce new waist measurement",
+  "@userProfileIntroduceNewWaist": {
+    "type": "text",
+    "description": "label for the edit waist dialog"
+  },
+  "userProfileIntroduceNewWeight": "Introduce new weight",
+  "@userProfileIntroduceNewWeight": {
+    "type": "text",
+    "description": "label for the field that edits the actual weight"
+  },
+  "userProfileMealPlans": "Meal Plans",
+  "@userProfileMealPlans": {
+    "type": "text",
+    "description": "Title for the list of meal plans in a user profile"
+  },
+  "userProfilePatientName": "Patient's name",
+  "@userProfilePatientName": {
+    "type": "text",
+    "description": "hint text for the client's name"
+  },
+  "userProfilePhoneNumber": "Phone Number",
+  "@userProfilePhoneNumber": {
+    "type": "text",
+    "description": "Phone number field title"
+  },
+  "userProfileRecordsBodyFatColumn": "Body Fat %",
+  "@userProfileRecordsBodyFatColumn": {
+    "type": "text",
+    "description": "Text for the body fat column in the stats table"
+  },
+  "userProfileRecordsChestColumn": "Chest",
+  "@userProfileRecordsChestColumn": {
+    "type": "text",
+    "description": "Text for the chest column in the stats table"
+  },
+  "userProfileRecordsDateColumn": "Date",
+  "@userProfileRecordsDateColumn": {
+    "type": "text",
+    "description": "Text for the date column in the stats table"
+  },
+  "userProfileRecordsLeftArmColumn": "Left Arm",
+  "@userProfileRecordsLeftArmColumn": {
+    "type": "text",
+    "description": "Text for the left arm column in the stats table"
+  },
+  "userProfileRecordsLeftLegColumn": "Left Leg",
+  "@userProfileRecordsLeftLegColumn": {
+    "type": "text",
+    "description": "Text for the left leg column in the stats table"
+  },
+  "userProfileRecordsRightArmColumn": "Right Arm",
+  "@userProfileRecordsRightArmColumn": {
+    "type": "text",
+    "description": "Text for the right arm column in the stats table"
+  },
+  "userProfileRecordsRightLegColumn": "Right Leg",
+  "@userProfileRecordsRightLegColumn": {
+    "type": "text",
+    "description": "Text for the right leg column in the stats table"
+  },
+  "userProfileRecordsWaistColumn": "Waist",
+  "@userProfileRecordsWaistColumn": {
+    "type": "text",
+    "description": "Text for the waist column in the stats table"
+  },
+  "userProfileRecordsWeightColumn": "Weight",
+  "@userProfileRecordsWeightColumn": {
+    "type": "text",
+    "description": "Text for the weight column in the stats table"
+  },
+  "userProfileStatsData": "Stats Data",
+  "@userProfileStatsData": {
+    "type": "text",
+    "description": "Title for the user profile data table"
+  },
+  "userProfileWaist": "Waist",
+  "@userProfileWaist": {
+    "type": "text",
+    "description": "Title for the waist measurement"
+  },
+  "userProfileWeight": "Weight",
+  "@userProfileWeight": {
+    "type": "text",
+    "description": "Title for the weight measurement"
+  },
+  "valine": "Valine",
+  "@valine": {
+    "type": "text",
+    "description": "Valine"
+  },
+  "vegetablesAndVegetableProducts": "Vegetables and Vegetable Products",
+  "@vegetablesAndVegetableProducts": {
+    "type": "text",
+    "description": "Vegetables and Vegetable Products"
+  },
+  "vitaminAIu": "Vitamin A, IU",
+  "@vitaminAIu": {
+    "type": "text",
+    "description": "Vitamin A, IU"
+  },
+  "vitaminARae": "Vitamin A, RAE",
+  "@vitaminARae": {
+    "type": "text",
+    "description": "Vitamin A, RAE"
+  },
+  "vitaminB12": "Vitamin B-12",
+  "@vitaminB12": {
+    "type": "text",
+    "description": "Vitamin B-12"
+  },
+  "vitaminB12Added": "Vitamin B-12, added",
+  "@vitaminB12Added": {
+    "type": "text",
+    "description": "Vitamin B-12, added"
+  },
+  "vitaminB6": "Vitamin B-6",
+  "@vitaminB6": {
+    "type": "text",
+    "description": "Vitamin B-6"
+  },
+  "vitaminCTotalAscorbicAcid": "Vitamin C, total ascorbic acid",
+  "@vitaminCTotalAscorbicAcid": {
+    "type": "text",
+    "description": "Vitamin C, total ascorbic acid"
+  },
+  "vitaminD2Ergocalciferol": "Vitamin D2 (ergocalciferol)",
+  "@vitaminD2Ergocalciferol": {
+    "type": "text",
+    "description": "Vitamin D2 (ergocalciferol)"
+  },
+  "vitaminD3Cholecalciferol": "Vitamin D3 (cholecalciferol)",
+  "@vitaminD3Cholecalciferol": {
+    "type": "text",
+    "description": "Vitamin D3 (cholecalciferol)"
+  },
+  "vitaminDD2D3": "Vitamin D (D2 + D3)",
+  "@vitaminDD2D3": {
+    "type": "text",
+    "description": "Vitamin D (D2 + D3)"
+  },
+  "vitaminDD2D3InternationalUnits": "Vitamin D (D2 + D3), International Units",
+  "@vitaminDD2D3InternationalUnits": {
+    "type": "text",
+    "description": "Vitamin D (D2 + D3), International Units"
+  },
+  "vitaminEAdded": "Vitamin E, added",
+  "@vitaminEAdded": {
+    "type": "text",
+    "description": "Vitamin E, added"
+  },
+  "vitaminEAlphatocopherol": "Vitamin E (alpha-tocopherol)",
+  "@vitaminEAlphatocopherol": {
+    "type": "text",
+    "description": "Vitamin E (alpha-tocopherol)"
+  },
+  "vitaminKDihydrophylloquinone": "Vitamin K (Dihydrophylloquinone)",
+  "@vitaminKDihydrophylloquinone": {
+    "type": "text",
+    "description": "Vitamin K (Dihydrophylloquinone)"
+  },
+  "vitaminKMenaquinone4": "Vitamin K (Menaquinone-4)",
+  "@vitaminKMenaquinone4": {
+    "type": "text",
+    "description": "Vitamin K (Menaquinone-4)"
+  },
+  "vitaminKPhylloquinone": "Vitamin K (phylloquinone)",
+  "@vitaminKPhylloquinone": {
+    "type": "text",
+    "description": "Vitamin K (phylloquinone)"
+  },
+  "vitamins": "Vitamins",
+  "@vitamins": {
+    "type": "text",
+    "description": "Vitamins text"
+  },
+  "water": "Water",
+  "@water": {
+    "type": "text",
+    "description": "Water"
+  },
+  "wednesday": "Wednesday",
+  "@wednesday": {
+    "type": "text",
+    "description": "Wednesday: day of the week."
+  },
+  "weDontWantYourDataToGetLost": "We don't want your data to get lost!",
+  "@weDontWantYourDataToGetLost": {
+    "type": "text",
+    "description": "Title for the dialog shown when a food item in conflict."
+  },
+  "weHaveUpdatedYourDatabase": "We have updated your database!",
+  "@weHaveUpdatedYourDatabase": {
+    "type": "text",
+    "description": "database update confirmation dialog title"
+  },
+  "weHaveUpdatedYourMealPlan": "We have updated your meal plan!",
+  "@weHaveUpdatedYourMealPlan": {
+    "type": "text",
+    "description": "Title of dialog shown when an item in the meal plan has been updated"
+  },
+  "weWillKeepUsingADifferentVersion": "We will keep using a different version of this item on your meal plan.",
+  "@weWillKeepUsingADifferentVersion": {
+    "type": "text",
+    "description": "Message for the dialog shown when no changes were made to meal plan."
+  },
+  "weWillUpdateThisFoodItemInMealPlan": "We will update the existing references to this food item in your meal plan with your selection.",
+  "@weWillUpdateThisFoodItemInMealPlan": {
+    "type": "text",
+    "description": "Message for the confirmation dialog when we are about to update a food item in meal plan."
+  },
+  "whichVersionOfThisFoodShouldWeUse": "Which version of this food item should we use for this plan?",
+  "@whichVersionOfThisFoodShouldWeUse": {
+    "type": "text",
+    "description": "Message for the dialog shown when a food item in conflict."
+  },
+  "yes": "Yes",
+  "@yes": {
+    "type": "text",
+    "description": "text for a yes button."
+  },
+  "youAreAboutToDeleteFoodPortion": "You are about to delete the {portion} portion, do you want to continue?",
+  "@youAreAboutToDeleteFoodPortion": {
+    "type": "text",
+    "description": "Message for the delete food portion dialog",
+    "placeholders": {
+      "portion": {}
+    }
+  },
+  "yourDatabaseWillBeUpdateWithFoodPlanItem": "Your database will be updated with the food item in the food plan. Once you confirm your database will be updated.",
+  "@yourDatabaseWillBeUpdateWithFoodPlanItem": {
+    "type": "text",
+    "description": "Confirm update dialog message"
+  },
+  "yourFoodItemWillBeMarkedAsSynced": "Your food item in your meal plan will be marked as synced.",
+  "@yourFoodItemWillBeMarkedAsSynced": {
+    "type": "text",
+    "description": "Food item will be marked as synced text"
+  },
+  "zincZn": "Zinc, Zn",
+  "@zincZn": {
+    "type": "text",
+    "description": "Zinc, Zn"
+  }
+}

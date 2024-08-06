@@ -1,4 +1,4 @@
-name: my_project
+name: banana_query_dart_sdk
 
 packages:
   - packages/**

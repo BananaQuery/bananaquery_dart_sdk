@@ -1,4 +1,4 @@
-name: my_project
+name: banana_query_dart_sdk
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
