@@ -1,5 +1,3 @@
-import 'package:rxdart/rxdart.dart';
-
 class FoodPlanStats {
   // final BehaviorSubject listener = BehaviorSubject<FoodPlanStats>();
   //

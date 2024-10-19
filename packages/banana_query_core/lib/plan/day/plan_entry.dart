@@ -1,7 +1,6 @@
 import 'package:uuid/uuid.dart';
 
 import '../../portions/food_portion.dart';
-import '../../portions/i_food_portion.dart';
 
 class PlanEntry {
   PlanEntry(
@@ -15,7 +14,7 @@ class PlanEntry {
   String uid = const Uuid().v4();
 
   /// ----------- PLAN ENTRY's FOOD INFORMATION -----------
-  IFoodPortion portion;
+  FoodPortion portion;
   double quantity;
   String foodUid;
   int mealIndex;

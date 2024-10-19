@@ -15,11 +15,11 @@ import 'package:banana_query_core/foods/item/protein/protein_product.dart';
 import 'package:banana_query_core/foods/item/vegetables/vegetable_product.dart';
 import 'package:banana_query_core/foods/portioned_food.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
+import 'package:banana_query_ui/components/foods/lists/food_item_tile.dart';
 import 'package:flutter/material.dart';
 
 import '../containers/secondary_container.dart';
 import '../plan/viewer/search/field/food_search_field.dart';
-import 'food_search_result.dart';
 
 typedef ItemCallback = Function(PortionedFood, FoodDatabaseInfo);
 
@@ -30,7 +30,6 @@ class AdvancedFoodSearch extends StatefulWidget {
     this.onSelect,
     this.onOpenItem,
     this.actions,
-
   });
 
   final ItemCallback? onSelect;
@@ -335,7 +334,7 @@ class AdvancedFoodSearchState extends State<AdvancedFoodSearch> {
                                 width: 800,
                                 height: 55,
                                 // padding: EdgeInsets.only(left: 15.0),
-                                margin: EdgeInsets.only(top: 15.0),
+                                margin: const EdgeInsets.only(top: 15.0),
                                 child: FoodSearchField(
                                   controller: searchFieldController,
                                   autofocus: true,
@@ -351,76 +350,61 @@ class AdvancedFoodSearchState extends State<AdvancedFoodSearch> {
                               if (searchFieldController.value.text.isNotEmpty)
                                 Expanded(
                                     child: SizedBox(
-                                      child: searchResults.isEmpty
-                                          ? Column(
-                                        crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        mainAxisAlignment:
-                                        MainAxisAlignment.center,
-                                        children: [
-                                          Center(
-                                              child: Container(
-                                                height: 400,
-                                                width: 400,
-                                                padding: EdgeInsets.all(40),
-                                                decoration: const BoxDecoration(
-                                                    color: Colors.black12,
-                                                    borderRadius:
-                                                    BorderRadius.all(
-                                                        Radius.circular(
-                                                            400))),
+                                  child: searchResults.isEmpty
+                                      ? Column(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Center(
                                                 child: Container(
-                                                  color: Colors.red,
-                                                ),
-                                              )),
-                                          Padding(
-                                            padding: const EdgeInsets.only(
-                                                top: 20.0),
-                                            child: Text(
-                                              S
-                                                  .of(context)
-                                                  .noFoodItemsMatchingQuery(
-                                                  searchFieldController
-                                                      .value.text),
-                                              style: Theme.of(context)
-                                                  .textTheme
-                                                  .bodyLarge!
-                                                  .copyWith(
-                                                  fontWeight:
-                                                  FontWeight.w100,
-                                                  fontStyle:
-                                                  FontStyle.italic),
-                                            ),
-                                          )
-                                        ],
-                                      )
-                                          : ListView(
-                                        // shrinkWrap: true
-                                        padding: const EdgeInsets.only(
-                                            left: 15.0, top: 35.0),
-                                        children: searchResults
-                                            .map((e) => FoodSearchResult(
-                                          key: ValueKey(e.id),
-                                          isSelected:
-                                          selectedItem?.item ==
-                                              e,
-                                          foodItem: e,
-                                          onSelect:
-                                              (PortionedFood food) async {
-                                            var databaseInfo = await database.getFoodDatabase(food.item.databaseId!);
-                                            setState(() {
-                                              selectedItem = food;
-                                              onSelect?.call(
-                                                  food, databaseInfo);
-                                            });
-                                          },
-                                          onOpenItem: (PortionedFood serving) async {
-                                          },
-                                          focusNode: node,
-                                        ))
-                                            .toList(),
-                                      ),
-                                    )),
+                                              height: 400,
+                                              width: 400,
+                                              padding: const EdgeInsets.all(40),
+                                              decoration: const BoxDecoration(
+                                                  color: Colors.black12,
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                          Radius.circular(
+                                                              400))),
+                                              child: Container(
+                                                color: Colors.red,
+                                              ),
+                                            )),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  top: 20.0),
+                                              child: Text(
+                                                S
+                                                    .of(context)
+                                                    .noFoodItemsMatchingQuery(
+                                                        searchFieldController
+                                                            .value.text),
+                                                style: Theme.of(context)
+                                                    .textTheme
+                                                    .bodyLarge!
+                                                    .copyWith(
+                                                        fontWeight:
+                                                            FontWeight.w100,
+                                                        fontStyle:
+                                                            FontStyle.italic),
+                                              ),
+                                            )
+                                          ],
+                                        )
+                                      : ListView(
+                                          // shrinkWrap: true
+                                          padding: const EdgeInsets.only(
+                                              left: 15.0, top: 35.0),
+                                          children: searchResults
+                                              .map((e) => FoodItemTile(
+                                                    key: ValueKey(e.id),
+                                                    foodItem: e,
+                                                  ))
+                                              .toList(),
+                                        ),
+                                )),
                               if (searchFieldController.value.text.isEmpty)
                                 Expanded(
                                   child: Center(
@@ -432,9 +416,9 @@ class AdvancedFoodSearchState extends State<AdvancedFoodSearch> {
                                           .textTheme
                                           .bodyLarge!
                                           .copyWith(
-                                          fontWeight: FontWeight.w100,
-                                          fontStyle: FontStyle.italic,
-                                          color: Colors.white60),
+                                              fontWeight: FontWeight.w100,
+                                              fontStyle: FontStyle.italic,
+                                              color: Colors.white60),
                                     ),
                                   ),
                                 )
@@ -450,8 +434,6 @@ class AdvancedFoodSearchState extends State<AdvancedFoodSearch> {
                   )
                 ],
               );
-            }
-        )
-    );
+            }));
   }
 }

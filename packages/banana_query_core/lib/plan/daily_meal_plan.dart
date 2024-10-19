@@ -31,15 +31,14 @@ class DailyMealPlan implements MealPlan<PlanDay> {
     required this.name,
     required this.days,
     required this.meals,
-  }) :
-      uuid = const Uuid().v4(),
-      foodItems = {},
-      foodSources = {},
-      referencedDatabases = {},
-      entries = [],
-      description = '',
-      createdAt = DateTime.now(),
-      accessKey = const Uuid().v4();
+  })  : uuid = const Uuid().v4(),
+        foodItems = {},
+        foodSources = {},
+        referencedDatabases = {},
+        entries = [],
+        description = '',
+        createdAt = DateTime.now(),
+        accessKey = const Uuid().v4();
 
   @override
   Map<String, FoodDatabaseInfo> referencedDatabases = {};
@@ -83,7 +82,7 @@ class DailyMealPlan implements MealPlan<PlanDay> {
           key,
           value
               .map((e) => _entryToPortionedFood(e))
-              .map((entry) => (entry.getCalories)?.amount ?? 0.0)
+              .map((entry) => (entry.getCalories).amount ?? 0.0)
               .reduce((value, element) => value + element)));
 
   @override

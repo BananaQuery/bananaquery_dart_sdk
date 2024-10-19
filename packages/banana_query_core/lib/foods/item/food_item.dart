@@ -7,7 +7,6 @@ import 'package:crypto/crypto.dart';
 
 import '../../nutritional_entity.dart';
 import '../../portions/food_portion.dart';
-import '../../portions/i_food_portion.dart';
 
 class FoodItem extends NutritionalEntity {
   const FoodItem(
@@ -59,7 +58,7 @@ class FoodItem extends NutritionalEntity {
   final List<Nutrient> nutrients;
 
   @override
-  final List<IFoodPortion> portions;
+  final List<FoodPortion> portions;
 
   @override
   Map<String, dynamic> toJson() {
@@ -96,8 +95,8 @@ class FoodItem extends NutritionalEntity {
             : [],
         portions = extractPortionsFromJson(json);
 
-  static List<IFoodPortion> extractPortionsFromJson(Map<String, dynamic> json) {
-    List<IFoodPortion> portions = json['portions'] != null
+  static List<FoodPortion> extractPortionsFromJson(Map<String, dynamic> json) {
+    List<FoodPortion> portions = json['portions'] != null
         ? jsonDecode(json['portions'])
             .map<FoodPortion>((portion) => FoodPortion.fromJson(portion))
             .toList()
@@ -161,7 +160,7 @@ class FoodItem extends NutritionalEntity {
   }
 
   @override
-  void addPortion(IFoodPortion portion) {
+  void addPortion(FoodPortion portion) {
     portions.add(portion);
   }
 

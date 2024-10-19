@@ -7,9 +7,10 @@ import 'package:flutter/material.dart';
 import 'micro_nutrient_table.dart';
 
 class MicroNutrientStats extends StatefulWidget {
-  const MicroNutrientStats({Key? key,
+  const MicroNutrientStats({
+    super.key,
     required this.foods,
-  }) : super(key: key);
+  });
 
   final List<PortionedFood> foods;
 
@@ -35,31 +36,34 @@ class _MicroNutrientStatsState extends State<MicroNutrientStats> {
     return Column(
       children: [
         Expanded(
-          child: ListView(
-            children: [
-              Padding(padding: EdgeInsets.only(top: 15.0)),
-              Container(
-                color: Theme.of(context).colorScheme.primary.withOpacity(.5),
-                padding: EdgeInsets.only(left: 10.0, top: 30.0, bottom: 10.0),
-                child: SelectableText(S.of(context).vitamins, style: Theme.of(context).textTheme.titleMedium),
-              ),
-              MicroNutrientTable(
-                foods: foods,
-                nutrients: NutrientTotalsCalculator.vitamins,
-              ),
-              Padding(padding: EdgeInsets.only(top: 15.0)),
-              Container(
-                color: Theme.of(context).colorScheme.primary.withOpacity(.5),
-                padding: EdgeInsets.only(left: 10.0, top: 30.0, bottom: 10.0),
-                child: SelectableText(S.of(context).minerals, style: Theme.of(context).textTheme.titleLarge!),
-              ),
-              MicroNutrientTable(
-                foods: foods,
-                nutrients: NutrientTotalsCalculator.minerals,
-              ),
-            ],
-          )
-        ),
+            child: ListView(
+          children: [
+            const Padding(padding: EdgeInsets.only(top: 15.0)),
+            Container(
+              color: Theme.of(context).colorScheme.primary.withOpacity(.5),
+              padding:
+                  const EdgeInsets.only(left: 10.0, top: 30.0, bottom: 10.0),
+              child: SelectableText(S.of(context).vitamins,
+                  style: Theme.of(context).textTheme.titleMedium),
+            ),
+            MicroNutrientTable(
+              foods: foods,
+              nutrients: NutrientTotalsCalculator.vitamins,
+            ),
+            const Padding(padding: EdgeInsets.only(top: 15.0)),
+            Container(
+              color: Theme.of(context).colorScheme.primary.withOpacity(.5),
+              padding:
+                  const EdgeInsets.only(left: 10.0, top: 30.0, bottom: 10.0),
+              child: SelectableText(S.of(context).minerals,
+                  style: Theme.of(context).textTheme.titleLarge!),
+            ),
+            MicroNutrientTable(
+              foods: foods,
+              nutrients: NutrientTotalsCalculator.minerals,
+            ),
+          ],
+        )),
       ],
     );
   }

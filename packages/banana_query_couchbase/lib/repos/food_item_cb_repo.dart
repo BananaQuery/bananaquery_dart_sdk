@@ -4,18 +4,20 @@ import 'package:banana_query_database/items/food_item_repo.dart';
 import 'package:cbl/cbl.dart';
 
 class FoodItemCbRepo extends FoodItemRepo {
-  FoodItemCbRepo({ required database }) : _database = database;
+  FoodItemCbRepo({required database}) : _database = database;
 
   static final String _collectionName = 'BQ_FoodItems';
   final Database _database;
 
   @override
   Future<bool> createFoodItem(NutritionalEntity foodItem) async {
-    if (foodItem.id == null || foodItem.id!.isEmpty) {
-      throw ArgumentError('Food item must have a database id and a unique id ("uid") to be valid');
+    if (foodItem.id.isEmpty) {
+      throw ArgumentError(
+          'Food item must have a database id and a unique id ("uid") to be valid');
     }
     final collection = await _database.createCollection(_collectionName);
-    final mutableDocument = MutableDocument.withId(foodItem.id!, foodItem.toJson());
+    final mutableDocument =
+        MutableDocument.withId(foodItem.id, foodItem.toJson());
     return collection.saveDocument(mutableDocument);
   }
 
@@ -55,7 +57,8 @@ class FoodItemCbRepo extends FoodItemRepo {
 
     final resultSet = await query.execute();
     final rows = await resultSet.allResults();
-    return FoodFactory.standard().fromJson(rows.first.toPlainMap()[_collectionName] as Map<String, dynamic>);
+    return FoodFactory.standard().fromJson(
+        rows.first.toPlainMap()[_collectionName] as Map<String, dynamic>);
   }
 
   @override
@@ -67,7 +70,10 @@ class FoodItemCbRepo extends FoodItemRepo {
     // Run the query.
     final result = await query.execute();
     final rows = await result.allResults();
-    return rows.map((e) => FoodFactory.standard().fromJson(e.toPlainMap()[_collectionName] as Map<String, dynamic>)).toList();
+    return rows
+        .map((e) => FoodFactory.standard()
+            .fromJson(e.toPlainMap()[_collectionName] as Map<String, dynamic>))
+        .toList();
   }
 
   @override
@@ -76,8 +82,8 @@ class FoodItemCbRepo extends FoodItemRepo {
     final query = QueryBuilder()
         .select(SelectResult.all())
         .from(DataSource.collection(collection))
-        .where(FullTextFunction.match(indexName: 'nameDescriptionFTSIndex', query: searchQuery));
-
+        .where(FullTextFunction.match(
+            indexName: 'nameDescriptionFTSIndex', query: searchQuery));
 
     final resultSet = await query.execute();
     final rows = await resultSet.allResults();
@@ -86,7 +92,10 @@ class FoodItemCbRepo extends FoodItemRepo {
       print(row.toPlainMap());
     }
 
-    return rows.map((e) => FoodFactory.standard().fromJson(e.toPlainMap()[_collectionName] as Map<String, dynamic>)).toList();
+    return rows
+        .map((e) => FoodFactory.standard()
+            .fromJson(e.toPlainMap()[_collectionName] as Map<String, dynamic>))
+        .toList();
   }
 
   @override
@@ -104,15 +113,17 @@ class FoodItemCbRepo extends FoodItemRepo {
   }
 
   MutableDocument _foodMutableDoc(NutritionalEntity item) {
-    if (item.id == null || item.id!.isEmpty) {
-      throw ArgumentError('Food item must have a database id and a unique id ("uid") to be valid');
+    if (item.id.isEmpty) {
+      throw ArgumentError(
+          'Food item must have a database id and a unique id ("uid") to be valid');
     }
-    return MutableDocument.withId(item.id!, item.toJson());
+    return MutableDocument.withId(item.id, item.toJson());
   }
 
   Collection _assertCollectionExists(Collection? collection) {
     if (collection == null) {
-      throw Exception('Database has not been initialized. Run BananaQueryCoachBase.initialize() before using this repo');
+      throw Exception(
+          'Database has not been initialized. Run BananaQueryCoachBase.initialize() before using this repo');
     }
     return collection;
   }

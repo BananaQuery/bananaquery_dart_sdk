@@ -122,8 +122,6 @@ class FoodPlanEditorState extends State<FoodPlanEditor> with CommandMixin {
     String? databaseId = plan.foodSources[entry.foodUid];
     NutritionalEntity? dbItem;
 
-
-    // ignore: use_build_context_synchronously
     showDialog(
         context: context,
         useRootNavigator: false,
@@ -474,6 +472,7 @@ class FoodPlanEditorState extends State<FoodPlanEditor> with CommandMixin {
                         child: TilePlanView(
                           columnsWidths: columnWidths,
                           plan: plan,
+                          editable: true,
                           clipboard: clipboard,
                           onAddButtonClick: openSearchModal,
                           onItemClick: openEntryEditModal,

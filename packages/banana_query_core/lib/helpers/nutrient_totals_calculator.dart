@@ -126,7 +126,7 @@ class NutrientTotalsCalculator {
     return nutrientAmountInPortion;
   }
 
-  static List<Nutrient> getNutrientTotals<T extends Nutrient>(List<PortionedFood> entries, {String? nutrientType}) {
+  static List<Nutrient> getNutrientTotals<T extends Nutrient>(List<PortionedFood> entries) {
     Map<String, Nutrient> nutrientTotals = {};
     entries.forEach((e) {
       e.getNutrientTotalsWhereType<Nutrient>()?.forEach((element) {
@@ -141,5 +141,14 @@ class NutrientTotalsCalculator {
     });
 
     return nutrientTotals.values.toList();
+  }
+
+  static Nutrient? getNutrientTotalByName<T extends Nutrient>(List<PortionedFood> entries, String nutrientType) {
+    List<Nutrient> nutrients = getNutrientTotals(entries);
+    try {
+      return nutrients.firstWhere((element) => element.type == nutrientType);
+    } catch (e) {
+      return null;
+    }
   }
 }

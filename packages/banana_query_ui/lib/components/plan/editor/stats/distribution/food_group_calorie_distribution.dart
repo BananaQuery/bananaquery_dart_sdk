@@ -2,7 +2,8 @@ import 'package:banana_query_core/foods/portioned_food.dart';
 import 'package:flutter/cupertino.dart';
 
 class FoodGroupCalorieDistribution extends StatefulWidget {
-  const FoodGroupCalorieDistribution({Key? key, required this.foods});
+  const FoodGroupCalorieDistribution(
+      {super.key, required this.foods});
 
   final List<PortionedFood> foods;
 
@@ -12,7 +13,8 @@ class FoodGroupCalorieDistribution extends StatefulWidget {
   }
 }
 
-class _FoodGroupCalorieDistributionState extends State<FoodGroupCalorieDistribution> {
+class _FoodGroupCalorieDistributionState
+    extends State<FoodGroupCalorieDistribution> {
   @override
   Widget build(BuildContext context) {
     return Container();

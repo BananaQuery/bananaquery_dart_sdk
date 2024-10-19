@@ -1,7 +1,3 @@
-import 'package:banana_query_core/nutrients/micro/minerals/calcium.dart';
-import 'package:banana_query_core/nutrients/micro/minerals/copper.dart';
-import 'package:banana_query_core/nutrients/micro/minerals/mineral.dart';
-import 'package:banana_query_core/nutrients/micro/other/choline.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/a/carotenoids/carotene/cryptoxanthin_beta.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/a/carotenoids/carotene/lutein_zeaxanthin.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/a/carotenoids/carotene/lycopene.dart';
@@ -19,7 +15,6 @@ import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/e/tocotrie
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_beta_tocotrienol.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_delta_tocotrienol.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/e/tocotrienol/vitamin_e_gamma_tocotrienol.dart';
-import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/k/vitamin_k1.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/k/vitamin_k1_dihydrophylloquinone.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/fatsoluble/k/vitamin_k2_menaquinone.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/vitamin.dart';
@@ -58,7 +53,8 @@ class VitaminFactory {
     // Carotenoids
     registeredTypes[CaroteneAlpha.nutrientType] = CaroteneAlpha.fromJson;
     registeredTypes[CaroteneBeta.nutrientType] = CaroteneBeta.fromJson;
-    registeredTypes[CryptoxanthinBeta.nutrientType] = CryptoxanthinBeta.fromJson;
+    registeredTypes[CryptoxanthinBeta.nutrientType] =
+        CryptoxanthinBeta.fromJson;
     registeredTypes[LuteinZeaxanthin.nutrientType] = LuteinZeaxanthin.fromJson;
     registeredTypes[Lycopene.nutrientType] = Lycopene.fromJson;
 
@@ -70,21 +66,32 @@ class VitaminFactory {
     registeredTypes[VitaminDD3.nutrientType] = VitaminDD3.fromJson;
     registeredTypes[VitaminDIU.nutrientType] = VitaminDIU.fromJson;
 
-    registeredTypes[VitaminEAlphaTocopherol.nutrientType] = VitaminEAlphaTocopherol.fromJson;
-    registeredTypes[VitaminEBetaTocopherol.nutrientType] = VitaminEBetaTocopherol.fromJson;
-    registeredTypes[VitaminEDeltaTocopherol.nutrientType] = VitaminEDeltaTocopherol.fromJson;
-    registeredTypes[VitaminEGammaTocopherol.nutrientType] = VitaminEGammaTocopherol.fromJson;
+    registeredTypes[VitaminEAlphaTocopherol.nutrientType] =
+        VitaminEAlphaTocopherol.fromJson;
+    registeredTypes[VitaminEBetaTocopherol.nutrientType] =
+        VitaminEBetaTocopherol.fromJson;
+    registeredTypes[VitaminEDeltaTocopherol.nutrientType] =
+        VitaminEDeltaTocopherol.fromJson;
+    registeredTypes[VitaminEGammaTocopherol.nutrientType] =
+        VitaminEGammaTocopherol.fromJson;
 
-    registeredTypes[VitaminEAlphaTocotrienol.nutrientType] = VitaminEAlphaTocotrienol.fromJson;
-    registeredTypes[VitaminEBetaTocotrienol.nutrientType] = VitaminEBetaTocotrienol.fromJson;
-    registeredTypes[VitaminEDeltaTocotrienol.nutrientType] = VitaminEDeltaTocotrienol.fromJson;
-    registeredTypes[VitaminEGammaTocotrienol.nutrientType] = VitaminEGammaTocotrienol.fromJson;
+    registeredTypes[VitaminEAlphaTocotrienol.nutrientType] =
+        VitaminEAlphaTocotrienol.fromJson;
+    registeredTypes[VitaminEBetaTocotrienol.nutrientType] =
+        VitaminEBetaTocotrienol.fromJson;
+    registeredTypes[VitaminEDeltaTocotrienol.nutrientType] =
+        VitaminEDeltaTocotrienol.fromJson;
+    registeredTypes[VitaminEGammaTocotrienol.nutrientType] =
+        VitaminEGammaTocotrienol.fromJson;
 
     registeredTypes[VitaminEAdded.nutrientType] = VitaminEAdded.fromJson;
 
-    registeredTypes[VitaminK1Dihydrophylloquinone.nutrientType] = VitaminK1Dihydrophylloquinone.fromJson;
-    registeredTypes[VitaminK1Phylloquinone.nutrientType] = VitaminK1Phylloquinone.fromJson;
-    registeredTypes[VitaminK2Menaquinone.nutrientType] = VitaminK2Menaquinone.fromJson;
+    registeredTypes[VitaminK1Dihydrophylloquinone.nutrientType] =
+        VitaminK1Dihydrophylloquinone.fromJson;
+    registeredTypes[VitaminK1Phylloquinone.nutrientType] =
+        VitaminK1Phylloquinone.fromJson;
+    registeredTypes[VitaminK2Menaquinone.nutrientType] =
+        VitaminK2Menaquinone.fromJson;
 
     // ---- Vitamin B's ---- //
     registeredTypes[Riboflavin.nutrientType] = Riboflavin.fromJson;
@@ -102,7 +109,8 @@ class VitaminFactory {
     registeredTypes[Thiamin.nutrientType] = Thiamin.fromJson;
 
     // ---- Vitamin C ---- //
-    registeredTypes[VitaminCTotalAscorbicAcid.nutrientType] = VitaminCTotalAscorbicAcid.fromJson;
+    registeredTypes[VitaminCTotalAscorbicAcid.nutrientType] =
+        VitaminCTotalAscorbicAcid.fromJson;
   }
 
   VitaminFactory.empty() {}
@@ -115,7 +123,8 @@ class VitaminFactory {
     final type = json['type'];
     final serializer = registeredTypes[type];
     if (serializer == null && defaultSerializer == null) {
-      throw Exception("Unknown vitamin type: $type. Did you maybe forget to register with \"vitaminFactory.registerType('$type', ...)\"");
+      throw Exception(
+          "Unknown vitamin type: $type. Did you maybe forget to register with \"vitaminFactory.registerType('$type', ...)\"");
     }
     return serializer?.call(json) ?? defaultSerializer!.call(json);
   }

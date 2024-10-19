@@ -9,11 +9,12 @@ import 'distribution/calorie_distribution_view.dart';
 import 'macros/macro_distribution_view.dart';
 
 class MacroNutrientsStats extends StatefulWidget {
-  const MacroNutrientsStats({Key? key,
+  const MacroNutrientsStats({
+    super.key,
     required this.plan,
     required this.foods,
     this.selectedDay,
-  }) : super(key: key);
+  });
 
   final List<PortionedFood> foods;
   final MealPlan plan;
@@ -24,7 +25,6 @@ class MacroNutrientsStats extends StatefulWidget {
 }
 
 class _MacroNutrientsStatsState extends State<MacroNutrientsStats> {
-
   List<PortionedFood> get foods => widget.foods;
   MealPlan get plan => widget.plan;
   PlanDay? get selectedDay => widget.selectedDay;
@@ -35,11 +35,12 @@ class _MacroNutrientsStatsState extends State<MacroNutrientsStats> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 25.0, bottom: 10.0),
-          child: Text(S.of(context).macrosAndGroups, style: Theme.of(context).textTheme.headlineMedium),
+          padding: const EdgeInsets.only(top: 25.0, bottom: 10.0),
+          child: Text(S.of(context).macrosAndGroups,
+              style: Theme.of(context).textTheme.headlineMedium),
         ),
         Container(
-          padding: EdgeInsets.only(top: 15.0),
+            padding: const EdgeInsets.only(top: 15.0),
             height: 250,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -47,22 +48,21 @@ class _MacroNutrientsStatsState extends State<MacroNutrientsStats> {
                 MacroDistributionView(foods: foods),
                 // FoodGroupDistribution(foods: foods),
               ],
-            )
-        ),
+            )),
         Padding(
-          padding: EdgeInsets.only(top: 35.0),
-          child: Text(S.of(context).calorieDistribution, style: Theme.of(context).textTheme.headlineMedium),
+          padding: const EdgeInsets.only(top: 35.0),
+          child: Text(S.of(context).calorieDistribution,
+              style: Theme.of(context).textTheme.headlineMedium),
         ),
         Container(
-            padding: EdgeInsets.only(top: 10.0),
+            padding: const EdgeInsets.only(top: 10.0),
             height: 430,
             width: 800,
             child: CalorieDistributionView(
               foods: foods,
               plan: plan,
               selectedDay: selectedDay,
-            )
-        )
+            ))
       ],
     );
   }

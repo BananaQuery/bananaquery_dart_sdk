@@ -1,21 +1,23 @@
-import 'package:banana_query_core/portions/i_food_portion.dart';
-import 'package:banana_query_localization/generated/l10n.dart';
+import 'package:banana_query_core/portions/food_portion.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_font_icons/flutter_font_icons.dart';
 
-typedef OnSelectionChanged = Function(IFoodPortion);
+typedef OnSelectionChanged = Function(FoodPortion);
 
 class PortionsDropdownField extends StatefulWidget {
   PortionsDropdownField(
-      {super.key, required this.portions,
+      {super.key,
+      required this.portions,
       this.initialValue,
       this.onChanged,
-      this.onPortionMenuOpened});
+      this.onPortionMenuOpened,
+      this.isDense = false});
 
-  List<IFoodPortion> portions;
-  IFoodPortion? initialValue;
+  List<FoodPortion> portions;
+  FoodPortion? initialValue;
   OnSelectionChanged? onChanged;
   Function? onPortionMenuOpened;
+  bool isDense;
 
   @override
   State<StatefulWidget> createState() {
@@ -24,12 +26,13 @@ class PortionsDropdownField extends StatefulWidget {
 }
 
 class PortionDropdownFieldState extends State<PortionsDropdownField> {
-  List<IFoodPortion> get portions => widget.portions;
-  IFoodPortion? get initialValue => widget.initialValue;
+  List<FoodPortion> get portions => widget.portions;
+  FoodPortion? get initialValue => widget.initialValue;
   OnSelectionChanged? get onChanged => widget.onChanged;
   Function? get onPortionMenuOpened => widget.onPortionMenuOpened;
+  bool get isDense => widget.isDense;
 
-  IFoodPortion? getFirstPortion() {
+  FoodPortion? getFirstPortion() {
     try {
       return portions.first;
     } catch (e) {
@@ -46,18 +49,10 @@ class PortionDropdownFieldState extends State<PortionsDropdownField> {
         ?.copyWith(
             color: Theme.of(context).colorScheme.onSurface.withOpacity(.5));
 
-    return DropdownButtonFormField<IFoodPortion>(
+    return DropdownButtonFormField<FoodPortion>(
       // Callback that sets the selected popup menus item.
       value: initialValue ?? getFirstPortion(),
       style: portionTextStyle,
-      selectedItemBuilder: (BuildContext context) {
-        return portions.map((IFoodPortion portion) {
-          return Text(portion.title,
-              style: selectedItemStyle,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis);
-        }).toList();
-      },
       icon: Container(
         width: 10,
         margin: const EdgeInsets.only(right: 7.0),
@@ -67,14 +62,15 @@ class PortionDropdownFieldState extends State<PortionsDropdownField> {
         ),
       ),
       isDense: true,
-      onChanged: (IFoodPortion? newPortion) {
+      onChanged: (FoodPortion? newPortion) {
         if (newPortion != null) {
           onChanged?.call(newPortion);
         }
       },
       decoration: InputDecoration(
-          border: OutlineInputBorder(),
-          labelText: S.of(context).portion,
+          isDense: isDense,
+          border: const OutlineInputBorder(),
+          // labelText: S.of(context).portion,
           floatingLabelBehavior: FloatingLabelBehavior.always),
       onTap: () => onPortionMenuOpened?.call(),
       itemHeight: kMinInteractiveDimension,
@@ -82,14 +78,12 @@ class PortionDropdownFieldState extends State<PortionsDropdownField> {
       dropdownColor: Theme.of(context).colorScheme.surface,
       autofocus: false,
       items: portions
-          .map((e) => DropdownMenuItem<IFoodPortion>(
+          .map((e) => DropdownMenuItem<FoodPortion>(
               value: e,
               child: SizedBox(
-                width: 200,
-                child: Text(e.title,
-                    style: portionTextStyle,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis),
+                width: 159,
+                child:
+                    Text(e.title, maxLines: 1, overflow: TextOverflow.ellipsis),
               )))
           .toList(),
     );

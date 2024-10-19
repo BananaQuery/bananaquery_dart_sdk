@@ -1,8 +1,8 @@
+import 'package:example/items/recipe_item_demo.dart';
 import 'package:example/plan/meal_plan_demo.dart';
-import 'package:example/search/search_demo.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'components/components_demo.dart';
 import 'items/food_item_demo.dart';
 
 class DemoPage extends StatefulWidget {
@@ -15,25 +15,27 @@ class DemoPage extends StatefulWidget {
 }
 
 class DemoPageState extends State<DemoPage> {
-
   int activeDemo = 0;
 
   List<String> widgets = [
-    'Food Item Widget',
-    'Meal Plan',
-    'Food Search',
-    'Nutrient Table'
+    'Components',
+    'Food Item Page',
+    'Recipe Page',
+    'Meal Plan'
   ];
 
   Widget getActiveDemo() {
     if (activeDemo == 0) {
-      return const FoodItemDemo();
+      return const ComponentsDemo();
     }
     if (activeDemo == 1) {
-      return const MealPlanDemo();
+      return const FoodItemDemo();
     }
     if (activeDemo == 2) {
-      return const SearchDemo();
+      return const RecipeItemDemo();
+    }
+    if (activeDemo == 3) {
+      return const MealPlanDemo();
     }
     return const Text('Nutrient Table');
   }
@@ -41,14 +43,14 @@ class DemoPageState extends State<DemoPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Demo Page'),
-      ),
-      body: Row(
-        children: [
-          SizedBox(
-            width: 200,
-            child: NavigationRail(
+        appBar: AppBar(
+          title: const Text('Demo Page'),
+        ),
+        body: Row(
+          children: [
+            SizedBox(
+              width: 200,
+              child: NavigationRail(
                 extended: true,
                 selectedIndex: activeDemo,
                 onDestinationSelected: (int index) {
@@ -58,33 +60,28 @@ class DemoPageState extends State<DemoPage> {
                 },
                 destinations: const [
                   NavigationRailDestination(
-                    icon: Icon(Icons.favorite_border),
-                    selectedIcon: Icon(Icons.fastfood),
-                    label: Text('Food Item Widget'),
+                    icon: Icon(Icons.settings),
+                    label: Text('Components'),
                   ),
                   NavigationRailDestination(
-                    icon: Icon(Icons.calendar_month),
-                    selectedIcon: Icon(Icons.calendar_month),
-                    label: Text('Meal Plan'),
+                    icon: Icon(Icons.apple),
+                    label: Text('Food Item Page'),
                   ),
                   NavigationRailDestination(
-                    icon: Icon(Icons.search),
-                    selectedIcon: Icon(Icons.search),
-                    label: Text('Food Search'),
+                    icon: Icon(Icons.fastfood),
+                    label: Text('Recipe Page'),
                   ),
                   NavigationRailDestination(
                     icon: Icon(Icons.table_chart),
-                    selectedIcon: Icon(Icons.table_chart),
-                    label: Text('Nutrient Table'),
+                    label: Text('Meal Plan Page'),
                   ),
                 ],
+              ),
             ),
-          ),
-          Expanded(
+            Expanded(
               child: getActiveDemo(),
-          )
-        ],
-      )
-    );
+            )
+          ],
+        ));
   }
 }

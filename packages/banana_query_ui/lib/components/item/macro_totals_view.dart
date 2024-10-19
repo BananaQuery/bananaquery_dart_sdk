@@ -4,12 +4,14 @@ import 'package:banana_query_localization/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class MacroTotalsView extends StatelessWidget {
-  const MacroTotalsView({ key,
-    required this.totals,
-    this.valueStyle,
-    this.labelStyle,
-    this.padding,
-    this.color = const Color(0xFFA5B4B0)}) : super(key: key);
+  const MacroTotalsView(
+      {key,
+      required this.totals,
+      this.valueStyle,
+      this.labelStyle,
+      this.padding,
+      this.color = const Color(0xFFA5B4B0)})
+      : super(key: key);
 
   final MacroTotals? totals;
   final TextStyle? valueStyle;
@@ -19,7 +21,11 @@ class MacroTotalsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextStyle defaultValueStyle = Theme.of(context).textTheme.bodyMedium!.copyWith(color: Theme.of(context).colorScheme.onSecondary.withOpacity(.8));
+    TextStyle defaultValueStyle = Theme.of(context)
+        .textTheme
+        .bodyMedium!
+        .copyWith(
+            color: Theme.of(context).colorScheme.onSecondary.withOpacity(.8));
     TextStyle defaultLabelStyle = Theme.of(context).textTheme.bodyMedium!;
 
     TextStyle usedValueStyle = valueStyle ?? defaultValueStyle;
@@ -33,68 +39,83 @@ class MacroTotalsView extends StatelessWidget {
     }
 
     return Container(
-        padding: padding ?? const EdgeInsets.symmetric(horizontal: 15.0),
-        alignment: Alignment.center,
-        child: Row(
-          children: [
-            Expanded(
-              child: Container(
-                height: 35,
-                width: 50,
-                color: color,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('${getValueString(totals?.carbs)}g',
-                        style: usedValueStyle),
-                    Text(S.of(context).carb, style: usedLabelStyle,)
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                height: 35,
-                width: 50,
-                color: color,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('${getValueString(totals?.proteins)}g', style: usedValueStyle),
-                    Text(S.of(context).protein, style: usedLabelStyle,)
-                  ],
-                ),
-              ),
-            ),
-            Expanded(
-              child: Container(
-                height: 35,
-                width: 50,
-                color: color,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text('${getValueString(totals?.fats)}g', style: usedValueStyle),
-                    Text(S.of(context).fat, style: usedLabelStyle,)
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              height: 35,
+      padding: padding ?? const EdgeInsets.symmetric(horizontal: 15.0),
+      alignment: Alignment.center,
+      child: Row(
+        children: [
+          Expanded(
+            child: Container(
+              height: 40,
               width: 50,
-              margin: EdgeInsets.only(left: 5.0, right: 5.0),
               color: color,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text('${getValueString(totals?.kilocalories)} cal', style: usedValueStyle),
-                  Text(S.of(context).energy, style: usedLabelStyle,)
+                  Text('${getValueString(totals?.carbs)}g',
+                      style: usedValueStyle),
+                  Text(
+                    S.of(context).carb,
+                    style: usedLabelStyle,
+                  )
                 ],
               ),
             ),
-          ],
-        ),
+          ),
+          Expanded(
+            child: Container(
+              height: 40,
+              width: 50,
+              color: color,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('${getValueString(totals?.proteins)}g',
+                      style: usedValueStyle),
+                  Text(
+                    S.of(context).protein,
+                    style: usedLabelStyle,
+                  )
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              height: 40,
+              width: 50,
+              color: color,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('${getValueString(totals?.fats)}g',
+                      style: usedValueStyle),
+                  Text(
+                    S.of(context).fat,
+                    style: usedLabelStyle,
+                  )
+                ],
+              ),
+            ),
+          ),
+          Container(
+            height: 40,
+            width: 50,
+            margin: const EdgeInsets.only(left: 5.0, right: 5.0),
+            color: color,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('${getValueString(totals?.kilocalories)} cal',
+                    style: usedValueStyle),
+                Text(
+                  S.of(context).energy,
+                  style: usedLabelStyle,
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

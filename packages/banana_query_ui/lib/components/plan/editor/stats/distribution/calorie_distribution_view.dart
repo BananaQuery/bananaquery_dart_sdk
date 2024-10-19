@@ -6,22 +6,24 @@ import 'package:flutter/material.dart';
 import 'meal_calorie_distribution.dart';
 
 class CalorieDistributionView extends StatefulWidget {
-  const CalorieDistributionView({Key? key,
+  const CalorieDistributionView({
+    super.key,
     required this.plan,
     required this.foods,
     this.selectedDay,
-  }) : super(key: key);
+  });
 
   final List<PortionedFood> foods;
   final MealPlan plan;
   final PlanDay? selectedDay;
 
   @override
-  _CalorieDistributionViewState createState() => _CalorieDistributionViewState();
+  _CalorieDistributionViewState createState() =>
+      _CalorieDistributionViewState();
 }
 
-class _CalorieDistributionViewState extends State<CalorieDistributionView> with SingleTickerProviderStateMixin {
-
+class _CalorieDistributionViewState extends State<CalorieDistributionView>
+    with SingleTickerProviderStateMixin {
   // -------------------------------- PROPS -------------------------------- //
   PlanDay? get selectedDay => widget.selectedDay;
 
@@ -84,34 +86,33 @@ class _CalorieDistributionViewState extends State<CalorieDistributionView> with 
         //     ),
         //   ],
         // ),
-        Padding(
+        const Padding(
           padding: EdgeInsets.only(top: 25.0),
         ),
         Expanded(
-            child: Center(
+          child: Center(
               // mainAxisAlignment: MainAxisAlignment.center,
               // crossAxisAlignment: CrossAxisAlignment.center,
-                child:
-                SizedBox(
-                  width: 750,
-                  child: MealCalorieDistribution(plan: plan, selectedDay: selectedDay),)
-
-            ),
-            // TabBarView(
-            //   controller: tabController,
-            //   children: [
-            //     FoodCalorieDistribution(foods: foods),
-            //     Center(
-            //       // mainAxisAlignment: MainAxisAlignment.center,
-            //       // crossAxisAlignment: CrossAxisAlignment.center,
-            //       child:
-            //         SizedBox(
-            //           width: 600,
-            //           child: MealCalorieDistribution(plan: plan),)
-            //
-            //     )
-            //   ],
-            // )
+              child: SizedBox(
+            width: 750,
+            child:
+                MealCalorieDistribution(plan: plan, selectedDay: selectedDay),
+          )),
+          // TabBarView(
+          //   controller: tabController,
+          //   children: [
+          //     FoodCalorieDistribution(foods: foods),
+          //     Center(
+          //       // mainAxisAlignment: MainAxisAlignment.center,
+          //       // crossAxisAlignment: CrossAxisAlignment.center,
+          //       child:
+          //         SizedBox(
+          //           width: 600,
+          //           child: MealCalorieDistribution(plan: plan),)
+          //
+          //     )
+          //   ],
+          // )
         )
       ],
     );

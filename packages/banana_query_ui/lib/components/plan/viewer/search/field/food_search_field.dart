@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:banana_query_core/nutritional_entity.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
+import 'package:drop_down_search_field/drop_down_search_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_font_icons/flutter_font_icons.dart';
 
@@ -10,9 +11,10 @@ typedef SearchMethod = Future<List<NutritionalEntity>> Function(String);
 class FoodSearchField extends StatefulWidget {
   const FoodSearchField({
     super.key,
-    required this.autofocus,
     this.searcher,
     this.onResults,
+    this.autofocus = false,
+    this.fieldConfig,
     this.focusNode,
     this.controller,
     this.contentPadding,
@@ -21,6 +23,8 @@ class FoodSearchField extends StatefulWidget {
 
   final bool autofocus;
   final OnResults? onResults;
+  final TextFieldConfiguration? fieldConfig;
+
   final FocusNode? focusNode;
   final TextEditingController? controller;
 

@@ -35,10 +35,10 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
 
   /// The default portion of an item is the first portion in the list.
   /// unless the list is empty, in which case it is a zero portion.
-  IFoodPortion getItemDefaultPortion(NutritionalEntity item) {
+  FoodPortion getItemDefaultPortion(NutritionalEntity item) {
     try {
       return item.portions.first;
-    } catch(e) {
+    } catch (e) {
       return const FoodPortion.zero();
     }
   }
@@ -59,12 +59,12 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
           S.of(context).whichVersionOfThisFoodShouldWeUse,
           style: displayStyle,
         ),
-        Padding(padding: EdgeInsets.only(bottom: 10.0)),
+        const Padding(padding: EdgeInsets.only(bottom: 10.0)),
         SelectableText(
           S.of(context).conflictingItemSelectionDialogMessageOne,
         ),
         SelectableText(S.of(context).conflictingItemSelectionDialogMessageTwo),
-        Padding(padding: EdgeInsets.only(bottom: 20.0)),
+        const Padding(padding: EdgeInsets.only(bottom: 20.0)),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -85,7 +85,7 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
                         child: Container(
                           height: 55,
                           color: secondary,
-                          padding: EdgeInsets.only(left: 15.0),
+                          padding: const EdgeInsets.only(left: 15.0),
                           alignment: Alignment.centerLeft,
                           child: Text(
                               S.of(context).conflictingItemMealPlanItemTitle,
@@ -99,7 +99,7 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
                       quantity: 1,
                       portion: getItemDefaultPortion(planItem))),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(right: 20.0),
             ),
             SelectableContainer(
@@ -119,7 +119,7 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
                         child: Container(
                           height: 55,
                           color: secondary,
-                          padding: EdgeInsets.only(left: 15.0),
+                          padding: const EdgeInsets.only(left: 15.0),
                           alignment: Alignment.centerLeft,
                           child: Text(
                               S.of(context).conflictingItemDatabaseItemTitle,
@@ -139,7 +139,7 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             Padding(
-                padding: EdgeInsets.only(top: 45.0, right: 50.0),
+                padding: const EdgeInsets.only(top: 45.0, right: 50.0),
                 child: ElevatedButton(
                     onPressed: () async {
                       if (selectedItem != null && selectedItem != planItem) {

@@ -250,7 +250,7 @@ class PasteSelectionAction extends Action<PasteSelectionIntent> {
                     dayIndex: dayIndex,
                     dayCount: dayCount,
                     mealIndex: mealIndex,
-                    foodUid: f.item.id!,
+                    foodUid: f.item.id,
                     portion: f.portion,
                     quantity: f.quantity,
                   ))
@@ -269,7 +269,7 @@ class PasteSelectionAction extends Action<PasteSelectionIntent> {
                     dayIndex: dayIndex,
                     dayCount: 1,
                     mealIndex: mealIndex,
-                    foodUid: f.item.id!,
+                    foodUid: f.item.id,
                     portion: f.portion,
                     quantity: f.quantity,
                   ))
@@ -289,6 +289,7 @@ class PasteSelectionAction extends Action<PasteSelectionIntent> {
 
       return null;
     }
+    return null;
   }
 }
 
@@ -328,6 +329,7 @@ class ExpandSelectionAction extends Action<ExpandSelectionIntent> {
       return commandExecutor?.call(
           ExpandEntryIntoNextDay(entries: entriesToExpand, plan: intent.plan));
     }
+    return null;
   }
 }
 
@@ -347,5 +349,6 @@ class ShrinkSelectionAction extends Action<ShrinkSelectionIntent> {
       return commandExecutor?.call(
           ShrinkPlanEntryCommand(entries: entriesToShrink, plan: intent.plan));
     }
+    return null;
   }
 }

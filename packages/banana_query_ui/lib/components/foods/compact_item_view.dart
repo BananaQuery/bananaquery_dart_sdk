@@ -1,4 +1,3 @@
-
 import 'package:banana_query_core/banana_query_api.dart';
 import 'package:banana_query_core/foods/portioned_food.dart';
 import 'package:banana_query_core/helpers/macro_totals.dart';
@@ -9,7 +8,6 @@ import 'package:banana_query_core/nutrients/macro/lipids/total/total_lipids.dart
 import 'package:banana_query_core/nutrients/macro/proteins/total_protein.dart';
 import 'package:banana_query_core/nutrients/micro/minerals/mineral.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/vitamin.dart';
-import 'package:banana_query_core/portions/i_food_portion.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -71,10 +69,10 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
 
   /// The default portion of an item is the first portion in the list.
   /// unless the list is empty, in which case it is a zero portion.
-  IFoodPortion getItemDefaultPortion(NutritionalEntity item) {
+  FoodPortion getItemDefaultPortion(NutritionalEntity item) {
     try {
       return item.portions.first;
-    } catch(e) {
+    } catch (e) {
       return const FoodPortion.zero();
     }
   }
@@ -83,7 +81,7 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
   Widget build(BuildContext context) {
     Color secondaryColor = Theme.of(context).colorScheme.secondary;
     Color onSecondary = Theme.of(context).colorScheme.onSecondary;
-    Color surface = Theme.of(context).colorScheme.background;
+    Color surface = Theme.of(context).colorScheme.surface;
 
     return LayoutBuilder(
       builder: (context, constraints) {
@@ -111,7 +109,8 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
                     ),
                   ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                padding: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 20.0),
                 child: PortionsDropdownField(portions: foodItem.item.portions),
               ),
               Expanded(
@@ -123,7 +122,8 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
                           width: 400,
                           child: Column(
                             children: [
-                              Padding(padding: EdgeInsets.only(top: 20.0)),
+                              const Padding(
+                                  padding: EdgeInsets.only(top: 20.0)),
                               Wrap(
                                 alignment: WrapAlignment.center,
                                 children: [
@@ -133,7 +133,8 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
                                       child: EditableMacro(
                                         macro: S.of(context).calories,
                                         nutrient: macroTotals?.kilocalories,
-                                        nutrientType: EnergyNutrient.nutrientType,
+                                        nutrientType:
+                                            EnergyNutrient.nutrientType,
                                       )),
                                   SizedBox(
                                       height: 120,
@@ -141,7 +142,8 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
                                       child: EditableMacro(
                                         macro: S.of(context).carbohydrates,
                                         nutrient: macroTotals?.carbs,
-                                        nutrientType: CarbohydrateDifference.nutrientType,
+                                        nutrientType:
+                                            CarbohydrateDifference.nutrientType,
                                       )),
                                   SizedBox(
                                       height: 120,
@@ -165,7 +167,8 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
                                 width: 300,
                                 child: NutrientTable(
                                   title: S.of(context).minerals,
-                                  values: NutrientTotalsCalculator.getNutrientTotals<Mineral>([foodItem]),
+                                  values: NutrientTotalsCalculator
+                                      .getNutrientTotals<Mineral>([foodItem]),
                                   editable: false,
                                 ),
                               ),
@@ -176,7 +179,8 @@ class CompactFoodItemtViewState extends State<CompactFoodItemtView>
                                 width: 300,
                                 child: NutrientTable(
                                   title: S.of(context).vitamins,
-                                  values: NutrientTotalsCalculator.getNutrientTotals<Vitamin>([foodItem]),
+                                  values: NutrientTotalsCalculator
+                                      .getNutrientTotals<Vitamin>([foodItem]),
                                   editable: false,
                                 ),
                               ),

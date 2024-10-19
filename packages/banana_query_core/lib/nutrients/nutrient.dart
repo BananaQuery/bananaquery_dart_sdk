@@ -37,4 +37,8 @@ abstract class Nutrient {
   String toString() {
     return 'Nutrient{type: $type, amount: $amount, units: $units}';
   }
+
+  double amountInGrams(double weight) {
+    return (amount / 100) * weight;
+  }
 }

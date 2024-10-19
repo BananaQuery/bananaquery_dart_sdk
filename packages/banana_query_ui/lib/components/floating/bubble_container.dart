@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BubbleContainer extends StatelessWidget {
-  const BubbleContainer({Key? key,  this.color, this.child }) : super(key: key);
+  const BubbleContainer({super.key, this.color, this.child});
 
   final Color? color;
   final Widget? child;
@@ -17,7 +17,9 @@ class BubbleContainer extends StatelessWidget {
               height: 10,
               margin: const EdgeInsets.only(left: 35.0),
               alignment: Alignment.topLeft,
-              child: CustomPaint(painter: _BubbleArrow(color: color),),
+              child: CustomPaint(
+                painter: _BubbleArrow(color: color),
+              ),
             )
           ],
         ),
@@ -33,11 +35,10 @@ class BubbleContainer extends StatelessWidget {
       ],
     );
   }
-
 }
 
 class _BubbleArrow extends CustomPainter {
-  _BubbleArrow({ this.color });
+  _BubbleArrow({this.color});
 
   final Color? color;
 
@@ -46,11 +47,10 @@ class _BubbleArrow extends CustomPainter {
     var paint = Paint()..color = color ?? Colors.transparent;
     var path = Path();
 
-
     path.lineTo(-5, 10);
     path.lineTo(5, 10);
     path.lineTo(0, 0);
-    path = path.shift(Offset(-size.width/3, 00));
+    path = path.shift(Offset(-size.width / 3, 00));
     canvas.drawPath(path, paint);
   }
 

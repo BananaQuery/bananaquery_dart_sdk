@@ -9,11 +9,8 @@ import 'macro_nutrients_stats.dart';
 import 'micros/micro_nutrients_stats.dart';
 
 class PlanStatsView extends StatefulWidget {
-  const PlanStatsView({super.key,
-    required this.plan,
-    required this.foods,
-    this.selectedDay
-  });
+  const PlanStatsView(
+      {super.key, required this.plan, required this.foods, this.selectedDay});
 
   final MealPlan plan;
   final List<PortionedFood> foods;
@@ -25,7 +22,8 @@ class PlanStatsView extends StatefulWidget {
   }
 }
 
-class PlanStatsViewState extends State<PlanStatsView> with SingleTickerProviderStateMixin {
+class PlanStatsViewState extends State<PlanStatsView>
+    with SingleTickerProviderStateMixin {
   // -------------------------------- PROPS -------------------------------- //
   MealPlan get plan => widget.plan;
   List<PortionedFood> get foods => widget.foods;
@@ -55,27 +53,24 @@ class PlanStatsViewState extends State<PlanStatsView> with SingleTickerProviderS
               tabs: [
                 Tab(text: S.of(context).planEditorViewMacroNutrients),
                 Tab(text: S.of(context).planEditorViewMicroNutrients),
-              ]
-          ),
+              ]),
         ),
-        Padding(padding: EdgeInsets.only(top: 10)),
+        const Padding(padding: EdgeInsets.only(top: 10)),
         SizedBox(
-          height: 800,
-          width: 800,
-          child: TabBarView(
-              controller: tabController,
-              children: [
-                MacroNutrientsStats(
-                  foods: foods,
-                  plan: plan,
-                  selectedDay: selectedDay,
-                ),
-                MicroNutrientStats(
-                  foods: selectedDay != null ? plan.getFoodsByDay(selectedDay!) : foods,
-                )
-              ]
-          )
-        ),
+            height: 800,
+            width: 800,
+            child: TabBarView(controller: tabController, children: [
+              MacroNutrientsStats(
+                foods: foods,
+                plan: plan,
+                selectedDay: selectedDay,
+              ),
+              MicroNutrientStats(
+                foods: selectedDay != null
+                    ? plan.getFoodsByDay(selectedDay!)
+                    : foods,
+              )
+            ])),
       ],
     );
   }

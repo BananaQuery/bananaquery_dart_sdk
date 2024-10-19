@@ -1,8 +1,8 @@
 import 'package:banana_query_core/foods/item/food_item.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
-import 'package:banana_query_localization/l10n/pages_localization_strings.dart';
-import 'package:banana_query_ui/components/foods/food_item_view.dart';
+import 'package:banana_query_ui/components/foods/item/food_item_view.dart';
 import 'package:flutter/material.dart';
+import 'package:shadcn_ui/shadcn_ui.dart';
 
 import 'demo_page.dart';
 
@@ -16,6 +16,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // return ShadApp(
+    //   theme: ShadThemeData(
+    //     colorScheme: ShadColorScheme.fromName("stone"),
+    //     brightness: Brightness.dark,
+    //   ),
+    //   home: const DemoPage(),
+    // );
     return MaterialApp(
       localizationsDelegates: const [
         S.delegate,
@@ -41,8 +48,20 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        inputDecorationTheme: const InputDecorationTheme(
+          isDense: true,
+          hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
+          counterStyle: TextStyle(color: Colors.grey),
+          suffixStyle: TextStyle(color: Colors.grey),
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.all(Radius.circular(5)),
+              borderSide: BorderSide.none),
+          filled: true,
+          fillColor: Colors.white,
+          focusColor: Colors.white,
+        ),
       ),
-      home: DemoPage(),
+      home: const DemoPage(),
     );
   }
 }

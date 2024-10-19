@@ -21,7 +21,7 @@ class NoChangesView extends StatelessWidget {
               S.of(context).noChangesHaveBeenMade,
               style: displayStyle,
             ),
-            Padding(padding: EdgeInsets.only(top: 20.0)),
+            const Padding(padding: EdgeInsets.only(top: 20.0)),
             Text(S.of(context).weWillKeepUsingADifferentVersion),
             Text(S.of(context).theItemWillStillBeMarkedAsNotSynced)
           ],
@@ -42,7 +42,7 @@ class NoChangesView extends StatelessWidget {
                     S.of(context).finish,
                     style: TextStyle(color: onPrimary),
                   ))),
-          Padding(padding: EdgeInsets.only(right: 20.0)),
+          const Padding(padding: EdgeInsets.only(right: 20.0)),
         ],
       ),
     );

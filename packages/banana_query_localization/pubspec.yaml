@@ -8,7 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  intl_translation: ^0.18.2
+  intl_translation: ^0.20.0
   flutter:
     sdk: flutter
 
@@ -16,7 +16,7 @@ dependency_overrides:
 #  path: ^1.8.2
 #  dart_style: ^2.2.3
 #  args: ^2.3.1
-  intl: ^0.18.1
+  intl: ^0.19.0
 #  analyzer: 3.4.1
 #  petitparser: ^5.0.0
 

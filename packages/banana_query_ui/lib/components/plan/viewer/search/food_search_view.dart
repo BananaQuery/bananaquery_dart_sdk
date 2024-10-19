@@ -78,16 +78,19 @@ class FoodSearchViewState extends State<FoodSearchView> {
             child: Scaffold(
               backgroundColor: Colors.transparent,
               body: results.isNotEmpty
-                  ? FoodItemOptionsView(
-                  shrinkWrap: false,
-                  foodItems: results,
-                  selectedEntry: selectedEntry,
-                  onSelect: (PortionedFood entry) {
-                    setState(() {
-                      selectedEntry = entry;
-                    });
-                  }
+                  ? SizedBox(
+                width: 600,
+                child: FoodItemOptionsView(
+                    shrinkWrap: false,
+                    foodItems: results,
+                    selectedEntry: selectedEntry,
+                    onSelect: (PortionedFood entry) {
+                      setState(() {
+                        selectedEntry = entry;
+                      });
+                    }
                 )
+              )
                 : isLoading ? const Center(child: CircularProgressIndicator()) : const SearchEmptyState(),
               floatingActionButton: FloatingActionButton(
                 backgroundColor: selectedEntry != null

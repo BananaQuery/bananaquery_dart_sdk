@@ -2,6 +2,8 @@ import 'package:banana_query_localization/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
 class DatabaseUpdateConfirmation extends StatelessWidget {
+  const DatabaseUpdateConfirmation({super.key});
+
   @override
   Widget build(BuildContext context) {
     Color onPrimary = Theme.of(context).colorScheme.onPrimary;
@@ -19,7 +21,7 @@ class DatabaseUpdateConfirmation extends StatelessWidget {
               S.of(context).weHaveUpdatedYourDatabase,
               style: displayStyle,
             ),
-            Padding(padding: EdgeInsets.only(top: 20.0)),
+            const Padding(padding: EdgeInsets.only(top: 20.0)),
             Text(S.of(context).yourFoodItemWillBeMarkedAsSynced),
           ],
         ),
@@ -39,7 +41,7 @@ class DatabaseUpdateConfirmation extends StatelessWidget {
                     S.of(context).finish,
                     style: TextStyle(color: onPrimary),
                   ))),
-          Padding(padding: EdgeInsets.only(right: 20.0)),
+          const Padding(padding: EdgeInsets.only(right: 20.0)),
         ],
       ),
     );

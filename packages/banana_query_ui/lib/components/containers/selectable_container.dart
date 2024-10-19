@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 typedef OnTap = Function(bool);
 
 class SelectableContainer extends StatelessWidget {
-  SelectableContainer({this.isSelected = false, this.onTap, this.child});
+  const SelectableContainer(
+      {super.key, this.isSelected = false, this.onTap, this.child});
 
   final bool isSelected;
   final OnTap? onTap;

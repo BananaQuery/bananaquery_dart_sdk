@@ -5,7 +5,6 @@ import 'package:banana_query_core/nutrients/macro/energy/energy_nutrient.dart';
 import '../../factories/nutrient/nutrient_factory.dart';
 import '../../nutritional_entity.dart';
 import '../../portions/food_portion.dart';
-import '../../portions/i_food_portion.dart';
 
 class Equivalence extends NutritionalEntity {
   Equivalence({
@@ -33,7 +32,7 @@ class Equivalence extends NutritionalEntity {
   /// When a equivalence can't have common portions you can leave this empty
   /// and the portions will be defined individually by the items.
   @override
-  final List<IFoodPortion> portions;
+  final List<FoodPortion> portions;
   final List<PortionedFood> items;
 
   @override
@@ -48,7 +47,7 @@ class Equivalence extends NutritionalEntity {
         String? description,
         String? databaseId,
       List<Nutrient>? nutrients,
-      List<IFoodPortion>? portions}) {
+      List<FoodPortion>? portions}) {
     if (nutrients != null) {
       throw ArgumentError(
           "Equivalence can't have nutrients, nutrients are defined by the items");
@@ -128,7 +127,7 @@ class Equivalence extends NutritionalEntity {
           : [],
       portions = json['portions'] != null
           ? json['portions']
-              .map<IFoodPortion>((portion) => FoodPortion.fromJson(portion))
+              .map<FoodPortion>((portion) => FoodPortion.fromJson(portion))
               .toList()
           : [];
 
@@ -136,7 +135,7 @@ class Equivalence extends NutritionalEntity {
   String get type => "Equivalence";
 
   @override
-  void addPortion(IFoodPortion portion) {
+  void addPortion(FoodPortion portion) {
     portions.add(portion);
   }
 

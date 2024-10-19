@@ -8,11 +8,14 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  rxdart: ^0.28.0
-  fl_chart: ^0.68.0
   action_slider: ^0.7.0
   data_table_2: ^2.5.15
+  chewie: ^1.8.5
+  fl_chart: ^0.68.0
   flutter_font_icons: ^2.2.7
+  rxdart: ^0.28.0
+  shadcn_flutter: ^0.0.20
+  drop_down_search_field: ^1.0.4
   colonel:
     git: https://github.com/dbrdz/colonel
   keywi:

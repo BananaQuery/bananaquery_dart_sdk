@@ -1,14 +1,10 @@
-import 'dart:html';
-
 import 'package:banana_query_core/commands/food_plan_command.dart';
 import 'package:banana_query_core/plan/meal_plan.dart';
 
 import '../../../day/plan_entry.dart';
 
-
 class ExpandFoodItemEntry extends BananaQueryCommand {
-
-  ExpandFoodItemEntry({ required this.entry, required this.plan });
+  ExpandFoodItemEntry({required this.entry, required this.plan});
 
   final PlanEntry entry;
   final MealPlan plan;
@@ -39,5 +35,4 @@ class ExpandFoodItemEntry extends BananaQueryCommand {
       return true;
     });
   }
-  
 }

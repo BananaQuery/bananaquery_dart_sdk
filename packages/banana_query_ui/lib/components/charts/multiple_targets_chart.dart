@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 
 class MultipleTargetsChart extends StatefulWidget {
   const MultipleTargetsChart(
-      {Key? key, required this.columns, required this.values})
-      : super(key: key);
+      {super.key, required this.columns, required this.values});
 
   final List<Color> availableColors = const [
     Colors.purpleAccent,
@@ -132,27 +131,27 @@ class BarChartSample1State extends State<MultipleTargetsChart> {
       barTouchData: BarTouchData(
         touchTooltipData: BarTouchTooltipData(
             getTooltipItem: (group, groupIndex, rod, rodIndex) {
-              String weekDay = columns[group.x.toInt()];
+          String weekDay = columns[group.x.toInt()];
 
-              return BarTooltipItem(
-                "$weekDay \n",
-                const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
+          return BarTooltipItem(
+            "$weekDay \n",
+            const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+            children: <TextSpan>[
+              TextSpan(
+                text: '${(rod.toY - 1).round().toString()} kcal',
+                style: const TextStyle(
+                  color: Colors.yellow,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
                 ),
-                children: <TextSpan>[
-                  TextSpan(
-                    text: '${(rod.toY - 1).round().toString()} kcal',
-                    style: const TextStyle(
-                      color: Colors.yellow,
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                    ),
-                  ),
-                ],
-              );
-            }),
+              ),
+            ],
+          );
+        }),
         touchCallback: (FlTouchEvent event, barTouchResponse) {
           setState(() {
             if (!event.isInterestedForInteractions ||
@@ -167,8 +166,9 @@ class BarChartSample1State extends State<MultipleTargetsChart> {
       ),
       titlesData: FlTitlesData(
         show: true,
-        rightTitles: AxisTitles(sideTitles: SideTitles(showTitles: false)),
-        topTitles: AxisTitles(
+        rightTitles:
+            const AxisTitles(sideTitles: SideTitles(showTitles: false)),
+        topTitles: const AxisTitles(
           sideTitles: SideTitles(showTitles: false),
         ),
         bottomTitles: AxisTitles(
@@ -183,7 +183,7 @@ class BarChartSample1State extends State<MultipleTargetsChart> {
             },
           ),
         ),
-        leftTitles: AxisTitles(
+        leftTitles: const AxisTitles(
           sideTitles: SideTitles(
             showTitles: false,
           ),
@@ -193,7 +193,7 @@ class BarChartSample1State extends State<MultipleTargetsChart> {
         show: false,
       ),
       barGroups: showingGroups(),
-      gridData: FlGridData(show: false),
+      gridData: const FlGridData(show: false),
     );
   }
 

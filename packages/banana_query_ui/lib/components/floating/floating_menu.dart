@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:rxdart/rxdart.dart';
 
 class FloatingBubbleMenuController {
-  FloatingBubbleMenuController({ isOpened = false })
-    : isOpenedStream = BehaviorSubject<bool>.seeded(isOpened);
+  FloatingBubbleMenuController({isOpened = false})
+      : isOpenedStream = BehaviorSubject<bool>.seeded(isOpened);
 
   final BehaviorSubject<bool> isOpenedStream;
 
@@ -23,7 +23,7 @@ class FloatingBubbleMenuController {
 
 class FloatingMenu extends StatefulWidget {
   const FloatingMenu({
-    Key? key,
+    super.key,
     required this.menuWidth,
     required this.menuHeight,
     this.controller,
@@ -31,7 +31,7 @@ class FloatingMenu extends StatefulWidget {
     this.menu,
     this.onTap,
     this.onDoubleTap,
-  }) : super(key: key);
+  });
 
   final FloatingBubbleMenuController? controller;
   final Widget? child;
@@ -49,14 +49,14 @@ class FloatingMenu extends StatefulWidget {
 }
 
 class FloatingMenuState extends State<FloatingMenu> {
-
   Widget? get _child => widget.child;
   Widget? get _menu => widget.menu;
   double get _height => widget.menuHeight;
   double get _width => widget.menuWidth;
   VoidCallback? get _onTap => widget.onTap;
   VoidCallback? get _onDoubleTap => widget.onDoubleTap;
-  bool get _isDesktopApp => Platform.isMacOS || Platform.isLinux || Platform.isWindows;
+  bool get _isDesktopApp =>
+      Platform.isMacOS || Platform.isLinux || Platform.isWindows;
 
   OverlayEntry? overlayEntry;
   final LayerLink _optionsLayerLink = LayerLink();
@@ -75,8 +75,6 @@ class FloatingMenuState extends State<FloatingMenu> {
 
     super.initState();
   }
-
-
 
   void hideMenu() {
     overlayEntry?.remove();
@@ -104,16 +102,14 @@ class FloatingMenuState extends State<FloatingMenu> {
           );
         },
       );
-      Overlay.of(context, rootOverlay: false)!.insert(overlayEntry!);
+      Overlay.of(context, rootOverlay: false).insert(overlayEntry!);
     }
   }
 
-
   void toggleMenu() {
-    if (overlayEntry == null){
+    if (overlayEntry == null) {
       showMenu();
-    }
-     else {
+    } else {
       hideMenu();
     }
   }
@@ -121,19 +117,18 @@ class FloatingMenuState extends State<FloatingMenu> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      child: GestureDetector(
-        onTap: () {
-          _onTap?.call();
-        },
-        onDoubleTap: _onDoubleTap,
-        onSecondaryTap: () {
-          toggleMenu();
-        },
-        child: CompositedTransformTarget(
-          link: _optionsLayerLink,
-          child: _child,
-        ),
-      )
-    );
+        child: GestureDetector(
+      onTap: () {
+        _onTap?.call();
+      },
+      onDoubleTap: _onDoubleTap,
+      onSecondaryTap: () {
+        toggleMenu();
+      },
+      child: CompositedTransformTarget(
+        link: _optionsLayerLink,
+        child: _child,
+      ),
+    ));
   }
 }

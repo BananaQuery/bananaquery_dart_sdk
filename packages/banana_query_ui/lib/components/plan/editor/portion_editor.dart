@@ -1,7 +1,5 @@
 import 'package:banana_query_core/portions/food_portion.dart';
-import 'package:banana_query_core/portions/i_food_portion.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,7 +11,7 @@ class PortionsEditor extends StatefulWidget {
   });
 
   final String title;
-  final IFoodPortion? portion;
+  final FoodPortion? portion;
 
   @override
   State<StatefulWidget> createState() {
@@ -29,7 +27,7 @@ class PortionDraft {
 class PortionsEditorState extends State<PortionsEditor> {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
-  IFoodPortion? get _portion => widget.portion;
+  FoodPortion? get _portion => widget.portion;
   String get title => widget.title;
 
   String portionName = "";
@@ -69,20 +67,21 @@ class PortionsEditorState extends State<PortionsEditor> {
             height: 200,
             width: 500,
             key: UniqueKey(),
-            margin: EdgeInsets.only(bottom: 5.0),
+            margin: const EdgeInsets.only(bottom: 5.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 25.0, bottom: 25.0, top: 15.0),
+                  padding: const EdgeInsets.only(
+                      left: 25.0, bottom: 25.0, top: 15.0),
                   child: Row(
                     children: [
-                      Icon(
+                      const Icon(
                         // TODO: Change icon
                         Icons.question_mark,
                         size: 24,
                       ),
-                      Padding(padding: EdgeInsets.only(left: 15.0)),
+                      const Padding(padding: EdgeInsets.only(left: 15.0)),
                       SelectableText(
                         title,
                         style: titleStyle,
@@ -92,7 +91,8 @@ class PortionsEditorState extends State<PortionsEditor> {
                 ),
                 Row(
                   children: [
-                    Padding(padding: EdgeInsets.only(left: 25.0, top: 35.0)),
+                    const Padding(
+                        padding: EdgeInsets.only(left: 25.0, top: 35.0)),
                     Container(
                       width: 120,
                       padding: const EdgeInsets.only(left: 15.0),
@@ -109,7 +109,7 @@ class PortionsEditorState extends State<PortionsEditor> {
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                           hintText: "e.g: 85",
                           // hintStyle: Theme.of(context).textTheme.bodyMedium!.copyWith(color: Colors.white.withOpacity(.6)),
-                          border: OutlineInputBorder(),
+                          border: const OutlineInputBorder(),
                           errorBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.red)),
                           isDense: true,
@@ -119,7 +119,7 @@ class PortionsEditorState extends State<PortionsEditor> {
                         },
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(left: 15.0)),
+                    const Padding(padding: EdgeInsets.only(left: 15.0)),
                     Expanded(
                       child: TextFormField(
                         validator: validatePortionName,
@@ -128,8 +128,8 @@ class PortionsEditorState extends State<PortionsEditor> {
                           labelText: S.of(context).portionName,
                           floatingLabelBehavior: FloatingLabelBehavior.always,
                           hintText: S.of(context).portionNameHint,
-                          border: OutlineInputBorder(),
-                          errorBorder: UnderlineInputBorder(
+                          border: const OutlineInputBorder(),
+                          errorBorder: const UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.red)),
                           errorMaxLines: 1,
                           isDense: true,
@@ -139,11 +139,11 @@ class PortionsEditorState extends State<PortionsEditor> {
                         },
                       ),
                     ),
-                    Padding(padding: EdgeInsets.only(left: 35.0)),
+                    const Padding(padding: EdgeInsets.only(left: 35.0)),
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                       top: 20.0, bottom: 10.0, left: 30, right: 30.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
@@ -153,7 +153,7 @@ class PortionsEditorState extends State<PortionsEditor> {
                             Navigator.of(context).pop();
                           },
                           child: Text(S.of(context).cancelButtonText)),
-                      Padding(padding: EdgeInsets.only(left: 15.0)),
+                      const Padding(padding: EdgeInsets.only(left: 15.0)),
                       SizedBox(
                         height: 40,
                         width: 120,

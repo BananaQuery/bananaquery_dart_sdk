@@ -1,7 +1,7 @@
 import 'package:banana_query_core/foods/item/food_item.dart';
-import 'package:banana_query_ui/components/foods/food_item_view.dart';
-import 'package:example/components/widget_preview.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:banana_query_core/nutrients/micro/vitamins/watersoluble/b/b12/vitamin_b12_added.dart';
+import 'package:banana_query_core/nutrients/nutrient.dart';
+import 'package:banana_query_ui/components/foods/item/food_item_view.dart';
 import 'package:flutter/material.dart';
 
 class FoodItemDemo extends StatefulWidget {
@@ -14,23 +14,25 @@ class FoodItemDemo extends StatefulWidget {
 }
 
 class FoodItemDemoState extends State<FoodItemDemo> {
-  final FoodItem item = FoodItem.empty();
+  final FoodItem item = FoodItem.empty().copyWith(name: "Banana") as FoodItem;
+  final Nutrient vitaminB12 = VitaminB12Added(amount: 1000);
+
+  @override
+  void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Expanded(
-          child: Container(
-            color: Colors.white,
-            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-            child: WidgetPreview(
-              widget: FoodItemView(foodItem: item),
-              code: 'FoodItemView(foodItem: item)',
-            ),
-          )
-        )
-      ]
-    );
+    return SizedBox(
+        width: 800,
+        child: ListView(children: [
+          SizedBox(
+              width: 500,
+              height: 1000,
+              child: FoodItemView(
+                foodItem: item,
+              )),
+        ]));
   }
 }

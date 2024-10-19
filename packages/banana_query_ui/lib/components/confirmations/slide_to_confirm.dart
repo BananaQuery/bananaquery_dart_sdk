@@ -21,14 +21,14 @@ class _SlideToConfirm extends StatelessWidget {
             title: Row(
               children: [
                 Padding(
-                    padding: EdgeInsets.only(left: 10.0, top: 10.0),
+                    padding: const EdgeInsets.only(left: 10.0, top: 10.0),
                     child: IconButton(
                         onPressed: () {
                           Navigator.of(context).pop();
                         },
-                        icon: Icon(Ionicons.close))),
+                        icon: const Icon(Ionicons.close))),
                 Padding(
-                  padding: EdgeInsets.only(top: 10),
+                  padding: const EdgeInsets.only(top: 10),
                   child: title,
                 )
               ],
@@ -40,7 +40,7 @@ class _SlideToConfirm extends StatelessWidget {
                   child: Column(
                 children: [
                   message,
-                  Spacer(),
+                  const Spacer(),
                   SizedBox(
                     width: 300,
                     height: 65,
@@ -49,11 +49,11 @@ class _SlideToConfirm extends StatelessWidget {
                         onConfirm.call();
                       },
                       // TODO: Update icon
-                      icon: Icon(Icons.question_mark),
+                      icon: const Icon(Icons.question_mark),
                       child: Text(S.of(context).slideAvocadoToConfirm),
                     ),
                   ),
-                  Spacer(),
+                  const Spacer(),
                 ],
               )),
             )));

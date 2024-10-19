@@ -47,10 +47,10 @@ class FoodSyncViewState extends State<FoodSyncView> {
 
   /// The default portion of an item is the first portion in the list.
   /// unless the list is empty, in which case it is a zero portion.
-  IFoodPortion getItemDefaultPortion(NutritionalEntity item) {
+  FoodPortion getItemDefaultPortion(NutritionalEntity item) {
     try {
       return item.portions.first;
-    } catch(e) {
+    } catch (e) {
       return const FoodPortion.zero();
     }
   }
@@ -79,18 +79,18 @@ class FoodSyncViewState extends State<FoodSyncView> {
                 S.of(context).weDontWantYourDataToGetLost,
                 style: displayStyle,
               ),
-              Padding(padding: EdgeInsets.only(top: 10.0)),
+              const Padding(padding: EdgeInsets.only(top: 10.0)),
               SelectableText(
                 S.of(context).foodPlansHoldTheirOwnData,
                 textAlign: TextAlign.center,
               ),
-              Padding(padding: EdgeInsets.only(top: 35.0)),
+              const Padding(padding: EdgeInsets.only(top: 35.0)),
               SelectableText(
                 S.of(context).whichVersionOfThisFoodShouldWeUse,
                 textAlign: TextAlign.center,
                 style: titleStyle.copyWith(fontWeight: FontWeight.w700),
               ),
-              Padding(padding: const EdgeInsets.only(top: 20.0)),
+              const Padding(padding: EdgeInsets.only(top: 20.0)),
               Row(
                 children: [
                   SelectableContainer(
@@ -110,7 +110,7 @@ class FoodSyncViewState extends State<FoodSyncView> {
                             child: Container(
                               height: 55,
                               color: secondary,
-                              padding: EdgeInsets.only(left: 15.0),
+                              padding: const EdgeInsets.only(left: 15.0),
                               alignment: Alignment.centerLeft,
                               child: Text(planName,
                                   style: TextStyle(color: onSecondary)),
@@ -121,11 +121,11 @@ class FoodSyncViewState extends State<FoodSyncView> {
                       foodItem: PortionedFood(
                           item: planItem,
                           quantity: 1,
-                          portion: getItemDefaultPortion(planItem)
-                      ),
+                          portion: getItemDefaultPortion(planItem)),
                     ),
                   ),
-                  Padding(padding: EdgeInsets.symmetric(horizontal: 10.0)),
+                  const Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 10.0)),
                   SelectableContainer(
                     isSelected: selectedItem == databaseItem,
                     onTap: (isSelected) {
@@ -143,7 +143,7 @@ class FoodSyncViewState extends State<FoodSyncView> {
                             child: Container(
                               height: 55,
                               color: secondary,
-                              padding: EdgeInsets.only(left: 15.0),
+                              padding: const EdgeInsets.only(left: 15.0),
                               alignment: Alignment.centerLeft,
                               child: Text(databaseName,
                                   style: TextStyle(color: onSecondary)),
@@ -190,7 +190,7 @@ class FoodSyncViewState extends State<FoodSyncView> {
                   style: TextStyle(color: onPrimary),
                 )),
           ),
-          Padding(padding: EdgeInsets.only(right: 10.0)),
+          const Padding(padding: EdgeInsets.only(right: 10.0)),
         ],
       ),
     );

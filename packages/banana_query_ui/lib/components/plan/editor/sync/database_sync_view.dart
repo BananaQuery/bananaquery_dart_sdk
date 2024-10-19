@@ -59,7 +59,7 @@ class DatabaseSyncViewState extends State<DatabaseSyncView> {
         children: [
           SelectableText(S.of(context).updateDatabaseWithMealPlanItemTitle,
               style: displayStyle),
-          Padding(padding: EdgeInsets.only(top: 10.0)),
+          const Padding(padding: EdgeInsets.only(top: 10.0)),
           SelectableText(
             S.of(context).updateDatabaseWithMealPlanItemMessageOne,
           ),
@@ -69,7 +69,7 @@ class DatabaseSyncViewState extends State<DatabaseSyncView> {
           SelectableText(
             S.of(context).updateDatabaseWithMealPlanItemMessageThree,
           ),
-          Padding(padding: EdgeInsets.only(top: 15.0)),
+          const Padding(padding: EdgeInsets.only(top: 15.0)),
           SelectableContainer(
             isSelected: true,
             onTap: (isSelected) {},
@@ -81,7 +81,7 @@ class DatabaseSyncViewState extends State<DatabaseSyncView> {
                       child: Container(
                         height: 55,
                         color: secondary,
-                        padding: EdgeInsets.only(left: 15.0),
+                        padding: const EdgeInsets.only(left: 15.0),
                         alignment: Alignment.centerLeft,
                         child: Text("$databaseName - ${item.name}",
                             style: TextStyle(color: onSecondary)),
@@ -121,7 +121,7 @@ class DatabaseSyncViewState extends State<DatabaseSyncView> {
                     S.of(context).no,
                     style: TextStyle(color: onPrimary),
                   ))),
-          Padding(padding: EdgeInsets.only(right: 15.0)),
+          const Padding(padding: EdgeInsets.only(right: 15.0)),
           ElevatedButton(
               onPressed: () async {
                 bool? isConfirmed = await slideToConfirm(
@@ -142,7 +142,7 @@ class DatabaseSyncViewState extends State<DatabaseSyncView> {
                     S.of(context).yes,
                     style: TextStyle(color: onPrimary),
                   ))),
-          Padding(padding: EdgeInsets.only(right: 20.0)),
+          const Padding(padding: EdgeInsets.only(right: 20.0)),
         ],
       ),
     );

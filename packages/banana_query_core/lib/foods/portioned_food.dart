@@ -4,7 +4,6 @@ import 'package:banana_query_core/nutrients/nutrient.dart';
 import 'package:uuid/uuid.dart';
 
 import '../nutritional_entity.dart';
-import '../portions/i_food_portion.dart';
 import '../factories/food_factory.dart';
 import '../portions/food_portion.dart';
 
@@ -13,7 +12,7 @@ class PortionedFood {
       {required this.item, required this.quantity, required this.portion});
 
   final String key = Uuid().v4();
-  final IFoodPortion portion;
+  final FoodPortion portion;
   final double quantity;
   final NutritionalEntity item;
 
@@ -21,7 +20,7 @@ class PortionedFood {
     return item.nutrients.isNotEmpty;
   }
 
-  EnergyNutrient? get getCalories {
+  EnergyNutrient get getCalories {
     if (item.nutrients.isEmpty) {
       throw Exception("No nutrients found on food item");
     }
@@ -41,7 +40,7 @@ class PortionedFood {
   }
 
   PortionedFood copyWith(
-      {IFoodPortion? portion, double? quantity, NutritionalEntity? item}) {
+      {FoodPortion? portion, double? quantity, NutritionalEntity? item}) {
     return PortionedFood(
         portion: portion ?? this.portion,
         quantity: quantity ?? this.quantity,

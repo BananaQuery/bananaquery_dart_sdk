@@ -1,5 +1,12 @@
+import 'package:banana_query_core/banana_query_api.dart';
 import 'package:banana_query_core/nutrients/nutrient.dart';
-import 'portions/i_food_portion.dart';
+
+class NutrientValue {
+  final double amount;
+  final String units;
+
+  NutrientValue({required this.amount, required this.units});
+}
 
 /// the FoodItem class encapsulates a plans item with all of its nutritional
 /// information and portion size information. This FoodItem class is the base class
@@ -23,17 +30,39 @@ abstract class NutritionalEntity {
 
   // ---------
   List<Nutrient> get nutrients;
-  List<IFoodPortion> get portions;
+  List<FoodPortion> get portions;
   Map<String, dynamic> get metadata;
 
   const NutritionalEntity();
 
-  void addPortion(IFoodPortion portion);
+  void addPortion(FoodPortion portion);
 
   Map<String, dynamic> toJson();
 
   NutritionalEntity copyWith(
-      {String? name, String? description, List<Nutrient>? nutrients, List<IFoodPortion>? portions, String? databaseId});
+      {String? name, String? description, List<Nutrient>? nutrients, List<FoodPortion>? portions, String? databaseId});
+
+  NutrientValue? nutrientTotalByType<T extends Nutrient>({ double weight = 100.0 }) {
+    List<Nutrient> matches = nutrients.whereType<T>().toList();
+    if (matches.isEmpty) {
+      return null;
+    }
+
+    if (matches.length > 1) {
+      /// Make sure all nutrients have the same units
+      assert(matches.every((element) => element.units == matches.first.units));
+      return NutrientValue(amount: matches.fold(0, (previousValue, element) => previousValue + element.amount), units: matches.first.units);
+    }
+
+    return NutrientValue(amount: matches.first.amount, units: matches.first.units);
+  }
+
+  NutrientValue? nutrientTotalByName(String type) {
+    return NutrientValue(
+      amount: nutrients.where((element) => element.type == type).fold(0, (previousValue, element) => previousValue + element.amount),
+      units: nutrients.firstWhere((element) => element.type == type).units
+    );
+  }
 
   @override
   bool operator ==(Object other) =>

@@ -8,7 +8,6 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  cbl: ^3.0.0
   uuid: ^3.0.6
   cbl_flutter: ^3.0.0
   banana_query_core: {

@@ -10,10 +10,10 @@ class FoodPortionForm extends StatelessWidget {
     this.onSelect,
   });
 
-  final List<IFoodPortion> portions;
+  final List<FoodPortion> portions;
   final List<int> selectedPortions;
   final Widget Function()? emptyStateBuilder;
-  final void Function(IFoodPortion, int)? onSelect;
+  final void Function(FoodPortion, int)? onSelect;
 
   Widget noDataWidget() {
     if (emptyStateBuilder != null) {

@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:keywi/keywi.dart';
 
 class FoodPlanEditorHelp extends StatefulWidget {
+  const FoodPlanEditorHelp({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return FoodPlanEditorHelpState();

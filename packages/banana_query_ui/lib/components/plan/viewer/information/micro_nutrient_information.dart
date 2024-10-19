@@ -10,12 +10,12 @@ typedef OnEditNutrient = Function(Nutrient);
 
 class NutrientTable extends StatelessWidget {
   const NutrientTable({
-    Key? key,
+    super.key,
     required this.values,
     this.title = "",
     this.editable = false,
     this.onEditNutrient,
-  }) : super(key: key);
+  });
 
   final String title;
   final List<Nutrient> values;
@@ -23,18 +23,15 @@ class NutrientTable extends StatelessWidget {
   final OnEditNutrient? onEditNutrient;
   final bool editable;
 
-
-
   @override
   Widget build(BuildContext context) {
-
-
     List<DataRow> data = NutrientNames.microNutrients.map((nutrientName) {
       double? value;
       String units = NutrientUnits.typicalMeasuringUnits[nutrientName] ?? "?";
 
       try {
-       value = values.firstWhere((element) => element.type == nutrientName).amount;
+        value =
+            values.firstWhere((element) => element.type == nutrientName).amount;
       } catch (e) {
         value = null;
       }
@@ -49,8 +46,7 @@ class NutrientTable extends StatelessWidget {
             key: ValueKey('$nutrientName-$value'),
             enabled: editable,
             initialValue: value?.toStringAsFixed(2) ?? "?",
-            decoration:
-                InputDecoration(suffix: Text(units)),
+            decoration: InputDecoration(suffix: Text(units)),
             inputFormatters: [
               // This formatter allows only one decimal point
               FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d*')),
@@ -74,7 +70,7 @@ class NutrientTable extends StatelessWidget {
             label: Expanded(
               child: Text(
                 title,
-                style: TextStyle(fontStyle: FontStyle.italic),
+                style: const TextStyle(fontStyle: FontStyle.italic),
               ),
             ),
           ),
@@ -82,7 +78,7 @@ class NutrientTable extends StatelessWidget {
             label: Expanded(
               child: Text(
                 S.of(context).amount,
-                style: TextStyle(fontStyle: FontStyle.italic),
+                style: const TextStyle(fontStyle: FontStyle.italic),
               ),
             ),
           ),

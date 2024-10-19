@@ -5,12 +5,12 @@ import 'package:banana_query_core/nutrients/nutrient.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 class MicroNutrientTable extends StatefulWidget {
-  const MicroNutrientTable({Key? key,
+  const MicroNutrientTable({
+    super.key,
     required this.foods,
     required this.nutrients,
-  }) : super(key: key);
+  });
 
   final List<PortionedFood> foods;
   final List<String> nutrients;
@@ -73,7 +73,8 @@ class _MicroNutrientTableState extends State<MicroNutrientTable> {
 
   String getNutrientValue(String nutrientName) {
     try {
-      Nutrient nutrient = microNutrientValues.firstWhere((n) => n.type == nutrientName);
+      Nutrient nutrient =
+          microNutrientValues.firstWhere((n) => n.type == nutrientName);
       return "? ${nutrient.units}";
     } catch (e) {
       return "? ${NutrientUnits.typicalMeasuringUnits[nutrientName]}";
@@ -87,41 +88,44 @@ class _MicroNutrientTableState extends State<MicroNutrientTable> {
       children: [
         Expanded(
             child: Stack(
-              children: [
-                Padding(padding: EdgeInsets.only(top: 15.0),
-                  child: Table(
-                    columnWidths: {
-                      0: FlexColumnWidth(2),
-                      1: FlexColumnWidth(1.5),
-                    },
-                    children: nutrients.map((e) => TableRow(
-                        children: [
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 15.0),
+              child: Table(
+                columnWidths: const {
+                  0: const FlexColumnWidth(2),
+                  1: const FlexColumnWidth(1.5),
+                },
+                children: nutrients
+                    .map((e) => TableRow(children: [
                           TableCell(
                             child: Container(
-                              color: nutrients.indexOf(e) % 2 == 0 ? null: Colors.black12,
-                              height: rowHeight,
-                              alignment: Alignment.centerLeft,
-                              child: Padding(
-                                padding: EdgeInsets.only(left: 20.0),
-                                child: Text(e),
-                              )
-                            ),
+                                color: nutrients.indexOf(e) % 2 == 0
+                                    ? null
+                                    : Colors.black12,
+                                height: rowHeight,
+                                alignment: Alignment.centerLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(left: 20.0),
+                                  child: Text(e),
+                                )),
                           ),
                           TableCell(
                             child: Container(
-                              color: nutrients.indexOf(e) % 2 == 0 ? null: Colors.black12,
+                              color: nutrients.indexOf(e) % 2 == 0
+                                  ? null
+                                  : Colors.black12,
                               height: rowHeight,
                               alignment: Alignment.centerLeft,
                               child: SelectableText(getNutrientValue(e)),
                             ),
                           ),
-                        ]
-                    )).toList(),
-                  ),
-                ),
-              ],
-            )
-        ),
+                        ]))
+                    .toList(),
+              ),
+            ),
+          ],
+        )),
       ],
     );
   }

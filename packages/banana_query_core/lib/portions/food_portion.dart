@@ -1,12 +1,10 @@
-import 'i_food_portion.dart';
-
-class FoodPortion implements IFoodPortion {
+class FoodPortion {
   const FoodPortion(
       {required this.foodId, required this.title, required this.gramWeight});
 
   const FoodPortion.gramDefault()
       : foodId = -1,
-        title = 'portion',
+        title = 'standard',
         gramWeight = 100;
 
   const FoodPortion.zero()
@@ -14,22 +12,15 @@ class FoodPortion implements IFoodPortion {
         title = '???',
         gramWeight = 0.0;
 
-  @override
   final int foodId; // TODO: Think if we really need this
-
-  @override
   final num gramWeight;
-
-  @override
   final String title;
 
-  @override
   Map<String, dynamic> toJson() {
     return {'foodId': foodId, 'title': title, 'gramWeight': gramWeight};
   }
 
-  @override
-  IFoodPortion copyWith({String? title, num? gramWeight}) {
+  FoodPortion copyWith({String? title, num? gramWeight}) {
     return FoodPortion(
         foodId: foodId,
         title: title ?? this.title,

@@ -6,7 +6,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FoodGroupDistribution extends StatefulWidget {
-  FoodGroupDistribution({ super.key, required this.foods });
+  const FoodGroupDistribution({super.key, required this.foods});
 
   final List<PortionedFood> foods;
 
@@ -17,7 +17,6 @@ class FoodGroupDistribution extends StatefulWidget {
 }
 
 class FoodGroupDistributionState extends State<FoodGroupDistribution> {
-
   List<PortionedFood> get foods => widget.foods;
   int touchedIndex = -1;
 
@@ -30,6 +29,7 @@ class FoodGroupDistributionState extends State<FoodGroupDistribution> {
     super.initState();
   }
 
+  @override
   void didUpdateWidget(FoodGroupDistribution oldWidget) {
     if (oldWidget.foods != foods) {
       computeValues();
@@ -40,11 +40,13 @@ class FoodGroupDistributionState extends State<FoodGroupDistribution> {
   void computeValues() {
     for (var element in foods) {
       final String foodGroup = element.item.foodCategory;
-      foodGroupDistribution.update(foodGroup, (value) => (value + (element.getCalories?.amount ?? 0.0)),
-          ifAbsent: () => element.getCalories?.amount ?? 0.0);
+      foodGroupDistribution.update(
+          foodGroup, (value) => (value + (element.getCalories.amount ?? 0.0)),
+          ifAbsent: () => element.getCalories.amount ?? 0.0);
     }
 
-    totalCalories = foodGroupDistribution.values.fold(0.0, (previousValue, element) => previousValue + element);
+    totalCalories = foodGroupDistribution.values
+        .fold(0.0, (previousValue, element) => previousValue + element);
   }
 
   Color getFoodGroupColor(String foodGroup) {
@@ -155,90 +157,92 @@ class FoodGroupDistributionState extends State<FoodGroupDistribution> {
 
   @override
   Widget build(BuildContext context) {
-
-    List<PieChartSectionData> chartSections = foodGroupDistribution.entries.map((e) => PieChartSectionData(
-      title: "${(e.value/totalCalories * 100).truncate()}%",
-      value: e.value,
-      color: getFoodGroupColor(e.key),
-      titlePositionPercentageOffset: 2.8,
-      radius: 15,
-    )).toList();
+    List<PieChartSectionData> chartSections = foodGroupDistribution.entries
+        .map((e) => PieChartSectionData(
+              title: "${(e.value / totalCalories * 100).truncate()}%",
+              value: e.value,
+              color: getFoodGroupColor(e.key),
+              titlePositionPercentageOffset: 2.8,
+              radius: 15,
+            ))
+        .toList();
 
     return SizedBox(
-      height: 250,
-      width: 500,
-      child: Row(
-        children: [
-          SizedBox(
-            width: 170,
-            // color: Theme.of(context).colorScheme.primary.withOpacity(.5),
-            //   alignment: Alignment.topLeft,
-              child: Stack(
-                alignment: Alignment.center,
-                children: [
-                  SizedBox(
-                    width: 100,
-                    child: Text(S.of(context).foodGroupDistribution, textAlign: TextAlign.center),
-                  ),
-                  PieChart(
-                      PieChartData(
-                          centerSpaceRadius: 60.0,
-                          pieTouchData: PieTouchData(
-                            touchCallback: (FlTouchEvent event, pieTouchResponse) {
-                              setState(() {
-                                if (!event.isInterestedForInteractions ||
-                                    pieTouchResponse == null ||
-                                    pieTouchResponse.touchedSection == null) {
-                                  touchedIndex = -1;
-                                  return;
-                                }
-                                touchedIndex = pieTouchResponse
-                                    .touchedSection!.touchedSectionIndex;
-                              });
-                            },
-                          ),
-                          sections: [
-                            if (chartSections.length == 0)
-                              PieChartSectionData(
-                                title: "",
-                                value: 1,
-                                color: Colors.grey,
-                                titlePositionPercentageOffset: 2.8,
-                                radius: 15,
-                              )
-                            else
-                              ...chartSections
-                          ]
-                      )
-                  )
-                ],
-              )
-          ),
-          Expanded(
-            child: ListView.builder(
-              itemCount: foodGroupDistribution.length,
-              itemBuilder: (context, index) {
-                final String foodGroup = foodGroupDistribution.keys.elementAt(index);
-                return Column(
+        height: 250,
+        width: 500,
+        child: Row(
+          children: [
+            SizedBox(
+                width: 170,
+                // color: Theme.of(context).colorScheme.primary.withOpacity(.5),
+                //   alignment: Alignment.topLeft,
+                child: Stack(
+                  alignment: Alignment.center,
                   children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 10,
-                          height: 10,
-                          color: getFoodGroupColor(foodGroup),
-                        ),
-                        SizedBox(width: 5),
-                        Text(FoodGroupLocalizer.localize(foodGroup), overflow: TextOverflow.ellipsis,)
-                      ],
+                    SizedBox(
+                      width: 100,
+                      child: Text(S.of(context).foodGroupDistribution,
+                          textAlign: TextAlign.center),
                     ),
+                    PieChart(PieChartData(
+                        centerSpaceRadius: 60.0,
+                        pieTouchData: PieTouchData(
+                          touchCallback:
+                              (FlTouchEvent event, pieTouchResponse) {
+                            setState(() {
+                              if (!event.isInterestedForInteractions ||
+                                  pieTouchResponse == null ||
+                                  pieTouchResponse.touchedSection == null) {
+                                touchedIndex = -1;
+                                return;
+                              }
+                              touchedIndex = pieTouchResponse
+                                  .touchedSection!.touchedSectionIndex;
+                            });
+                          },
+                        ),
+                        sections: [
+                          if (chartSections.isEmpty)
+                            PieChartSectionData(
+                              title: "",
+                              value: 1,
+                              color: Colors.grey,
+                              titlePositionPercentageOffset: 2.8,
+                              radius: 15,
+                            )
+                          else
+                            ...chartSections
+                        ]))
                   ],
-                );
-              },
-            ),
-          )
-        ],
-      )
-    );
+                )),
+            Expanded(
+              child: ListView.builder(
+                itemCount: foodGroupDistribution.length,
+                itemBuilder: (context, index) {
+                  final String foodGroup =
+                      foodGroupDistribution.keys.elementAt(index);
+                  return Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            width: 10,
+                            height: 10,
+                            color: getFoodGroupColor(foodGroup),
+                          ),
+                          const SizedBox(width: 5),
+                          Text(
+                            FoodGroupLocalizer.localize(foodGroup),
+                            overflow: TextOverflow.ellipsis,
+                          )
+                        ],
+                      ),
+                    ],
+                  );
+                },
+              ),
+            )
+          ],
+        ));
   }
 }

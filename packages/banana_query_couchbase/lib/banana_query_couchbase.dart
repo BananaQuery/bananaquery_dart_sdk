@@ -14,7 +14,7 @@ class BananaQueryCouchBase  {
       print('warning: CouchbaseLiteFlutter already initialized: $e');
     }
 
-    final database = await Database.openAsync('BananaQuery');
+    final database = await Database.openAsync('BananaQuery', DatabaseConfiguration(directory: 'bananadb'));
     // Create a collection, or return it if it already exists.
     var databasecollection = await database.createCollection('BQ_FoodDatabases');
     var foodCollection = await database.createCollection('BQ_FoodItems');

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 class SingleTargetChart extends StatelessWidget {
-  const SingleTargetChart({Key? key, required this.value, required this.target }) : super(key: key);
+  const SingleTargetChart(
+      {super.key, required this.value, required this.target});
 
   final double value;
   final double target;
 
-  int get percentageCovered => (value/target * 100).round();
+  int get percentageCovered => (value / target * 100).round();
 
   @override
   Widget build(BuildContext context) {

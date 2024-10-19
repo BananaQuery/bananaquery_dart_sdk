@@ -40,7 +40,7 @@ class CustomItemViewTitle extends StatelessWidget {
     Color onPrimary = Theme.of(context).colorScheme.onPrimary;
 
     return Padding(
-      padding: EdgeInsets.only(top: 0.0),
+      padding: const EdgeInsets.only(top: 0.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -58,16 +58,16 @@ class CustomItemViewTitle extends StatelessWidget {
                               builder: (context) {
                                 return SingleFieldDialog(
                                   title: Padding(
-                                    padding:
-                                        EdgeInsets.only(left: 20.0, top: 25.0),
+                                    padding: const EdgeInsets.only(
+                                        left: 20.0, top: 25.0),
                                     child: Row(
                                       children: [
-                                        Icon(
+                                        const Icon(
                                           // TODO: asthetics replace icon
                                           Icons.question_mark,
                                           color: Colors.black87,
                                         ),
-                                        Padding(
+                                        const Padding(
                                           padding: EdgeInsets.only(left: 15.0),
                                         ),
                                         Text(S.of(context).editItem),
@@ -94,7 +94,7 @@ class CustomItemViewTitle extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(left: 15.0),
                   ),
                   SelectableText.rich(TextSpan(children: [
@@ -108,7 +108,7 @@ class CustomItemViewTitle extends StatelessWidget {
               )
             ],
           ),
-          Spacer(),
+          const Spacer(),
           if (isItemSynced == false)
             Row(
               children: [
@@ -120,7 +120,7 @@ class CustomItemViewTitle extends StatelessWidget {
                 Chip(
                   label: Text(
                     S.of(context).foodItemOutOfSync,
-                    style: TextStyle(color: Colors.black),
+                    style: const TextStyle(color: Colors.black),
                   ),
                 ),
                 IconButton(

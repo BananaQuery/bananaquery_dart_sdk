@@ -2,7 +2,7 @@
 import 'package:banana_query_core/foods/portioned_food.dart';
 import 'package:banana_query_core/plan/day/plan_entry.dart';
 import 'package:banana_query_core/plan/meal_plan.dart';
-import 'package:banana_query_core/portions/i_food_portion.dart';
+import 'package:banana_query_core/portions/food_portion.dart';
 import 'package:colonel/command_base.dart';
 
 class EditEntryCommand extends CommandBase {
@@ -30,7 +30,7 @@ class EditEntryCommand extends CommandBase {
   /// field we are editing.
   final PortionedFood food;
   final double portionQuantity;
-  final IFoodPortion portion;
+  final FoodPortion portion;
 
   @override
   Future<bool> execute() {

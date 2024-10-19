@@ -21,11 +21,11 @@ class SingleFieldDialog extends StatelessWidget {
       titlePadding: EdgeInsets.zero,
       title: title,
       contentPadding:
-          EdgeInsets.only(left: 35.0, right: 25, top: 10.0, bottom: 20.0),
+          const EdgeInsets.only(left: 35.0, right: 25, top: 10.0, bottom: 20.0),
       children: [
         Container(
             width: 400,
-            padding: EdgeInsets.only(top: 20.0, bottom: 20.0),
+            padding: const EdgeInsets.only(top: 20.0, bottom: 20.0),
             child: Form(
               key: formKey,
               child: TextFormField(
@@ -41,7 +41,7 @@ class SingleFieldDialog extends StatelessWidget {
                   name = newName;
                 },
                 decoration: InputDecoration(
-                    labelText: fieldLabel, border: OutlineInputBorder()),
+                    labelText: fieldLabel, border: const OutlineInputBorder()),
               ),
             )),
         Row(

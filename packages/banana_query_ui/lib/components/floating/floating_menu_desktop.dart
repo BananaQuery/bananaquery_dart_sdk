@@ -5,15 +5,15 @@ import 'package:flutter/cupertino.dart';
 import 'floating_menu.dart';
 
 class FloatingMenuDesktop extends StatefulWidget {
-  const FloatingMenuDesktop({Key? key,
-    required this.menuHeight,
-    required this.menuWidth,
-    required this.child,
-    required this.menu,
-    this.onTap,
-    this.onDoubleTap,
-    this.controller
-  }) : super(key: key);
+  const FloatingMenuDesktop(
+      {super.key,
+      required this.menuHeight,
+      required this.menuWidth,
+      required this.child,
+      required this.menu,
+      this.onTap,
+      this.onDoubleTap,
+      this.controller});
 
   final double menuHeight;
   final double menuWidth;
@@ -31,8 +31,6 @@ class FloatingMenuDesktop extends StatefulWidget {
 }
 
 class FloatingMenuDesktopState extends State<FloatingMenuDesktop> {
-
-
   double get menuHeight => widget.menuHeight;
   double get menuWidth => widget.menuWidth;
   Widget get child => widget.child;
@@ -40,7 +38,8 @@ class FloatingMenuDesktopState extends State<FloatingMenuDesktop> {
 
   VoidCallback? get _onTap => widget.onTap;
   VoidCallback? get _onDoubleTap => widget.onDoubleTap;
-  final FloatingBubbleMenuController controller = FloatingBubbleMenuController();
+  final FloatingBubbleMenuController controller =
+      FloatingBubbleMenuController();
 
   // DESKTOP Platform timers
   // In desktop platforms the menu disappears if the mouse spends more than x amount

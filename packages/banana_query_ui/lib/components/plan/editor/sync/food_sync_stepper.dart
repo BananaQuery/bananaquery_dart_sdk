@@ -63,7 +63,7 @@ class FoodSyncStepperState extends State<FoodSyncStepper>
   Widget build(BuildContext context) {
     return TabBarView(
         controller: tabController,
-        physics: NeverScrollableScrollPhysics(),
+        physics: const NeverScrollableScrollPhysics(),
         children: [
           FoodSyncView(
             planName: plan.name,
