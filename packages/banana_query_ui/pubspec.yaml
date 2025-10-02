@@ -22,7 +22,6 @@ dependencies:
     git:
       url: https://github.com/bodistics/keywi
       branch: main
-
   banana_query_database:
     git:
       url: https://github.com/BananaQuery/bananaquery_dart_sdk/

@@ -33,27 +33,32 @@ dependencies:
   cbl_flutter_ce: ^3.5.1
   colonel:
     git: https://github.com/dbrdz/colonel
-  banana_query_localization: {
-     path: ../../banana_query_localization
-  }
-  banana_query_core: {
-     path: ../../banana_query_core
-  }
-  banana_query_couchbase: {
-     path: ../../banana_query_couchbase
-  }
-  banana_query_database: {
-     path: ../../banana_query_database
-  }
-  banana_query_ui: {
-     path: ../
-  }
-  # banana_query_database: {  # Commented out for web compatibility
-  #    path: ../../banana_query_database
-  # }
-  # banana_query_couchbase: {  # Commented out for web compatibility
-  #    path: ../../banana_query_couchbase
-  # }
+  banana_query_localization:
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_localization
+      ref: main
+  banana_query_core: 
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_core
+      ref: main
+  banana_query_couchbase:
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_couchbase
+      ref: main
+  banana_query_database:
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_database
+      ref: main
+  banana_query_ui:
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_ui
+      ref: main
+
   flutter:
     sdk: flutter
 
