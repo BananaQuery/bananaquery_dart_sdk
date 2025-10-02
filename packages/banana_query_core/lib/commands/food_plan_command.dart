@@ -1,5 +1,4 @@
-import 'package:rxdart/rxdart.dart';
-
+import 'dart:async';
 import 'command_exceptions.dart';
 
 ///
@@ -9,7 +8,7 @@ enum ExecutionState { notExecuted, executed, undone, redone }
 
 abstract class BananaQueryCommand  {
   ExecutionState executionState = ExecutionState.notExecuted;
-  static BehaviorSubject listener = BehaviorSubject();
+  static StreamController listener = StreamController();
   bool notifyListenersOnExecution = true;
 
   void assertCanExecute() {

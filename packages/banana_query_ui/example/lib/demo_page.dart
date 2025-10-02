@@ -1,5 +1,7 @@
 import 'package:example/items/recipe_item_demo.dart';
 import 'package:example/plan/meal_plan_demo.dart';
+// import 'package:example/plan/meal_plan_demo.dart';  // Commented out for web compatibility
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'components/components_demo.dart';
@@ -17,7 +19,11 @@ class DemoPage extends StatefulWidget {
 class DemoPageState extends State<DemoPage> {
   int activeDemo = 0;
 
-  List<String> widgets = [
+  List<String> get widgets => kIsWeb ? [
+    'Components',
+    'Food Item Page',
+    'Recipe Page',
+  ] : [
     'Components',
     'Food Item Page',
     'Recipe Page',
@@ -58,7 +64,20 @@ class DemoPageState extends State<DemoPage> {
                     activeDemo = index;
                   });
                 },
-                destinations: const [
+                destinations: kIsWeb ? const [
+                  NavigationRailDestination(
+                    icon: Icon(Icons.settings),
+                    label: Text('Components'),
+                  ),
+                  NavigationRailDestination(
+                    icon: Icon(Icons.apple),
+                    label: Text('Food Item Page'),
+                  ),
+                  NavigationRailDestination(
+                    icon: Icon(Icons.fastfood),
+                    label: Text('Recipe Page'),
+                  ),
+                ] : const [
                   NavigationRailDestination(
                     icon: Icon(Icons.settings),
                     label: Text('Components'),

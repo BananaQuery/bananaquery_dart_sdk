@@ -84,7 +84,7 @@ class AutoCompleteFoodSearchFieldState extends State<AutoCompleteFoodSearchField
           return itemBuilder!(context, itemData);
         }
         return FoodItemTile(foodItem: itemData);
-      },
+      }, isMultiSelectDropdown: false,
     );
   }
 }

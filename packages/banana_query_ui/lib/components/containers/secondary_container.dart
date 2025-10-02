@@ -11,7 +11,7 @@ class SecondaryContainer extends StatelessWidget {
     final ThemeData parentTheme = Theme.of(context);
     final ColorScheme colorScheme = parentTheme.colorScheme;
     final TextTheme textTheme = Theme.of(context).textTheme;
-    final InputDecorationTheme inputTheme = Theme.of(context).inputDecorationTheme;
+    final InputDecorationThemeData inputTheme = Theme.of(context).inputDecorationTheme;
     final IconThemeData iconThemeData = Theme.of(context).iconTheme;
     return Theme(
         data: parentTheme.copyWith(

@@ -2,10 +2,10 @@
 dependency_overrides:
   banana_query_core:
     path: ../../banana_query_core
-  banana_query_couchbase:
-    path: ../../banana_query_couchbase
-  banana_query_database:
-    path: ../../banana_query_database
+  # banana_query_couchbase:  # Commented out for web compatibility
+  #   path: ../../banana_query_couchbase
+  # banana_query_database:  # Commented out for web compatibility
+  #   path: ../../banana_query_database
   banana_query_localization:
     path: ../../banana_query_localization
   banana_query_ui:
