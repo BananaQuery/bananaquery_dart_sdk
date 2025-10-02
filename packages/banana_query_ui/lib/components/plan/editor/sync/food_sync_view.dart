@@ -102,7 +102,7 @@ class FoodSyncViewState extends State<FoodSyncView> {
                         });
                       }
                     },
-                    child: CompactFoodItemtView(
+                    child: CompactFoodItemView(
                       title: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
@@ -135,7 +135,7 @@ class FoodSyncViewState extends State<FoodSyncView> {
                         });
                       }
                     },
-                    child: CompactFoodItemtView(
+                    child: CompactFoodItemView(
                       title: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [

@@ -73,7 +73,7 @@ class DatabaseSyncViewState extends State<DatabaseSyncView> {
           SelectableContainer(
             isSelected: true,
             onTap: (isSelected) {},
-            child: CompactFoodItemtView(
+            child: CompactFoodItemView(
                 title: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [

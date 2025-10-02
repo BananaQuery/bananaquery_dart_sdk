@@ -30,7 +30,10 @@ dependencies:
   tile_table:
     git: https://github.com/dbrdz/tile_table
   banana_query_core:
-    path: ../banana_query_core
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_core
+      ref: main
   flutter:
     sdk: flutter
 

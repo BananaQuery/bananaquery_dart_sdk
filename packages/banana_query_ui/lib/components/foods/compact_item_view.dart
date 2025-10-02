@@ -19,8 +19,8 @@ typedef TitleBuilder = Widget Function(
     BuildContext context, PortionedFood quantizedItem);
 typedef OnChange = Function(PortionedFood);
 
-class CompactFoodItemtView extends StatefulWidget {
-  const CompactFoodItemtView({
+class CompactFoodItemView extends StatefulWidget {
+  const CompactFoodItemView({
     super.key,
     required this.foodItem,
     this.title,
@@ -33,11 +33,11 @@ class CompactFoodItemtView extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-    return CompactFoodItemtViewState();
+    return CompactFoodItemViewState();
   }
 }
 
-class CompactFoodItemtViewState extends State<CompactFoodItemtView>
+class CompactFoodItemViewState extends State<CompactFoodItemView>
     with SingleTickerProviderStateMixin {
   late Animation<double> _animation;
   late AnimationController _animationController;

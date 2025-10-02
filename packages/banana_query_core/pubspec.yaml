@@ -13,6 +13,5 @@ dependencies:
 
 dev_dependencies:
   openapi_generator: ^4.11.0
-
   test: ^1.25.0
 

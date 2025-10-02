@@ -77,7 +77,7 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
                   });
                 }
               },
-              child: CompactFoodItemtView(
+              child: CompactFoodItemView(
                   title: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -111,7 +111,7 @@ class ConflictingFoodSelectorState extends State<ConflictingFoodSelector> {
                   });
                 }
               },
-              child: CompactFoodItemtView(
+              child: CompactFoodItemView(
                   title: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
