@@ -1,6 +1,6 @@
 # BananaQuery Drift
 
-A Drift-based database implementation for the BananaQuery SDK. This package provides SQLite database functionality using the Drift ORM for managing food databases and food items.
+A Flutter-compatible Drift-based database implementation for the BananaQuery SDK. This package provides SQLite database functionality using the Drift ORM for managing food databases and food items in Flutter applications.
 
 ## Features
 
@@ -38,11 +38,13 @@ final searchResults = await database.searchFoodDatabases('custom');
 
 ## Dependencies
 
-- `drift`: SQLite ORM for Dart
-- `sqlite3_flutter_libs`: SQLite libraries for Flutter
-- `path_provider`: File system path utilities
+- `drift`: SQLite ORM for Dart/Flutter
+- `sqlite3_flutter_libs`: SQLite libraries for Flutter applications
+- `path_provider`: Flutter file system path utilities
 - `banana_query_core`: Core BananaQuery types and interfaces
 - `banana_query_database`: Database abstraction layer
+
+**Note**: This package is designed specifically for Flutter applications and requires Flutter dependencies to function properly.
 
 ## Database Schema
 

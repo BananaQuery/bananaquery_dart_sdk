@@ -1,4 +1,4 @@
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:banana_query_drift/banana_query_drift.dart';
 
 void main() {
