@@ -1,4 +1,5 @@
-import 'package:test/test.dart';
+import 'package:test/expect.dart';
+import 'package:test/scaffolding.dart';
 
 void main() {
   test('String.split() splits the string on the delimiter', () {

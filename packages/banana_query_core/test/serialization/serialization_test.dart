@@ -1,6 +1,7 @@
 import 'package:banana_query_core/banana_query_api.dart';
 import 'package:banana_query_core/factories/food_factory.dart';
-import 'package:test/test.dart';
+import 'package:test/expect.dart';
+import 'package:test/scaffolding.dart';
 
 import '../data/items.dart';
 

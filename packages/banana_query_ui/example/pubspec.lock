@@ -59,16 +59,20 @@ packages:
   banana_query_couchbase:
     dependency: "direct main"
     description:
-      path: "../../banana_query_couchbase"
-      relative: true
-    source: path
+      path: "packages/banana_query_couchbase"
+      ref: main
+      resolved-ref: "393beec47dc4f402c4f86e401cb83a5e0d52fd42"
+      url: "https://github.com/BananaQuery/bananaquery_dart_sdk/"
+    source: git
     version: "1.0.0"
   banana_query_database:
     dependency: "direct main"
     description:
-      path: "../../banana_query_database"
-      relative: true
-    source: path
+      path: "packages/banana_query_database"
+      ref: main
+      resolved-ref: "393beec47dc4f402c4f86e401cb83a5e0d52fd42"
+      url: "https://github.com/BananaQuery/bananaquery_dart_sdk/"
+    source: git
     version: "1.0.0"
   banana_query_localization:
     dependency: "direct main"
