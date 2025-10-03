@@ -2,7 +2,6 @@ import 'package:banana_query_core/foods/item/food_item.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
 import 'package:banana_query_ui/components/foods/item/food_item_view.dart';
 import 'package:flutter/material.dart';
-import 'package:shadcn_ui/shadcn_ui.dart';
 
 import 'demo_page.dart';
 
