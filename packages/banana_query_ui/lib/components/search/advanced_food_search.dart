@@ -16,7 +16,7 @@ import 'package:banana_query_core/foods/item/vegetables/vegetable_product.dart';
 import 'package:banana_query_core/foods/portioned_food.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
 import 'package:banana_query_ui/components/foods/lists/food_item_tile.dart';
-import 'package:banana_query_ui/components/search%20copy/field/food_search_field.dart';
+import 'package:banana_query_ui/components/search/field/food_search_field.dart';
 import 'package:flutter/material.dart';
 
 import '../containers/secondary_container.dart';
