@@ -9,11 +9,11 @@ import 'package:banana_query_core/nutrients/macro/proteins/total_protein.dart';
 import 'package:banana_query_core/nutrients/micro/minerals/mineral.dart';
 import 'package:banana_query_core/nutrients/micro/vitamins/vitamin.dart';
 import 'package:banana_query_localization/generated/l10n.dart';
+import 'package:banana_query_ui/components/foods/nutrient/nutrient_information.dart';
 import 'package:flutter/material.dart';
 
 import '../fields/editable_macro.dart';
 import '../fields/portions_dropdown_field.dart';
-import '../plan/viewer/information/micro_nutrient_information.dart';
 
 typedef TitleBuilder = Widget Function(
     BuildContext context, PortionedFood quantizedItem);

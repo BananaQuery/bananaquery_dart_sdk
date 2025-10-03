@@ -1,6 +1,4 @@
 import 'package:example/items/recipe_item_demo.dart';
-import 'package:example/plan/meal_plan_demo.dart';
-// import 'package:example/plan/meal_plan_demo.dart';  // Commented out for web compatibility
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -40,9 +38,7 @@ class DemoPageState extends State<DemoPage> {
     if (activeDemo == 2) {
       return const RecipeItemDemo();
     }
-    if (activeDemo == 3) {
-      return const MealPlanDemo();
-    }
+  
     return const Text('Nutrient Table');
   }
 
