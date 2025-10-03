@@ -10,16 +10,10 @@ environment:
 dependencies:
   uuid: ^3.0.6
   cbl_flutter: ^3.3.5
-  banana_query_core: 
-    git:
-      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
-      path: packages/banana_query_core
-      ref: main
+  banana_query_core:
+    path: ../banana_query_core
   banana_query_database:
-    git:
-      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
-      path: packages/banana_query_database
-      ref: main
+    path: ../banana_query_database
   # path: ^1.8.0
 
 dev_dependencies:
