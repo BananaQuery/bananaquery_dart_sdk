@@ -7,6 +7,10 @@ environment:
   sdk: '>=2.18.2 <3.0.0'
 
 dependencies:
+  colonel:
+    git:
+      url: https://github.com/dbrdz/colonel
+      ref: main
   openapi_generator_annotations: ^4.11.0
   crypto: ^3.0.1
   uuid: ^3.0.6
