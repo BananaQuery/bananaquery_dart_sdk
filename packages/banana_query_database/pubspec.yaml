@@ -8,8 +8,12 @@ environment:
 
 # Add regular dependencies here.
 dependencies:
-  banana_query_core:
-    path: ../banana_query_core
+  banana_query_core: 
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_core
+      ref: main
+  # path: ^1.8.0
 
 dev_dependencies:
   lints: ^3.0.0

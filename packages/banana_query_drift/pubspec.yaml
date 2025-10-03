@@ -10,10 +10,16 @@ dependencies:
   drift: ^2.14.1
   sqlite3: ^2.4.0
   path: ^1.8.3
-  banana_query_core:
-    path: ../banana_query_core
+  banana_query_core: 
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_core
+      ref: main
   banana_query_database:
-    path: ../banana_query_database
+    git:
+      url: https://github.com/BananaQuery/bananaquery_dart_sdk/
+      path: packages/banana_query_database
+      ref: main
 
 dev_dependencies:
   drift_dev: ^2.14.1
