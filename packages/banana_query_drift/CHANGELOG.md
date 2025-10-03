@@ -9,9 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Initial release of BananaQuery Drift package
-- SQLite database implementation using Drift ORM
+- Flutter-optimized SQLite database implementation using Drift ORM
+- Uses `drift_flutter` for seamless Flutter integration
 - Food database management (CRUD operations)
 - Food item management (CRUD operations)
 - Full-text search capabilities using FTS5
 - Full compatibility with BananaQuery core API
+- Flutter test framework integration
 - Comprehensive test coverage

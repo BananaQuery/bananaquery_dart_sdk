@@ -39,12 +39,12 @@ final searchResults = await database.searchFoodDatabases('custom');
 ## Dependencies
 
 - `drift`: SQLite ORM for Dart/Flutter
-- `sqlite3_flutter_libs`: SQLite libraries for Flutter applications
+- `drift_flutter`: Flutter-specific Drift database implementation
 - `path_provider`: Flutter file system path utilities
 - `banana_query_core`: Core BananaQuery types and interfaces
 - `banana_query_database`: Database abstraction layer
 
-**Note**: This package is designed specifically for Flutter applications and requires Flutter dependencies to function properly.
+**Note**: This package uses `drift_flutter` which provides optimized Flutter integration and handles platform-specific SQLite setup automatically.
 
 ## Database Schema
 
