@@ -1,9 +1,5 @@
-import 'dart:io';
 import 'package:drift/drift.dart';
-import 'package:drift/native.dart';
 import 'package:drift_flutter/drift_flutter.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:path/path.dart' as p;
 
 import 'tables.dart';
 
@@ -11,7 +7,13 @@ part 'database.g.dart';
 
 @DriftDatabase(tables: [FoodDatabases, FoodItems])
 class BananaQueryDriftDatabase extends _$BananaQueryDriftDatabase {
-  BananaQueryDriftDatabase() : super(_openConnection());
+  BananaQueryDriftDatabase() : super(driftDatabase(
+    name: 'bananaquery.db',
+    web: DriftWebOptions(
+      sqlite3Wasm: Uri.parse('sqlite3.wasm'),
+      driftWorker: Uri.parse('drift_worker.dart.js'),
+    ),
+  ));
 
   @override
   int get schemaVersion => 1;
@@ -34,13 +36,4 @@ class BananaQueryDriftDatabase extends _$BananaQueryDriftDatabase {
       ''');
     },
   );
-}
-
-LazyDatabase _openConnection() {
-  return LazyDatabase(() async {
-    final dbFolder = await getApplicationDocumentsDirectory();
-    final file = File(p.join(dbFolder.path, 'bananaquery.db'));
-    
-    return NativeDatabase(file);
-  });
 }
